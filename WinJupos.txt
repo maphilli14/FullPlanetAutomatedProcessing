@@ -1,0 +1,234 @@
+Thursday September 14, 2023 04:38:49 PM Logging Planet Ephem
+Thursday September 14, 2023 04:38:50 PM Rest
+Thursday September 14, 2023 04:38:50 PM  Altitude          :  65°
+ Azimuth           :   6° [ S ]
+Thursday September 14, 2023 04:38:53 PM  Altitude          :  65°
+ Azimuth           :   6° [ S ]
+Thursday September 14, 2023 04:40:09 PM Logging Planet Ephem
+Thursday September 14, 2023 04:40:11 PM sleep 100
+
+Thursday September 14, 2023 04:40:11 PM  Altitude          :  65°
+ Azimuth           :   6° [ S ]
+Thursday September 14, 2023 04:40:14 PM  Altitude          :  65°
+ Azimuth           :   6° [ S ]
+Thursday September 14, 2023 04:40:43 PM Logging Planet Ephem
+Thursday September 14, 2023 04:40:44 PM sleep 100
+ Altitude          :  65°
+ Azimuth           :   6° [ S ] Altitude          :  65°
+ Azimuth           :   6° [ S ]
+Thursday September 14, 2023 04:40:44 PM  Altitude          :  65°
+ Azimuth           :   6° [ S ]
+Thursday September 14, 2023 04:40:52 PM  Altitude          :  65°
+ Azimuth           :   6° [ S ]
+Thursday September 14, 2023 04:41:51 PM Logging Planet Ephem
+Thursday September 14, 2023 04:41:53 PM MouseClickDrag ,1013,408,1888,474
+
+Thursday September 14, 2023 04:41:53 PM Altitude          :  65°
+ Azimuth           :   6° [ S ]
+Thursday September 14, 2023 04:41:57 PM Altitude          :  65°
+ Azimuth           :   6° [ S ]
+Thursday September 14, 2023 04:42:45 PM Logging Planet Ephem
+Thursday September 14, 2023 04:42:46 PM ahk_class TDialogHauptfenster
+Thursday September 14, 2023 04:42:46 PM Altitude          :  65°
+ Azimuth           :   6° [ S ]
+Thursday September 14, 2023 04:42:50 PM Altitude          :  65°
+ Azimuth           :   6° [ S ]
+Thursday September 14, 2023 04:43:50 PM Logging Planet Ephem
+Thursday September 14, 2023 04:43:51 PM System:       I       II (Atm. UV)
+   C.M.:   358.6°    92.3°
+Thursday September 14, 2023 04:43:52 PM Altitude          :  65°
+ Azimuth           :   6° [ S ]
+Thursday September 14, 2023 04:43:53 PM Altitude          :  65°
+ Azimuth           :   6° [ S ]
+Thursday September 14, 2023 04:45:48 PM Logging Planet Ephem
+Thursday September 14, 2023 04:45:49 PM System:       I       II (Atm. UV)
+   C.M.:   358.6°    92.3°
+Thursday September 14, 2023 04:45:50 PM Altitude          :  65°
+ Azimuth           :   6° [ S ]
+Thursday September 14, 2023 04:45:52 PM Altitude          :  65°
+ Azimuth           :   6° [ S ]
+Thursday September 14, 2023 04:46:21 PM Logging Planet Ephem
+Thursday September 14, 2023 04:46:22 PM System:       I       II (Atm. UV)
+   C.M.:   358.6°    92.3°Altitude          :  65°
+ Azimuth           :   6° [ S ]Altitude          :  65°
+ Azimuth           :   6° [ S ]
+Thursday September 14, 2023 04:46:23 PM 2
+Thursday September 14, 2023 04:46:25 PM 2
+Thursday September 14, 2023 04:46:53 PM Logging Planet Ephem
+Thursday September 14, 2023 04:46:56 PM 2
+Thursday September 14, 2023 04:46:59 PM 2
+Thursday September 14, 2023 04:47:02 PM 2
+Thursday September 14, 2023 04:47:11 PM Logging Planet Ephem
+Thursday September 14, 2023 04:47:15 PM  System:       I       II (Atm. UV)
+   C.M.:   358.6°    92.3°
+Thursday September 14, 2023 04:47:18 PM  Altitude          :  65°
+ Azimuth           :   6° [ S ]
+Thursday September 14, 2023 04:47:21 PM  Altitude          :  65°
+ Azimuth           :   6° [ S ]
+Thursday September 14, 2023 05:00:18 PM Logging Planet Ephem
+Thursday September 14, 2023 05:00:23 PM  System:       I       II (Atm. UV)
+   C.M.:   358.6°    92.3°
+Thursday September 14, 2023 05:00:27 PM  Altitude          :  65°
+ Azimuth           :   6° [ S ]
+Thursday September 14, 2023 05:00:31 PM Rise              :   8 h 40 min UT
+Meridian passage  :  15 h 12 min UT
+Set               :  21 h 44 min UT
+
+Sun rise          :  10 h 49 min UT
+Sun set           :  23 h 38 min UT
+
+Elongation        :  30.4°  [ W ]
+Light-time        :   2.9   min
+Diameter          :  47.4"  equat.
+Illumin. fraction :   0.144 of diam.
+Maximum phase     :  79.2°  from n.pole
+Position angle    :  14.5°  equat.
+                  :   9.70° horiz.
+Visual magnitude  :  -4.5   mag
+Longitude of Sun  : 356°
+Declin. of Earth  :   7.2°
+Declin. of Sun    :   2.3°
+
+Julian date (JD)  : 2460192.14028
+
+
+Thursday September 14, 2023 05:04:54 PM Logging Planet Ephem
+Thursday September 14, 2023 05:04:59 PM  System:       I       II (Atm. UV)
+   C.M.:   358.6°    92.3°
+Thursday September 14, 2023 05:05:03 PM  Altitude          :  65°
+ Azimuth           :   6° [ S ]
+Thursday September 14, 2023 05:05:07 PM Elongation        :  30.4°  [ W ]
+Thursday September 14, 2023 05:05:07 PM Diameter          :  47.4"  equat.
+Thursday September 14, 2023 05:05:07 PM Illumin. fraction :   0.144 of diam.
+Thursday September 14, 2023 05:05:07 PM Visual magnitude  :  -4.5   mag
+Thursday September 14, 2023 05:05:07 PM Longitude of Sun  : 356°
+
+
+Thursday September 14, 2023 05:11:50 PM Logging Planet Ephem
+ System:       I       II (Atm. UV)
+   C.M.:   358.6°    92.3°
+ Altitude          :  65°
+ Azimuth           :   6° [ S ]
+ Elongation        :  30.4°  [ W ]
+Thursday September 14, 2023 05:12:02 PM Diameter          :  47.4"  equat.
+Thursday September 14, 2023 05:12:02 PM Illumin. fraction :   0.144 of diam.
+Thursday September 14, 2023 05:12:02 PM Visual magnitude  :  -4.5   mag
+Thursday September 14, 2023 05:12:02 PM Longitude of Sun  : 356°
+
+
+Thursday September 14, 2023 05:12:38 PM Logging Planet Ephem
+ System:       I       II (Atm. UV)
+   C.M.:   358.6°    92.3°
+ Altitude          :  65°
+ Azimuth           :   6° [ S ]
+Elongation        :  30.4°  [ W ]
+Diameter          :  47.4"  equat.
+Illumin. fraction :   0.144 of diam.
+Visual magnitude  :  -4.5   mag
+Longitude of Sun  : 356°
+
+
+Thursday September 14, 2023 05:14:40 PM Logging Planet Ephem
+
+ System:       I       II (Atm. UV)
+   C.M.:   358.6°    92.3°
+
+ Altitude          :  65°
+
+Elongation        :  30.4°  [ W ]
+Diameter          :  47.4"  equat.
+Illumin. fraction :   0.144 of diam.
+Visual magnitude  :  -4.5   mag
+Longitude of Sun  : 356°
+
+
+Thursday September 14, 2023 11:20:29 PM Logging Planet Ephem
+
+    5h -  119.9    346.7      8.9
+     6h -  156.5     22.9     45.2
+     7h -  193.1     59.2     81.4
+     8h -  229.7     95.5    117.7
+
+
+
+Thursday September 14, 2023 11:21:56 PM Logging Planet Ephem
+
+
+
+Thursday September 14, 2023 11:22:21 PM Logging Planet Ephem
+
+ System:       I       II (Atm. UV)
+   C.M.:   358.6°    92.3° Altitude          :  65°
+ Azimuth           :   6° [ S ]Rise              :   8 h 40 min UT
+Meridian passage  :  15 h 12 min UT
+Set               :  21 h 44 min UT
+
+Sun rise          :  10 h 49 min UT
+Sun set           :  23 h 38 min UT
+
+Elongation        :  30.4°  [ W ]
+Light-time        :   2.9   min
+Diameter          :  47.4"  equat.
+Illumin. fraction :   0.144 of diam.
+Maximum phase     :  79.2°  from n.pole
+Position angle    :  14.5°  equat.
+                  :   9.70° horiz.
+Visual magnitude  :  -4.5   mag
+Longitude of Sun  : 356°
+Declin. of Earth  :   7.2°
+Declin. of Sun    :   2.3°
+
+Julian date (JD)  : 2460192.14028
+
+   C.M.:   358.6°    92.3° Altitude          :  65°
+
+Elongation        :  30.4°  [ W ]
+Diameter          :  47.4"  equat.
+Illumin. fraction :   0.144 of diam.
+Visual magnitude  :  -4.5   mag
+Longitude of Sun  : 356°
+
+
+Friday September 29, 2023 12:46:29 PM Logging Planet Ephem
+
+ System:       I       II      III
+   C.M.:   301.0°   181.8°   203.5°
+
+ Altitude          :  69°
+
+Elongation        : 116.0°  [ W ]
+Diameter
+Visual magnitude  :  -2.6   mag
+Longitude of Sun  :  35°
+
+
+Friday November 10, 2023 06:44:43 PM Logging Planet Ephem
+
+
+
+Friday November 10, 2023 06:47:31 PM Logging Planet Ephem
+
+j2023-11-05_04-31.0
+
+2023-11-05 - 04-31.0UTC
+
+CM I 223.3° CM II 352.4° CM III  30.6°
+
+Dia:49.5",mag:-2.9
+Alt:67°, Ls:41°
+Elong:177.3°  [ E ]
+
+
+
+Saturday November 11, 2023 04:31:41 PM Logging Planet Ephem
+
+j2023-11-06_03-34.3
+
+2023-11-06 - 03-34.3UTC
+
+CM I 346.8° CM II 108.5° CM III 146.9°
+
+Dia:49.5",mag:-2.9
+Alt:62°, Ls:41°
+Elong:176.4°  [ E ]
+

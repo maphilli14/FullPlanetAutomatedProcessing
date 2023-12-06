@@ -1,0 +1,10 @@
+
+
+Friday November 10, 2023 07:01:03 PM
+RedFile= D:\A-Inbox\Jupiter\Jupiter_2023_11_05\2023-11-05-0509_2-R.txt
+BlueFile= D:\A-Inbox\Jupiter\Jupiter_2023_11_05\2023-11-05-0508_3-B.txt
+GreenFile= D:\A-Inbox\Jupiter\Jupiter_2023_11_05\2023-11-05-0508_8-G.txt
+Friday November 10, 2023 07:01:03 PM Logging Firecapture Exposure Settings
+
+RBG:10, 12, 10
+Gain: 2250, 2500, 2300
