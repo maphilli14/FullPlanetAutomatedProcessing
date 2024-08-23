@@ -62,7 +62,7 @@ FILTER = "homeassistant/sensor/NINA-ACPlus/NINAStatus/Filter/"
 MQTTERROR = "homeassistant/sensor/NINA-ACPlus/NINAStatus/AkuleError/"
 
 username = "maphilli14"
-password = "F6aX8TxvAQup"
+password = "MQTTPASS"
 
 # Callback function when the client receives a CONNACK response from the server
 def on_connect(client, userdata, flags, rc):
