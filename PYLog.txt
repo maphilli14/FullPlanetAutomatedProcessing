@@ -1,0 +1,30 @@
+ERROR:__main__: Monday August 19, 2024 04:46:48 PM Starting RGB Assembly
+INFO:__main__:Monday August 19, 2024 04:46:48 PM Trying to assemble RGB
+INFO:__main__:Monday August 19, 2024 04:46:48 PM RBG counter= 1 of 3
+INFO:__main__:Monday August 19, 2024 04:46:48 PM RBG counter= 2 of 3
+ERROR:__main__:
+
+Monday August 19, 2024 04:47:19 PM cmd.exe /c "E:\\A-Inbox\\Saturn\\Saturn_2024_08_16\AS_P50\LrD-0.9-9\Anims\RGB+labels-bestsfastanimrock.gif" /s
+ERROR:__main__:
+
+Monday August 19, 2024 04:47:19 PM RGB Animation READY
+INFO:__main__:
+
+Monday August 19, 2024 04:47:19 PM 
+This script has completed successfully!
+
+ERROR:__main__: Monday August 19, 2024 04:47:34 PM Starting RGB Assembly
+INFO:__main__:Monday August 19, 2024 04:47:34 PM Trying to assemble RGB
+INFO:__main__:Monday August 19, 2024 04:47:34 PM RBG counter= 1 of 3
+INFO:__main__:Monday August 19, 2024 04:47:34 PM RBG counter= 2 of 3
+ERROR:__main__:
+
+Monday August 19, 2024 04:48:08 PM cmd.exe /c "E:\A-Inbox\Saturn\Saturn_2024_08_16\AS_P50\LrD-0.9-9\Anims\RGB+labels-bestsfastanimrock.gif" /s
+ERROR:__main__:
+
+Monday August 19, 2024 04:48:08 PM RGB Animation READY
+INFO:__main__:
+
+Monday August 19, 2024 04:48:08 PM 
+This script has completed successfully!
+

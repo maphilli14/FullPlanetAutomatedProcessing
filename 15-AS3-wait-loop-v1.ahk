@@ -1,6 +1,7 @@
 ﻿#Requires AutoHotkey v2.0
 ;
 ;This Script will open a set of FireCaputre recordings in AutoStakkert3 and stack with defaults
+; 20240807 v2 includes MQTT and lots of cleanup
 ;20220222 - ver 1.1
 ; Added Logging and file moves
 ;
@@ -9,6 +10,7 @@ Logging := 1
 ;
 ;Variables
 ;
+q := chr(34) ; https://www.autohotkey.com/board/topic/33688-storing-quotation-marks-in-a-variable/#:~:text=Use%20the%20accent%20symbol%20before%20each%20quote%20mark.,a%20variable%20to%20another%20variable%20and%20need%20quotes.
 FCRoot := IniRead("00-setup.ini", "Autostakkert", "FCRoot")
 AstraImage := IniRead("00-setup.ini", "Programs", "AstraImage")
 Blur := IniRead("00-setup.ini", "AI Settings", "Blur")
@@ -19,21 +21,18 @@ nY := IniRead("00-setup.ini", "Autostakkert", "ProgressY")
 VideoFileType := IniRead("00-setup.ini", "Autostakkert", "VideoFileType")
 ASOutputFileType := IniRead("00-setup.ini", "Autostakkert", "ASOutputFileType")
 ExplorerFileField := IniRead("00-setup.ini", "Programs", "ExplorerFileField")
-;
-if A_Args.Length < 1
-{
-    PATH := InputBox("This script requires at least 1 parameters but it only received " A_Args.Length ".  Please paste the path to your AS3 stacked images.").value
-}
-else
-{
-PATH := A_Args[1]
-}
-; Starting Logging
-;
-FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Starting AS3 Stacking watcher.`n", "Log.txt"
-;
-;
-;
+Enabled := IniRead("00-setup.ini", "MQTT", "Enabled")
+; These are moved below the args passing
+;UserPathIn := PATH
+;FCInput := StrSplit(UserPathIn,"\")
+;Planet := FCInput[3]
+;DateSet := FCInput[4]
+;CurrentSet := FCRoot "\" Planet "\" DateSet "\"
+;StackPath := CurrentSet PreferredStackDepth
+STATUS := IniRead("00-setup.ini", "MQTT", "STATUS")
+MQTTERROR := IniRead("00-setup.ini", "MQTT", "MQTTERROR")
+FILTER := IniRead("00-setup.ini", "MQTT", "FILTER")
+Target := IniRead("00-setup.ini", "MQTT", "Target")
 BLACK := "0x000000"
 WHITE := "0xFFFFFF"
 ;
@@ -42,14 +41,54 @@ WHITE := "0xFFFFFF"
 ;ny := Integer(890)
 ;
 ;
+;
+; ================================================================================
 ; Initial sleep to delay progress checking
-Sleep(10000)
+; ================================================================================
 ;
-; This section waits until stacking progress is at 100%
-; to prevent an infinte loop use timer * count in loop per https://www.autohotkey.com/board/topic/31617-count-1-on-every-loop/
-; 48hrs = 172,800sec/30sec = 5760counts 
 ;
-; This section sets up a planet specific Sharpening per the setup file
+Sleep(10000) ; 10seconds
+;
+;
+;
+; ================================================================================
+; Starting Logging
+; ================================================================================
+;
+;
+FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Starting AS3 Stacking watcher.`n", "Log.txt"
+;
+if Enabled = 1
+	{
+	Run STATUS '"Starting Autostakkert monitoring..."'
+	}
+;
+;
+;
+; ================================================================================
+; This secion sets up input video files via prompt or arg passing
+; ================================================================================
+;
+;
+if A_Args.Length < 1
+	{
+    PATH := InputBox("This script requires at least 1 parameters but it only received " A_Args.Length ".  Please paste the path to your AS3 stacked images.").value
+	try
+		Run FCRoot
+	catch
+		if Enabled = 1
+			{
+			Run MQTTERROR '"You are missing the FC ROOT files!"'
+			}
+		else
+			{
+			MsgBox "You are missing the FC ROOT files!"
+		}
+	}
+else
+	{
+	PATH := A_Args[1]
+	}
 ;
 UserPathIn := PATH
 FCInput := StrSplit(UserPathIn,"\")
@@ -57,7 +96,13 @@ Planet := FCInput[3]
 DateSet := FCInput[4]
 CurrentSet := FCRoot "\" Planet "\" DateSet "\"
 StackPath := CurrentSet PreferredStackDepth
-
+;
+;
+; ================================================================================
+; This section sets up a planet specific Sharpening per the setup file
+; ================================================================================
+;
+;
 ;
 if (Planet = "Jupiter")
 {
@@ -83,8 +128,33 @@ else
 	Iter := IniRead("00-setup.ini", "AI Settings", "Iter")
 	TrayTip "Planet = " Planet
 }
-LabelPath := StackPath "\LrD-" Blur "-" Iter
-DirCreate LabelPath
+try
+	{
+	LabelPath := StackPath "\LrD-" Blur "-" Iter
+	DirCreate LabelPath
+	if Enabled = 1
+		{
+		Run STATUS '"Creating AI Folders"'
+		}
+	}
+catch
+	{
+	if Enabled = 1
+		{
+		Run MQTTERROR '"You are missing the FC ROOT files!"'
+		}
+	else
+		{
+		MsgBox "You are missing the FC ROOT files!"
+		}
+	}
+;
+;
+;
+; ================================================================================
+; This secion sets up progress counting
+; ================================================================================
+;
 ;
 CountVID := 0
 CountOUT := 0
@@ -94,6 +164,7 @@ SetTimer () => ToolTip(), -20000
 Loop Files, CurrentSet VideoFileType
 	CountVID++
 ;
+
 TrayTip "Stacking should be started.  Found " CountOUT " stacked Files in " CurrentSet PreferredStackDepth "\" ASOutputFileType
 FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Stacking should be started.  Found " CountOUT " stacked Files in " CurrentSet "\" PreferredStackDepth "\" ASOutputFileType "`n", "Log.txt"
 
@@ -104,22 +175,28 @@ FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Found " CountVID
 TrayTip "Blur=" Blur " and Iter=" Iter, "Your AstraImage settings"
 FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Starting AstraImage Script.  Using Blur=" Blur " and Iter=" Iter " AstraImage settings`n", "Log.txt"
 ;
-
-
 ;
-
+;
+; This section waits until stacking progress is at 100%
+; to prevent an infinte loop use timer * count in loop per https://www.autohotkey.com/board/topic/31617-count-1-on-every-loop/
+; 48hrs = 172,800sec/30sec = 5760counts 
 ;
 ;
 ; This loop waits for the first file to get processed before loading previews in AstraImage
 if CountOUT = 0
 {
+	TrayTip VideoFileType " count is: " CountOUT
+	if Enabled = 1
+		{
+		Run Filter CountOUT
+		}
 	Loop 5760
 	 {
 		TrayTip "Waiting for 1st file"
 		CountOUT := 0
 		Loop Files, CurrentSet PreferredStackDepth "\" ASOutputFileType
 			CountOUT++
-		Sleep 4000
+		Sleep 30000
 		FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Starting AstraImage.exe`n", "Log.txt"	 
 		if CountOUT >= 1
 		{
@@ -132,9 +209,10 @@ if CountOUT = 0
 	}
 }
 ;
-;
-;
+; Start AI 
 ; This loop previews in AstraImage until tif count matches avi count
+;
+;
 if CountOUT > 0
 {
 	Loop 5760
@@ -145,7 +223,14 @@ if CountOUT > 0
 		try
 			WinClose "ahk_exe AstraImageWindows.exe"
 		try
+		{
 			Run AstraImage
+		    if Enabled = 1
+				{
+				Run TARGET '"AstraImage Preview"'
+				Run STATUS '"Previewing in AstraImage"'
+				}	
+		}
 		catch
 			MsgBox "File does not exist."
 			FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Please check setup for AI.exe location`n", "Log.txt"
@@ -158,8 +243,13 @@ if CountOUT > 0
 		Loop Files, CurrentSet PreferredStackDepth "\" ASOutputFileType
 			CountOUT++
 		TrayTip "Found stacked file for AI Preview"
+		COUTTXT := "Progress =" Ceil((CountOUT/CountVID)*100) "%"
 		TrayTip "Stacked files=" CountOUT " and Video Files=" CountVID
-		TrayTip "Progress =" Ceil((CountOUT/CountVID)*100) "%"
+		TrayTip COUTTXT
+		if Enabled = 1
+			{
+			Run FILTER q COUTTXT q
+			}			
 		ToolTip "Checking AS3 output file status, please wait"
 		SetTimer () => ToolTip(), -20000
 		FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Found stacked file for AI Preview`n", "Log.txt"
@@ -170,11 +260,17 @@ if CountOUT > 0
 			WinActivate "ahk_exe AstraImageWindows.exe"
 			MenuSelect "Astra Image",, "File", "Open"
 			WinWait "Astra Image - Open File"
-			sleep 500
-			Send StackPath "`n"
-			sleep 2000
-			;WinWaitClose "Astra Image - Open File"
-			;Open latest file, Tab, end, Enter then wait close
+			WinWait "ahk_class #32770"
+			sleep 5000 ; MQTT Pub opens window and AHK needs time to refoucs active window
+			WinActivate "ahk_class #32770"
+			sleep 5000 ; MQTT Pub opens window and AHK needs time to refoucs active window
+			WinActivate "ahk_class #32770" ; clicks into edit path to refocus window
+			ControlClick "Edit1", "ahk_class #32770" ; clicks into edit path to refocus window
+			Send "!a" ; unneded alt+a
+			sleep 200
+			Send "!n" ; ensures it's inside path
+			Send StackPath "`n" ; pastes path
+			sleep 200
 			Send "+{Tab 1}"
 			sleep 1000
 			Send "{End 1}" "`n"
@@ -257,6 +353,11 @@ if CountOUT > 0
 else
 {
 }
+;
+;
+;
+;
+; This secion defines the AS4 watch for end progress
 ;
 ;
 

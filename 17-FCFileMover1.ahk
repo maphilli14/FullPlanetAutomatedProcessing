@@ -7,6 +7,11 @@
 ; Compare number of AVI/SER to Stacked AS3 files
 ; Move files in win explorer if Stack files is = or greater than videos
 ;
+; Unless you care to rewrite these scripts, use the same path depth as I use....
+; My capture path in example is E:\A-Inbox\Saturn\Saturn_2024_08_01
+; this path depth is important as the planet specific settings are read from path and setup.
+; 
+;
 ;   https://www.autohotkey.com/docs/v2/lib/DateAdd.htm
 ;   https://www.autohotkey.com/docs/v2/lib/DirCreate.htm
 ;   https://www.autohotkey.com/docs/v2/lib/LoopFiles.htm
@@ -33,7 +38,7 @@ ExplorerFileField := IniRead("00-setup.ini", "Programs", "ExplorerFileField")
 ;
 if A_Args.Length < 1
 {
-    UserPathIn := InputBox("This script requires at least 1 parameters but it only received " A_Args.Length ".  Please paste the path to your AS3 stacked images.").value
+    UserPathIn := InputBox("This script requires at least 1 parameters but it only received " A_Args.Length ".  Please paste the path to your FireCapture RAW Root.").value
 }
 else
 {

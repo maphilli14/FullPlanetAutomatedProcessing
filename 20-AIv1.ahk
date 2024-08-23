@@ -14,70 +14,77 @@ Logging := 1
 ;
 ;Variables
 ;
+q := chr(34) ; https://www.autohotkey.com/board/topic/33688-storing-quotation-marks-in-a-variable/#:~:text=Use%20the%20accent%20symbol%20before%20each%20quote%20mark.,a%20variable%20to%20another%20variable%20and%20need%20quotes.
 FCRoot := IniRead("00-setup.ini", "Autostakkert", "FCRoot")
 AstraImage := IniRead("00-setup.ini", "Programs", "AstraImage")
 Blur := IniRead("00-setup.ini", "AI Settings", "Blur")
 Iter := IniRead("00-setup.ini", "AI Settings", "Iter")
 PreferredStackDepth := IniRead("00-setup.ini", "Autostakkert", "PreferredStackDepth")
+Enabled := IniRead("00-setup.ini", "MQTT", "Enabled")
+STATUS := IniRead("00-setup.ini", "MQTT", "STATUS")
+MQTTERROR := IniRead("00-setup.ini", "MQTT", "MQTTERROR")
+FILTER := IniRead("00-setup.ini", "MQTT", "FILTER")
+Target := IniRead("00-setup.ini", "MQTT", "Target")
+
 ;
 ;
 if A_Args.Length < 1
 {
-    UserPathIn := InputBox("This script requires at least 1 parameters but it only received " A_Args.Length ".  Please paste the path to your AS3 stacked images ONLY, stack depth is read from setup file").value
+    UserPathIn := InputBox("This script requires at least 1 parameters but it only received " A_Args.Length ".  Please paste the path to your FireCapture RAW Root, stack depth is read from setup file").value
 	UserPathIn := UserPathIn "\" PreferredStackDepth
 }
 else
 {
 UserPathIn := A_Args[1]
-;TrayTip UserPathIn
+;;TrayTip UserPathIn
 UserPathIn := UserPathIn
 }
 ;
 
-TrayTip "All windows explorers will close in 5seconds"
+;TrayTip "All windows explorers will close in 5seconds"
 sleep 5000
 
 WinClose "ahk_exe explorer.exe"
-WinClose "ahk_exe explorer.exe"
+;WinClose "ahk_exe explorer.exe"
 ;
-;TrayTip UserPathIn
+;;TrayTip UserPathIn
 ;
 ;
 ; This section sets up a planet specific Sharpening per the setup file
 ;
 FCInput := StrSplit(UserPathIn,"\")
 Planet := FCInput[3]
-;TrayTip Planet
+;;TrayTip Planet
 DateSet := FCInput[4]
 CurrentSet := FCRoot "\" Planet "\" DateSet "\"
 if (Planet = "Jupiter")
 {
 	Blur := IniRead("00-setup.ini", "AI Settings", "AvgJupiterBlur")
 	Iter := IniRead("00-setup.ini", "AI Settings", "AvgJupiterIter")
-	TrayTip "Planet = " Planet
+	;TrayTip "Planet = " Planet
 }
 else if (Planet = "Saturn")
 {
 	Blur := IniRead("00-setup.ini", "AI Settings", "SaturnBlur")
 	Iter := IniRead("00-setup.ini", "AI Settings", "SaturnIter")
-	TrayTip "Planet = " Planet
+	;TrayTip "Planet = " Planet
 }
 else if (Planet = "Star")
 {
 	Blur := IniRead("00-setup.ini", "AI Settings", "StarBlur")
 	Iter := IniRead("00-setup.ini", "AI Settings", "StarIter")
-	TrayTip "Planet = " Planet
+	;TrayTip "Planet = " Planet
 }
 else
 {
 	Blur := IniRead("00-setup.ini", "AI Settings", "Blur")
 	Iter := IniRead("00-setup.ini", "AI Settings", "Iter")
-	TrayTip "Planet = " Planet
+	;TrayTip "Planet = " Planet
 }
 
 ;
 ;
-TrayTip "Blur=" Blur " and Iter=" Iter, "Your AstraImage settings"
+;TrayTip "Blur=" Blur " and Iter=" Iter, "Your AstraImage settings"
 FileAppend "`n`n" FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Starting AstraImage Script.`n", "Log.txt"
 ;
 LabelPath := UserPathIn "\LrD-" Blur "-" Iter
@@ -85,73 +92,67 @@ DirCreate LabelPath
 ;
 FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Starting AstraImage.exe`n", "Log.txt"
 try
+	{
 	Run AstraImage
+	WinWait "ahk_class TfrmMain"
+	}
 catch
 	MsgBox "File does not exist."
 	FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Please check setup for AI.exe location`n", "Log.txt"
-sleep 10000
 ; Set focus and or wait for app
 ;
-WinActivate "ahk_class TfrmMain"
+WinActivate "ahk_exe AstraImageWindows.exe"
+sleep 200
 FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Switching to app.`n", "Log.txt"
-sleep 2000
 ;
 ; Sends file / open (alt+f,b,s)
 MenuSelect "Astra Image",, "File", "Batch Processing", "Simple Deconvolution"
 FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Opened Simple Deconvolution.`n", "Log.txt"
-sleep 10000
-SetControlDelay -1
-; This looks for "Files to process: Add Files"
-ControlClick "TButton6","ahk_class TfrmSimpleDeconvolutionBatch"
+sleep 200
+WinWait "ahk_class TfrmSimpleDeconvolutionBatch"
+sleep 200
+WinActivate "ahk_class TfrmSimpleDeconvolutionBatch"
+sleep 200
+; This looks for "Files to process: Add Files by tapping space, as you're locked into this screen and it's the default!"
+Send " "
+;ControlClick "TButton6","ahk_class TfrmSimpleDeconvolutionBatch"
 FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Opening add files.`n", "Log.txt"
-sleep 4000
-WinActivate "Batch Processing Files"
-FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Switching to file open.`n", "Log.txt"
+sleep 200
+;WinWait "ahk_class #32770"
+;FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Switching to file open.`n", "Log.txt"
 ; then removes existing path info by pasting in "our" path / need CR?
-Send UserPathIn
-FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Pasting " UserPathIn ".`n", "Log.txt"
+;WinActivate "ahk_class #32770" ; clicks into edit path to refocus window
+;ControlClick "Edit1", "ahk_class #32770" ; clicks into edit path to refocus window
+Send UserPathIn "`n"
+FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Pasting " UserPathIn "`n", "Log.txt"
+sleep 200
+Send "+{Tab 1}"
 sleep 1000
-; Opens path to expose files
-Send "!o"
-FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Opening " UserPathIn ".`n", "Log.txt"
-;
-;This section gets window postion to click into middle of diaglog box
-; Then click into files, select all and open them for processing
-WinGetPos &X, &Y, &W, &H, "ahk_class #32770"
-;
-nX := Integer((X+(W/2))/1)
-ny := Integer((Y+(H/2))/1)
-
-;nX := 250
-;ny := 250
-;
-sleep 1000
-MouseClick "left", nX, nY
-FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Clicking into files.`n", "Log.txt"
-sleep 3000
+Send "^a"
+sleep 200
 Send "^a"
 FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Selecting ALL.`n", "Log.txt"
-sleep 2000
+sleep 200
 Send "!o"
+;
 FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Pressing OPEN.`n", "Log.txt"
 ;
 ; sets output dir created above
-sleep 4000
+WinWaitClose "ahk_class #32770" , , 10000
 ;
 ControlClick "TButton4","ahk_class TfrmSimpleDeconvolutionBatch"
 FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Opening OUTPUT Path dialog.`n", "Log.txt"
-sleep 4000
+WinWait "ahk_class #32770" , , 10000
 Send LabelPath
 FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Pasting " LabelPath ".`n", "Log.txt"
-sleep 2000
+sleep 1000
+ControlClick "Button1","ahk_class #32770"
+WinWaitClose "ahk_class #32770" , , 10000
+FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Pressing Select Folder.`n", "Log.txt"
 ;
 ; This section sets Mike's favorite Mars stacking parameters
 ;
-sleep 4000
-
-ControlClick "Button1","ahk_class #32770"
-FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Pressing Select Folder.`n", "Log.txt"
-sleep 2000
+sleep 400
 ControlClick "TNumEdit3","ahk_class TfrmSimpleDeconvolutionBatch"
 FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Clicking Blur field.`n", "Log.txt"
 sleep 1000

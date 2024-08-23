@@ -232,3 +232,72 @@ Dia:49.5",mag:-2.9
 Alt:62°, Ls:41°
 Elong:176.4°  [ E ]
 
+
+
+Monday July 1, 2024 02:39:10 PM Logging Planet Ephem
+
+sRBG:15, 20_, 3200,
+
+RBG:15, 20 - , 3200,UTC
+
+
+
+Monday July 1, 2024 02:39:34 PM Logging Planet Ephem
+
+sRBG:15, 20_, 3200,
+
+RBG:15, 20 - , 3200,UTC
+
+
+
+Monday July 1, 2024 02:41:37 PM Logging Planet Ephem
+
+sRBG:15, 20_, 3200,
+
+RBG:15, 20 - , 3200,UTC
+
+
+
+Monday July 1, 2024 02:47:00 PM Logging Planet Ephem
+
+s2024-06-30_09-39.4
+
+2024-06-30 - 09-39.4UTC
+
+CM I 131.6° CM II 106.0° CM III  49.3°
+LoS=170°
+
+Dia:17.8",mag: 1.1
+Alt:48°, Rings: 2.4°
+Elong:109.7°  [ W ]
+
+
+
+Tuesday July 16, 2024 01:35:56 PM Logging Planet Ephem
+
+s2024-07-16_07-51.3
+
+2024-07-16 - 07-51.3UTC
+
+CM I 258.4° CM II  78.3° CM III   2.4°
+LoS=171°
+
+Dia:18.3",mag: 1.0
+Alt:45°, Rings: 2.6°
+Elong:125.1°  [ W ]
+
+
+
+Saturday August 17, 2024 01:25:29 PM Logging Planet Ephem
+
+s2024-08-16_06-35.0
+
+2024-08-16 - 06-35.0UTC
+
+CM I 109.8° CM II  10.1° CM III 256.9°
+LoS=172°
+
+Dia:19.0",mag: 0.7
+Alt:47°, Rings: 3.6°
+Elong:156.1°  [ W ]
+

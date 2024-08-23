@@ -2,6 +2,8 @@
 ;
 FileAppend "`n`n" FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Logging Planet Ephem`n`n", "WinJupos.txt"
 ;
+; updated to put comments on how to find the right boxes when working at 1080p / HD res with included wjs font and color scheme
+; use spy to update all 'the following' comments
 ;
 PLANET := InputBox("Input Planet's position number:`n EG: 5= Jupiter").value
 
@@ -10,6 +12,7 @@ PLANET := InputBox("Input Planet's position number:`n EG: 5= Jupiter").value
 ;
 WinActivate "ahk_class TDialogHauptfenster"
 sleep 1000
+; the following line is the System box, top left under ephem tab
 MouseClick "r",22, 275
 sleep 1000
 MouseClick ,32, 285

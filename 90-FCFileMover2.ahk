@@ -1,7 +1,8 @@
 #Requires AutoHotkey v2.0
 ;
 ;This Script will open WSL in Win10 and run various Imagemagik functions
-;20220222 - ver 1.1
+; 20240807 v2 includes MQTT and lots of cleanup
+; 20220222 - ver 1.1
 ; Added Logging and file moves
 ; 20230831 - ver 1.2
 ;  changed to native AHK
@@ -25,11 +26,34 @@ Destination1 := IniRead("00-setup.ini", "ExportFolders", "Destination1")
 Destination2 := IniRead("00-setup.ini", "ExportFolders", "Destination2")
 Blur := IniRead("00-setup.ini", "AI Settings", "Blur")
 Iter := IniRead("00-setup.ini", "AI Settings", "Iter")
+Enabled := IniRead("00-setup.ini", "MQTT", "Enabled")
+STATUS := IniRead("00-setup.ini", "MQTT", "STATUS")
+MQTTERROR := IniRead("00-setup.ini", "MQTT", "MQTTERROR")
+FILTER := IniRead("00-setup.ini", "MQTT", "FILTER")
+Target := IniRead("00-setup.ini", "MQTT", "Target")
 ;
-; set variable froma args passed
 ;
-;CMD := '"c:\Users\Mike Phillips\OneDrive\D-Permanent\Scripts\Astronomy\AutoHotKey\WithLoggingandMoves\91-FCFileMover2.py"'
-
+;
+;
+; ================================================================================
+; Starting Logging
+; ================================================================================
+;
+;
+FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Starting FCFileMover.`n", "Log.txt"
+;
+if Enabled = 1
+	{
+	Run STATUS '"Starting FCFileMover"'
+	}
+;
+;
+;
+; ================================================================================
+; This secion sets up input video files via prompt or arg passing
+; ================================================================================
+;
+;
 ;
 if A_Args.Length < 1
 {
@@ -41,7 +65,8 @@ else
 {
 ;UserPathIn := StrReplace(A_Args[1], "\\", "\")
 UserPathIn := A_Args[1]
-FCInput := StrSplit(UserPathIn,"//")
+;FCInput := StrSplit(UserPathIn,"//")  ; WORKING - borked 20240819
+FCInput := StrSplit(UserPathIn,"\")  ; BROKED RUnning from RGB ; trial 20240819
 }
 ;
 ;
@@ -114,6 +139,9 @@ if CountSHARP >= CountRAW {
 	;MsgBox ExpPath
 	Run "explorer.exe " ROOT
 	sleep 5500
+	;Send "^l"
+	;sleep 2000
+	;Send ROOT
 	ControlClick "DirectUIHWND2","ahk_class CabinetWClass" ; Clicks into object view to select all and COPY
 	sleep 2000
 	;ControlClick "DirectUIHWND2","ahk_class CabinetWClass" ; Clicks into object view to select all and COPY
@@ -127,7 +155,10 @@ if CountSHARP >= CountRAW {
 	;
 	Run "explorer.exe " Dst1
 	sleep 5500
-	sleep 500
+	;Send "^l"
+	;sleep 2000
+	;Send Dst1
+	;sleep 500
 	Send "^v"
 	FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Starting file copy to " Dst1 "`n", "Log.txt"
 	sleep 10000

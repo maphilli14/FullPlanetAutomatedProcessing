@@ -8,3 +8,30 @@ Friday November 10, 2023 07:01:03 PM Logging Firecapture Exposure Settings
 
 RBG:10, 12, 10
 Gain: 2250, 2500, 2300
+
+Monday July 1, 2024 02:38:32 PM
+RedFile= E:\A-Inbox\Saturn\Saturn_2024_06_30\2024-06-30-0958_4-R.txt
+BlueFile= E:\A-Inbox\Saturn\Saturn_2024_06_30\2024-06-30-0959_4-B.txt
+GreenFile= E:\A-Inbox\Saturn\Saturn_2024_06_30\2024-06-30-1000_4-G.txt
+Monday July 1, 2024 02:38:32 PM Logging Firecapture Exposure Settings
+
+RBG:15, 20, 15
+Gain: 3000, 3200, 3000
+
+Tuesday July 16, 2024 03:35:08 PM
+RedFile= E:\A-Inbox\SaturnHighFrameRate\SaturnHighFrameRate_2024_07_16\\2024-07-16-0752_3-R.txt
+BlueFile= E:\A-Inbox\SaturnHighFrameRate\SaturnHighFrameRate_2024_07_16\\2024-07-16-0753_4-B.txt
+GreenFile= E:\A-Inbox\SaturnHighFrameRate\SaturnHighFrameRate_2024_07_16\\2024-07-16-0754_5-G.txt
+Tuesday July 16, 2024 03:35:08 PM Logging Firecapture Exposure Settings
+
+RBG:15, 20, 15
+Gain: 3500, 3750, 3500
+
+Saturday August 17, 2024 01:25:18 PM
+RedFile= E:\A-Inbox\Saturn\Saturn_2024_08_16\2024-08-16-0700_0-R.txt
+BlueFile= E:\A-Inbox\Saturn\Saturn_2024_08_16\2024-08-16-0658_0-B.txt
+GreenFile= E:\A-Inbox\Saturn\Saturn_2024_08_16\2024-08-16-0659_0-G.txt
+Saturday August 17, 2024 01:25:18 PM Logging Firecapture Exposure Settings
+
+RBG:20, 25, 20
+Gain: 3000, 3200, 3000

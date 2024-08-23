@@ -9,6 +9,12 @@ PreferredStackDepth := IniRead("00-setup.ini", "Autostakkert", "PreferredStackDe
 nX := IniRead("00-setup.ini", "AI Settings", "ProgressX")
 nY := IniRead("00-setup.ini", "AI Settings", "ProgressY")
 NOTDONE := IniRead("00-setup.ini", "AI Settings", "NOTDONE")
+Enabled := IniRead("00-setup.ini", "MQTT", "Enabled")
+STATUS := IniRead("00-setup.ini", "MQTT", "STATUS")
+MQTTERROR := IniRead("00-setup.ini", "MQTT", "MQTTERROR")
+FILTER := IniRead("00-setup.ini", "MQTT", "FILTER")
+Target := IniRead("00-setup.ini", "MQTT", "Target")
+
 
 ; NOTDONE means the busy color of the Start button in Simple Decon
 ;
@@ -50,7 +56,7 @@ Loop 600
 	{
 		;MouseMove nX, nY
 		ToolTip "Checking AI status, please wait, found " Progress " color"
-		sleep 3000
+		sleep 5000
 		;MouseMove 1100, 700
 		;sleep 3000
 	}

@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 
 
-import os, shutil, logging, subprocess, time, sys
-
+import os, shutil, logging, subprocess, time, sys, datetime
+import paho.mqtt.client as mqtt
 
 '''
 
@@ -10,6 +10,9 @@ This script automates RGB combine in GIMP 2.10.
 It will ask for where your stacked or sharped source files are,
 sort them into RBG sequences, calculate the mid time and make them
 into color images.
+
+; 20240819 v3.0
+; Added MQTT
 
 ; 2023114 v2.0
 ;  Flow is now:
@@ -26,13 +29,71 @@ into color images.
 ;  Change cleanup scripts to launch ahk, to launch separate terminal to run python
 
 '''
+# Logging Section
+NOW = datetime.datetime.now().strftime("%A %B %d, %Y %I:%M:%S %p")
+logger = logging.getLogger(__name__)
+logging.basicConfig(filename='/mnt/c/Users/maphilli14-work2/Documents/GitHub/FullPlanetAutomatedProcessing/Log.txt', encoding='utf-8', level=logging.DEBUG)
+
+NOW = datetime.datetime.now().strftime("%A %B %d, %Y %I:%M:%S %p")
+message = "Starting RGB Assembly"
+logger.error(" " + NOW + " " + message)
+
+#Path Vars
+MyFILE = sys.argv[1]
+NOW = datetime.datetime.now().strftime("%A %B %d, %Y %I:%M:%S %p")
+logger.info(" " + NOW + " " + MyFILE)
+
+# Mike's Astro vars
 STACKROOT='/mnt/d/B-Sorted/Astronomy/20-Stacked/SolarSystem/4-Mars/2020/'
 OneDRIVERGB=''
 #LOGO='/mnt/c/Users/Mike\ Phillips/OneDrive/D-Permanent/Astronomy/Templates/maptag.png'
 LOGO='/mnt/c/maptag.png'
 #logo and label delay timers
 t=0.1
+LEVELS=' -level 1%,50% '
 #RECENT=os.listdir('/mnt/d/B-Sorted/Astronomy/20-Stacked/SolarSystem/4-Mars/2020/')[-1]
+
+# Define the MQTT broker details
+broker = "192.168.45.249"
+port = 1883
+Target = "homeassistant/sensor/NINA-ACPlus/NINAStatus/Target/"
+STATUS = "homeassistant/sensor/NINA-ACPlus/NINAStatus/Status/"
+FILTER = "homeassistant/sensor/NINA-ACPlus/NINAStatus/Filter/"
+MQTTERROR = "homeassistant/sensor/NINA-ACPlus/NINAStatus/AkuleError/"
+
+username = "maphilli14"
+password = "F6aX8TxvAQup"
+
+# Callback function when the client receives a CONNACK response from the server
+def on_connect(client, userdata, flags, rc):
+    if rc == 0:
+        print("Connected successfully")
+        client.subscribe(STATUS)
+    else:
+        print(f"Connect failed with code {rc}")
+
+# Callback function when a PUBLISH message is received from the server
+def on_message(client, userdata, msg):
+    print(f"Received message: {msg.payload.decode()} on STATUS {msg.STATUS}")
+
+# Create an MQTT client instance
+client = mqtt.Client()
+
+# Set username and password
+client.username_pw_set(username, password)
+
+# Assign the callback functions
+client.on_connect = on_connect
+client.on_message = on_message
+
+# Connect to the broker
+client.connect(broker, port, 6)
+
+message = "RGB Assembly in Imagemagik"
+print(message)
+client.publish(Target, message)
+message = "Error free"
+client.publish(MQTTERROR, message)
 
 '''
 
@@ -57,13 +118,13 @@ SLEEPT = 0
 print()
 print(str(sys.argv[1]))
 WINSTACKEDFOLDER = sys.argv[1]
-WINSTACKEDFOLDER='\"'+WINSTACKEDFOLDER+'\"'
+NewSTACKEDFOLDER='\"'+WINSTACKEDFOLDER+'\"'
 time.sleep(int(SLEEPT))
 
 
 #L=os.listdir(os.path.join(STACKROOT,RECENT,AS3,AI))
 
-cmd='wslpath '+WINSTACKEDFOLDER
+cmd='wslpath '+NewSTACKEDFOLDER
 SP = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
 OUT,err=SP.communicate()
 RC=SP.wait()
@@ -121,7 +182,10 @@ except:
     print('FAILED to Extract image parameters for logo and labling')
 
 print()
-print('Trying to assemble RGB')
+message = "Trying to assemble RGB"
+print(message)
+client.publish(STATUS, message)
+
 for f in L:
     if '.tif' in f:
         try:
@@ -145,6 +209,11 @@ for f in L:
                 print('RED = '+RED)
                 print('GREEN = '+GREEN)
                 print('BLUE = '+f)
+                message = 'RBG counter= '+str(BLUES.index(BLUE)+1)+' of '+str(len(BLUES))
+                logger.info(NOW + " " + message)
+                client.publish(STATUS, message)
+                COUNT = str(int(((BLUES.index(BLUE)+1)/(len(BLUES)))*100))+'%'
+                client.publish(FILTER, COUNT)
                 if not RED=='' and not GREEN=='' and not BLUE=='':
                     print()
                     print('All RGB FOUND!')
@@ -154,7 +223,6 @@ for f in L:
                     INFILE=os.path.join(STACKEDFOLDER,'RGB',RGB)
                     OUTFILE=os.path.join(STACKEDFOLDER,'RGB+labels',RGB)
                     OUTFILE2=os.path.join(STACKEDFOLDER,'RGB+labels-bests',RGB)
-                    LEVELS=' -level 0%,60% '
                     #LEVELS=' -auto-level '
                     RGBdt=RGB[:17]
                     #
@@ -193,8 +261,6 @@ for f in L:
             if '-R_' in f:
                 INFILE=os.path.join(STACKEDFOLDER,f)
                 OUTFILE=os.path.join(STACKEDFOLDER,'RED',f)
-                LEVELS=' -level 0%,60% '
-                #LEVELS=' -auto-level '
                 RGBdt=f[:17]
                 os.system('convert -quiet '+INFILE+LEVELS+' -font Times-Bold -pointsize 40 -stroke none -fill white -annotate +5+'+Sigheight+' \'Michael A. Phillips\'  -font Times-Bold -pointsize 20 -stroke none -fill white -annotate +5+25 '+RGBdt+' '+OUTFILE)
                 time.sleep(t)
@@ -206,8 +272,6 @@ for f in L:
             if '-G_' in f:
                 INFILE=os.path.join(STACKEDFOLDER,f)
                 OUTFILE=os.path.join(STACKEDFOLDER,'GREEN',f)
-                #LEVELS=' -level 0%,60% '
-                LEVELS=' -auto-level '
                 RGBdt=f[:17]
                 os.system('convert '+INFILE+LEVELS+' -font Times-Bold -pointsize 40 -stroke none -fill white -annotate +5+'+Sigheight+' \'Michael A. Phillips\'  -font Times-Bold -pointsize 20 -stroke none -fill white -annotate +5+25 '+RGBdt+' '+OUTFILE)
                 time.sleep(t)
@@ -219,8 +283,6 @@ for f in L:
             if '-B_' in f:
                 INFILE=os.path.join(STACKEDFOLDER,f)
                 OUTFILE=os.path.join(STACKEDFOLDER,'BLUE',f)
-                #LEVELS=' -level 0%,60% '
-                LEVELS=' -auto-level '
                 RGBdt=f[:17]
                 os.system('convert '+INFILE+LEVELS+' -font Times-Bold -pointsize 40 -stroke none -fill white -annotate +5+'+Sigheight+' \'Michael A. Phillips\'  -font Times-Bold -pointsize 20 -stroke none -fill white -annotate +5+25 '+RGBdt+' '+OUTFILE)
                 #time.sleep(t)
@@ -233,7 +295,10 @@ for i in SUBFolders:
     if not 'Anims' in i:
         try:
             print()
-            print('Making an animation out of the '+i+' channel.')
+            message = "Making an animation out of the " + i + " channel."
+            print(message)
+            client.publish(STATUS, message)
+            logger.info("\n\n" + NOW + " " + message)
             os.system('convert -delay 10 '+os.path.join(STACKEDFOLDER,i)+'/*.tif '+os.path.join(STACKEDFOLDER,'Anims')+'/'+i+'anim.gif')
             #reverses the labeled gif
             time.sleep(t)
@@ -245,11 +310,16 @@ for i in SUBFolders:
             #shutil.copy(os.path.join(STACKEDFOLDER,RGB),os.path.join(STACKEDFOLDER,'RGB'))
             #shutil.copy(os.path.join(STACKEDFOLDER,RGB),os.path.join(STACKEDFOLDER,'RGB'))
         except:
-                pass
+            message = "SUBFolder Errors"
+            client.publish(MQTTERROR, message)
+            logger.error("\n\n" + NOW + " " + message)
+            
 for i in SUBChannels:
     try:
         print()
-        print('Making an animation out of the '+i+' channel.')
+        message = "Making an animation out of the " + i + " channel."
+        print(message)
+        client.publish(STATUS, message)
         os.system('convert -delay 10 '+os.path.join(STACKEDFOLDER,i)+'/*.tif '+os.path.join(STACKEDFOLDER,i)+'/'+i+'anim.gif')
         #reverses the labeled gif
         time.sleep(t)
@@ -261,36 +331,55 @@ for i in SUBChannels:
         #shutil.copy(os.path.join(STACKEDFOLDER,RGB),os.path.join(STACKEDFOLDER,'RGB'))
         #shutil.copy(os.path.join(STACKEDFOLDER,RGB),os.path.join(STACKEDFOLDER,'RGB'))
     except:
-            pass
-
+        message = "SUBChannels Errors"
+        client.publish(MQTTERROR, message)
+        logger.error("\n\n" + NOW + " " + message)
 
 
 for c in CAPS:
     print()
     print(c)
 
+# Function to start a process and leave it open
+def start_process(command):
+    # Start the process
+    process = subprocess.Popen(command, shell=True)
+    # Return the process if needed
+    return process
+
+# The command to run the specific part of the script
+endPATH = "\Anims\RGB+labels-bestsfastanimrock.gif".replace('\\','\\\\')
+FILE = WINSTACKEDFOLDER.strip("\"") + endPATH # raw mode to preserve backslashes
+MyFILE = r"FILE"
+command = 'cmd.exe /c \"'+ WINSTACKEDFOLDER.strip("\"") +'\\Anims\\RGB+labels-bestsfastanimrock.gif\" /s'
+message = command
+client.publish(STATUS, message)
+print(message)
+NOW = datetime.datetime.now().strftime("%A %B %d, %Y %I:%M:%S %p")
+logger.info("\n" + NOW + " " + message)
+logger.info("\n" + NOW + " " + FILE)
+logger.info("\n" + NOW + " " + MyFILE)
+
+
 try:
     print()
-    print('Opening final gif')
-    os.system('cmd.exe /c \"'+sys.argv[1]+'\\Anims\\RGB+labels-bestsfastanimrock.gif\"')
+    # Start the process
+    #process = start_process(command)
+    message = "RGB Animation READY"
+    client.publish(STATUS, message)
+    print(message)
+    NOW = datetime.datetime.now().strftime("%A %B %d, %Y %I:%M:%S %p")
+    logger.info("\n\n" + NOW + " " + message)
+    # Continue with the rest of your script
+    print("Subprocess started, continuing with the main script...")
 except:
     print()
-    print('bad')
-
-
-print()
-print("\nThis script has completed successfully!\n")
+    message = "Failed to open RGB animation"
+    client.publish(MQTTERROR, message)
+    print(message)
+    NOW = datetime.datetime.now().strftime("%A %B %d, %Y %I:%M:%S %p")
+    logger.error("\n\n" + NOW + " " + message)
 
 AHK="/mnt/c/Program\\ Files/AutoHotKey/v2/AutoHotkey.exe"
-Script=r'"C:\Users\Mike Phillips\OneDrive\D-Permanent\Scripts\Astronomy\AutoHotKey\FullPlanetAutomatedProcessing\90-FCFileMover2.ahk"'
+Script=r'"C:\Users\maphilli14-work2\Documents\GitHub\FullPlanetAutomatedProcessing\31-animopen.ahk"'
 
-try:
-    print()
-    print('Running File Compare and move')
-    os.system(AHK+" "+Script+" "+sys.argv[1].replace("\\","/"))
-except:
-    print()
-    print('Failed to start next AHK script')
-
-print()
-print("CLOSING")
