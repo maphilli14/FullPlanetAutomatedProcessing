@@ -35,6 +35,6 @@ Run "explorer " MyFILE
 sleep 1500
 Send "{Enter}"
 sleep 1500
-Send "#Right"
+Send "#Left"
 sleep 1500
 Send "{Esc}"

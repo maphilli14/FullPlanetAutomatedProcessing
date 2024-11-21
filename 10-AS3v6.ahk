@@ -139,7 +139,7 @@ ControlClick "TButton5","ahk_class TFormMain" ; presses STACK button
 ; The main body is complete the following line starts the wait until done script
 ; End Logging
 ;
-FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " AS3 Stacking started.`n", "Log.txt"
+FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " AS4 Stacking started.`n", "Log.txt"
 ;
 ;
 Run "15-AS3-wait-loop-v1.ahk" " " PATH

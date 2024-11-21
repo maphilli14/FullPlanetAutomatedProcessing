@@ -1,6 +1,7 @@
 #Requires AutoHotkey v2.0
 ;
-;This Script will perform date math and move files in Windows Explorer
+;This Script will perform date math and move files
+; 20241027 - ver 2.0 big rewrite to count files and move nativiely in AHK
 ; 20230830 - ver 1.0
 ;
 ; Logic is: Create date in future to archive video files into.
@@ -63,7 +64,7 @@ TimeString := FormatTime(, "yyyyMMdd")
 Expiration := DateAdd(A_Now, DaysFromNow, "days")
 Expiration := FormatTime(Expiration, "yyyyMMdd")
 ;MsgBox "The expiration ISO date is " Expiration
-FileAppend "`n`n" FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Starting Video Archive process.`n", "Log.txt"
+FileAppend "`n`n" FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Starting 17-FCFileMove1, Video Archive process.`n", "Log.txt"
 ;
 ;
 ; This Section Creates the expiry folder
@@ -71,6 +72,33 @@ FileAppend "`n`n" FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Starting 
 ExpPath := ArchiveDrive "\" ArchiveFolder "\" "FC-Expiring--" Expiration "\" Planet "\" DateSet
 DirCreate ExpPath
 FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Archived Folder is: " ExpPath " named " ArchiveDrive "`n", "Log.txt"
+;
+;
+; This Section prompts for counting; no is the default and will exit to next step/stop
+; This section counts the video and stack files and prompts for archvial if complete!
+;
+CountOUT := 0
+Loop Files, CurrentSet "\" PreferredStackDepth "\" ASOutputFileType
+	CountOUT++
+TrayTip "Found " CountOUT " stacked Files in " CurrentSet "\" PreferredStackDepth "\" ASOutputFileType
+FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Found " CountOUT " stacked Files in " CurrentSet "\" PreferredStackDepth "\" ASOutputFileType "`n", "Log.txt"
+;
+result := MsgBox("Count video and stacks?  `n This MsgBox will time out in 5 seconds.  Continue?",, "Y/N T5")
+if (result = "Timeout")
+	{
+	TrayTip "You didn't press YES or NO within the 5-second period."
+    Exit ; Terminate this function as well as the calling function.
+	}
+else if (result = "No")
+	{
+	MsgBox "You pressed NO?!?!"
+    Exit ; Terminate this function as well as the calling function.
+    MsgBox "This MsgBox will never happen because of the Exit."
+	}
+else (result = "Yes")
+	{
+    TrayTip "You Said YES :)"
+	}
 ;
 ;
 ; This section compares input and output files types to evaulate if AS3 was successfule before archiving files
@@ -82,71 +110,53 @@ TrayTip "Found " CountVID " Video Files in " CurrentSet "\" VideoFileType
 FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Found " CountVID " Video Files in " CurrentSet "\" VideoFileType "`n", "Log.txt"
 ;
 ;
-; This Section compares outputs vs inputs
+; This section actually moves the files
 ;
-CountOUT := 0
-Loop Files, CurrentSet "\" PreferredStackDepth "\" ASOutputFileType
-	CountOUT++
-TrayTip "Found " CountOUT " stacked Files in " CurrentSet "\" PreferredStackDepth "\" ASOutputFileType
-FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Found " CountOUT " stacked Files in " CurrentSet "\" PreferredStackDepth "\" ASOutputFileType "`n", "Log.txt"
-
-if CountOUT >= CountVID {
+if CountVID = 0
+	{
+	; MsgBox "Files already moved or stacked incorrectly?" ; confirmed 20241027
+	if CountOUT > 0
+		{
+		TrayTip "Files already moved or stacked incorrectly?"
+		;Run "20-AIv1.ahk" " " PATH
+		}
+	Exit
+	}
+else if CountOUT >= CountVID
+	{
 	TrayTip "Found same or more stacked files vs FC Video"
 	FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Found same or more stacked files vs FC Video`n", "Log.txt"
 	;
 	;
 	; This section opens explerers and moves files via cut paste
 	;
-	;MsgBox ExpPath
-	Run "explorer.exe " CurrentSet
-	WinWait DateSet
-	WinActivate DateSet
-	sleep ExplorerSleep
-	Send "^f"
-	Send VideoFileType
-	sleep ExplorerSleep
-	Send "{TAB 6}" 
-	;MouseClick ExplorerFileField,"ahk_class CabinetWClass" ; Clicks into object view to select all and Cut
-	sleep ExplorerSleep
-	Send "^a"
-	sleep ExplorerSleep
-	Send "^x"
-	sleep ExplorerSleep
-	Send "^f"
-	Send "`b`b`b`b`b`b`b`b"
-	sleep ExplorerSleep
-	; Now we close the active window to keep clean
-	Send "^w"
-	;
-	Run "explorer.exe " ExpPath
-	sleep ExplorerSleep
-	Send "^v"
-	FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Starting file transfers`n", "Log.txt"
-	sleep 1000
-	if WinExist("Replace or Skip Files")
-		sleep ExplorerSleep
-		;Send "`n"
-		sleep ExplorerSleep
-	WinWait "ahk_class OperationStatusWindow", , 10  ; this waits for the transfer box to open if it does not because it moves quickly it timesout at 10sec
-	WinWaitClose "ahk_class OperationStatusWindow"
-	sleep ExplorerSleep
-	; Now we close the active window to keep clean
-	Send "^w"
-	FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " File transfers Complete`n", "Log.txt"
+
+	try
+		{
+		FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Starting file transfers`n", "Log.txt"
+		TrayTip "Starting file transfers"
+		RunWait Format('{} /c Robocopy "{}" "{}" {} /MOV /ETA', A_ComSpec, CurrentSet, ExpPath, VideoFileType) ; via lots of copilot
+		FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Completed File Moving Process`n", "Log.txt"
+		TrayTip "Completed File Moving Process"
+		}
+	catch as e  ; Handles the first error thrown by the block above.
+		{
+		;MsgBox "An error was thrown!`nSpecifically: " e.Message
+		; Report each problem folder by name.
+		MsgBox "Could not move " CurrentSet "\" VideoFileType " into " ExpPath "because: " e.Message
+		FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " FAILED File Moving Process, because: " e.Message "`n", "Log.txt"
+		TrayTip "FAILED File Moving Process"
+		Exit
+		}
 	TrayTip "File moves complete and confirmed!`n Script complete!"
-	; This section closes the logging
-	;
-	FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Completed File Moving Process`n", "Log.txt"
-	;
-	;
-	
-}
-else {
+	;MsgBox "Check your files" ; successful 20241027
+	}
+else
+	{
 	TrayTip "Found discrepancy with AS3 output files, rerun?"
 	FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Found discrepancy with AS3 output files, rerun?`n", "Log.txt"
-	Run "20-AIv1.ahk" " " PATH
-
-}
+	;Run "20-AIv1.ahk" " " PATH
+	}
 ;
 ;
 ; This section sets up a planet specific Sharpening per the setup file

@@ -50,7 +50,7 @@ OneDRIVERGB=''
 LOGO='/mnt/c/maptag.png'
 #logo and label delay timers
 t=0.1
-LEVELS=' -level 1%,40% '
+LEVELS=' -level 1%,50% '
 #RECENT=os.listdir('/mnt/d/B-Sorted/Astronomy/20-Stacked/SolarSystem/4-Mars/2020/')[-1]
 AHK="/mnt/c/Program\\ Files/AutoHotKey/v2/AutoHotkey.exe"
 PreviewScript=r'"C:\Users\maphilli14-work2\Documents\GitHub\FullPlanetAutomatedProcessing\31-animopen.ahk"'
@@ -181,7 +181,7 @@ BLUES=[]
 CAPS=[]
 for f in L:
     print('Found files: '+f)
-    if '-B_' in f:
+    if '_B_' in f:
         BLUES.append(f)
     if '.tif' in f:
         TEST=f
@@ -211,17 +211,17 @@ client.publish(STATUS, message)
 for f in L:
     if '.tif' in f:
         try:
-            if '-B_' in f:
+            if '_B_' in f:
                 print('Found a blue')
                 BLUE=f
                 MID=f[11:17]
-                if '-R_' in L[L.index(f)-1]:
+                if '_R_' in L[L.index(f)-1]:
                     print('Found a red')
                     RED = L[L.index(f)-1]
                     RGB=RED[0:11]+MID+'-RGB'+RED[19:]
                 else:
                     RED = ''
-                if '-G_' in L[L.index(f)+1]:
+                if '_G_' in L[L.index(f)+1]:
                     print('Found a green')
                     GREEN = L[L.index(f)+1]
                 else:
@@ -233,17 +233,9 @@ for f in L:
                 print('BLUE = '+f)
                 message = 'RBG counter= '+str(BLUES.index(BLUE)+1)+' of '+str(len(BLUES))
                 logger.info(NOW + " " + message)
-                try:
-                    client.publish(STATUS, message)
-                    COUNT = str(int(((BLUES.index(BLUE)+1)/(len(BLUES)))*100))+'%'
-                    nmessage = 'MQTT successfully sent'
-                    logger.info(NOW + " " + nmessage)
-                    client.publish(FILTER, COUNT)
-                except:
-                    message = "MQTT Errors"
-                    client.publish(MQTTERROR, message)
-                    logger.error("\n\n" + NOW + " " + message)
-                
+                client.publish(STATUS, message)
+                COUNT = str(int(((BLUES.index(BLUE)+1)/(len(BLUES)))*100))+'%'
+                client.publish(FILTER, COUNT)
                 #
                 # Checks for non-blank RGB files, if all are found, assemble into color and open 1st file for preview.
                 #
@@ -309,7 +301,7 @@ for f in L:
             print()
             print('Trying to assemble RGB but something went wrong, exiting!')
         try:
-            if '-R_' in f:
+            if '_R_' in f:
                 INFILE=os.path.join(STACKEDFOLDER,f)
                 OUTFILE=os.path.join(STACKEDFOLDER,'RED',f)
                 RGBdt=f[:17]
@@ -320,7 +312,7 @@ for f in L:
             print()
             print('Trying to label RED channels but something went wrong, exiting!')
         try:
-            if '-G_' in f:
+            if '_G_' in f:
                 INFILE=os.path.join(STACKEDFOLDER,f)
                 OUTFILE=os.path.join(STACKEDFOLDER,'GREEN',f)
                 RGBdt=f[:17]
@@ -331,7 +323,7 @@ for f in L:
             print()
             print('Trying to label GREEN channels but something went wrong, exiting!')
         try:
-            if '-B_' in f:
+            if '_B_' in f:
                 INFILE=os.path.join(STACKEDFOLDER,f)
                 OUTFILE=os.path.join(STACKEDFOLDER,'BLUE',f)
                 RGBdt=f[:17]
@@ -343,6 +335,11 @@ for f in L:
             print('Trying to label BLUE channels but something went wrong, exiting!')
 #
 # Make anims
+#
+print("Sleeping to clean up bests for 2min...")
+#time.sleep(120)
+print("Ready to resume!")
+time.sleep(2)
 #
 for i in SUBFolders:
     if not 'Anims' in i:
@@ -358,7 +355,7 @@ for i in SUBFolders:
             os.system('convert '+os.path.join(STACKEDFOLDER,'Anims')+'/'+i+'anim.gif -coalesce -reverse -quiet -layers OptimizePlus -loop 0 '+os.path.join(STACKEDFOLDER,'Anims')+'/'+i+'fastanimback.gif')
             #This creates a looping/rocking animation
             time.sleep(t)
-            os.system('convert '+os.path.join(STACKEDFOLDER,'Anims')+'/'+i+'anim.gif '+os.path.join(STACKEDFOLDER,'Anims')+'/'+i+'fastanimback.gif '+os.path.join(STACKEDFOLDER,'Anims')+'/'+RGB[:11]+i+'fastanimrock.gif')
+            os.system('convert '+os.path.join(STACKEDFOLDER,'Anims')+'/'+i+'anim.gif '+os.path.join(STACKEDFOLDER,'Anims')+'/'+i+'fastanimback.gif '+os.path.join(STACKEDFOLDER,'Anims')+'/'+i+'fastanimrock.gif')
             #time.sleep(2.2)
             #shutil.copy(os.path.join(STACKEDFOLDER,RGB),os.path.join(STACKEDFOLDER,'RGB'))
             #shutil.copy(os.path.join(STACKEDFOLDER,RGB),os.path.join(STACKEDFOLDER,'RGB'))
@@ -379,7 +376,7 @@ for i in SUBChannels:
         os.system('convert '+os.path.join(STACKEDFOLDER,i)+'/'+i+'anim.gif -coalesce -reverse -quiet -layers OptimizePlus -loop 0 '+os.path.join(STACKEDFOLDER,i)+'/'+i+'fastanimback.gif')
         #This creates a looping/rocking animation
         time.sleep(t)
-        os.system('convert '+os.path.join(STACKEDFOLDER,i)+'/'+i+'anim.gif '+os.path.join(STACKEDFOLDER,i)+'/'+i+'fastanimback.gif '+os.path.join(STACKEDFOLDER,'Anims')+'/'+RGB[:11]+i+'fastanimrock.gif')
+        os.system('convert '+os.path.join(STACKEDFOLDER,i)+'/'+i+'anim.gif '+os.path.join(STACKEDFOLDER,i)+'/'+i+'fastanimback.gif '+os.path.join(STACKEDFOLDER,'Anims')+'/'+i+'fastanimrock.gif')
         #time.sleep(2.2)
         #shutil.copy(os.path.join(STACKEDFOLDER,RGB),os.path.join(STACKEDFOLDER,'RGB'))
         #shutil.copy(os.path.join(STACKEDFOLDER,RGB),os.path.join(STACKEDFOLDER,'RGB'))

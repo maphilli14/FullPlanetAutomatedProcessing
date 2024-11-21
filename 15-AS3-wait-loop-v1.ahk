@@ -116,6 +116,16 @@ else if (Planet = "Saturn")
 	Iter := IniRead("00-setup.ini", "AI Settings", "SaturnIter")
 	TrayTip "Planet = " Planet
 }
+else if (Planet = "Mars")
+{
+	Blur := IniRead("00-setup.ini", "AI Settings", "MarsBlur")
+	Iter := IniRead("00-setup.ini", "AI Settings", "MarsIter")
+	TrayTip "Planet = " Planet
+	if Enabled = 1
+		{
+		Run STATUS Planet
+		}
+}
 else if (Planet = "Star")
 {
 	Blur := IniRead("00-setup.ini", "AI Settings", "StarBlur")
@@ -130,7 +140,7 @@ else
 }
 try
 	{
-	LabelPath := StackPath "\LrD-" Blur "-" Iter
+	LabelPath := StackPath "\LrD-" Blur "-" Iter "Preview"
 	DirCreate LabelPath
 	if Enabled = 1
 		{
@@ -301,7 +311,6 @@ if CountOUT > 0
 			WinActivate "ahk_exe AstraImageWindows.exe"
 			MenuSelect "Astra Image",, "File", "Save As"
 			sleep 2000
-			LabelPath := StackPath "\LrD-" Blur "-" Iter
 			Send "{Home 1}"
 			Send LabelPath "\"
 			sleep 1000
@@ -380,7 +389,7 @@ Loop 5760
 		FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Finished AS3 Stacking watcher.`n", "Log.txt"
 		break
 }
-ToolTip "AS3 COMPLETE"
+ToolTip "AS4 COMPLETE"
 SetTimer () => ToolTip(), -8000
 ;MsgBox Progress " means AS3 COMPLETE "
 ;
@@ -388,7 +397,7 @@ SetTimer () => ToolTip(), -8000
 ;
 ; Logging AS3 complete
 ;
-FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " COMPLETED AS3 processing.`n", "Log.txt"
+FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " COMPLETED AS4 processing.`n", "Log.txt"
 ;
 ;
 ; Close AS3 to begin file move mode -> 17-FCFileMover1.py

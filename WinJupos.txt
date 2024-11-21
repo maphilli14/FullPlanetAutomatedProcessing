@@ -301,3 +301,1124 @@ Dia:19.0",mag: 0.7
 Alt:47°, Rings: 3.6°
 Elong:156.1°  [ W ]
 
+
+
+Wednesday August 28, 2024 10:47:02 PM Logging Planet Ephem
+
+j2024-08-26_10-08.3
+
+2024-08-26 - 10-08.3UTC
+
+CM 356.5°
+
+
+
+Wednesday August 28, 2024 10:47:43 PM Logging Planet Ephem
+
+
+
+Wednesday August 28, 2024 10:50:28 PM Logging Planet Ephem
+
+m2024-08-26_10-08.3
+
+2024-08-26 - 10-08.3UTC
+
+CM 356.5°
+
+
+
+Wednesday August 28, 2024 10:55:12 PM Logging Planet Ephem
+
+Rise              :   5 h 14 min UT
+Meridian passage  :  12 h 26 min UT
+Set               :  19 h 39 min UT
+
+Sun rise          :  10 h 41 min UT
+Sun set           :  23 h 46 min UT
+
+Elongation        :  69.5°  [ W ]
+Light-time        :  12.2   min
+Diameter          :   6.4"  equat.
+Phase             :   0.12  of diam.
+Maximum phase     : 296.6°  from n.pole
+Position angle    : 330.8°  equat.
+                  :  31.28° horiz.
+Visual magnitude  :   0.8   mag
+Longitude of Sun  : 319°
+Declin. of Earth  :   0.6°
+Declin. of Sun    : -16.4°
+C.M. heliocentric :  33.7°
+Julian date (JD)  : 2460548.92243
+=============================
+Mars
+m2024-08-26_10-08.3
+
+2024-08-26 - 10-08.3UTC
+
+CM 356.5°
+
+
+
+Wednesday August 28, 2024 10:55:53 PM Logging Planet Ephem
+
+Rise              :   5 h 14 min UT
+Meridian passage  :  12 h 26 min UT
+Set               :  19 h 39 min UT
+
+Sun rise          :  10 h 41 min UT
+Sun set           :  23 h 46 min UT
+
+Elongation        :  69.5°  [ W ]
+Light-time        :  12.2   min
+Diameter          :   6.4"  equat.
+Phase             :   0.12  of diam.
+Maximum phase     : 296.6°  from n.pole
+Position angle    : 330.8°  equat.
+                  :  31.28° horiz.
+Visual magnitude  :   0.8   mag
+Longitude of Sun  : 319°
+Declin. of Earth  :   0.6°
+Declin. of Sun    : -16.4°
+C.M. heliocentric :  33.7°
+Julian date (JD)  : 2460548.92243
+=============================
+Mars
+m2024-08-26_10-08.3
+
+2024-08-26 - 10-08.3UTC
+
+CM 356.5°
+
+
+
+Wednesday August 28, 2024 10:57:48 PM Logging Planet Ephem
+
+Rise              :   5 h 14 min UT
+Meridian passage  :  12 h 26 min UT
+Set               :  19 h 39 min UT
+
+Sun rise          :  10 h 41 min UT
+Sun set           :  23 h 46 min UT
+
+Elongation        :  69.5°  [ W ]
+Light-time        :  12.2   min
+Diameter          :   6.4"  equat.
+Phase             :   0.12  of diam.
+Maximum phase     : 296.6°  from n.pole
+Position angle    : 330.8°  equat.
+                  :  31.28° horiz.
+Visual magnitude  :   0.8   mag
+Longitude of Sun  : 319°
+Declin. of Earth  :   0.6°
+Declin. of Sun    : -16.4°
+C.M. heliocentric :  33.7°
+Julian date (JD)  : 2460548.92243
+=============================
+Mars
+m2024-08-26_10-08.3
+
+2024-08-26 - 10-08.3UTC
+
+CM 356.5°
+
+Dia:96.6°,mag: 0.8
+Alt:58°, Ls:19°
+Elong: 69.5°  [ W ]
+
+
+
+Wednesday August 28, 2024 10:59:42 PM Logging Planet Ephem
+
+Rise              :   5 h 14 min UT
+Meridian passage  :  12 h 26 min UT
+Set               :  19 h 39 min UT
+
+Sun rise          :  10 h 41 min UT
+Sun set           :  23 h 46 min UT
+
+Elongation        :  69.5°  [ W ]
+Light-time        :  12.2   min
+Diameter          :   6.4"  equat.
+Phase             :   0.12  of diam.
+Maximum phase     : 296.6°  from n.pole
+Position angle    : 330.8°  equat.
+                  :  31.28° horiz.
+Visual magnitude  :   0.8   mag
+Longitude of Sun  : 319°
+Declin. of Earth  :   0.6°
+Declin. of Sun    : -16.4°
+C.M. heliocentric :  33.7°
+Julian date (JD)  : 2460548.92243
+=============================
+Mars
+m2024-08-26_10-08.3
+
+2024-08-26 - 10-08.3UTC
+
+CM 356.5°
+
+Dia: 0.12,mag: 0.8
+Alt:58°, Ls:19°
+Elong: 69.5°  [ W ]
+
+
+
+Wednesday August 28, 2024 11:01:00 PM Logging Planet Ephem
+
+Rise              :   5 h 14 min UT
+Meridian passage  :  12 h 26 min UT
+Set               :  19 h 39 min UT
+
+Sun rise          :  10 h 41 min UT
+Sun set           :  23 h 46 min UT
+
+Elongation        :  69.5°  [ W ]
+Light-time        :  12.2   min
+Diameter          :   6.4"  equat.
+Phase             :   0.12  of diam.
+Maximum phase     : 296.6°  from n.pole
+Position angle    : 330.8°  equat.
+                  :  31.28° horiz.
+Visual magnitude  :   0.8   mag
+Longitude of Sun  : 319°
+Declin. of Earth  :   0.6°
+Declin. of Sun    : -16.4°
+C.M. heliocentric :  33.7°
+Julian date (JD)  : 2460548.92243
+=============================
+Mars
+m2024-08-26_10-08.3
+
+2024-08-26 - 10-08.3UTC
+
+CM 356.5°
+
+Dia: 6.4",mag: 0.8
+Alt:58°, Ls:19°
+Elong: 69.5°  [ W ]
+
+
+
+Monday September 2, 2024 03:31:51 PM Logging Planet Ephem
+
+j2024-08-27_09-19.6
+
+2024-08-27 - 09-19.6UTC
+
+CM I 293.8° CM II 323.0° CM III  79.9°
+
+Dia:37.6",mag:-2.3
+Alt:53°, Ls:67°
+Elong: 76.1°  [ W ]
+
+
+
+Tuesday September 3, 2024 07:01:30 PM Logging Planet Ephem
+
+
+
+Tuesday September 3, 2024 07:01:42 PM Logging Planet Ephem
+
+j2024-08-26_10-27.4
+
+2024-08-26 - 10-27.4UTC
+
+CM I 177.3° CM II 213.7° CM III 330.4°
+
+Dia:37.5",mag:-2.2
+Alt:65°, Ls:67°
+Elong: 75.3°  [ W ]
+
+
+
+Saturday September 7, 2024 03:11:46 PM Logging Planet Ephem
+
+
+
+Saturday September 7, 2024 03:12:00 PM Logging Planet Ephem
+
+s2024-08-25_06-07.6
+
+2024-08-25 - 06-07.6UTC
+
+CM I 133.2° CM II 103.4° CM III 339.4°
+LoS=172°
+
+Dia:19.1",mag: 0.7
+Alt:47°, Rings: 4.0°
+Elong:165.3°  [ W ]
+
+
+
+Tuesday September 10, 2024 07:45:56 PM Logging Planet Ephem
+
+
+
+Tuesday September 10, 2024 07:46:06 PM Logging Planet Ephem
+
+ Altitude          :  25°
+ Azimuth           :  97° [ W ]
+=============================
+Mars
+m2024-09-10_11-06.4
+
+2024-09-10 - 11-06.4UTC
+
+CM 225.9°
+
+
+
+Tuesday September 10, 2024 07:46:27 PM Logging Planet Ephem
+
+Rise              :   4 h 53 min UT
+Meridian passage  :  12 h  7 min UT
+Set               :  19 h 20 min UT
+
+Sun rise          :  10 h 52 min UT
+Sun set           :  23 h 25 min UT
+
+Elongation        :  74.9°  [ W ]
+Light-time        :  11.4   min
+Diameter          :   6.8"  equat.
+Phase             :   0.12  of diam.
+Maximum phase     : 296.4°  from n.pole
+Position angle    : 335.1°  equat.
+                  :  20.43° horiz.
+Visual magnitude  :   0.7   mag
+Longitude of Sun  : 327°
+Declin. of Earth  :   4.5°
+Declin. of Sun    : -13.5°
+C.M. heliocentric : 263.2°
+Julian date (JD)  : 2460563.96278
+=============================
+Mars
+m2024-09-10_11-06.4
+
+2024-09-10 - 11-06.4UTC
+
+CM 225.9°
+
+Dia: 6.8", mag: 0.7
+Alt:73°, Ls:27°
+Elong: 74.9°  [ W ]
+
+
+
+Friday September 13, 2024 05:04:07 PM Logging Planet Ephem
+
+jRBG: 10, 1_337 , 3
+
+RBG: 10, 1 - 337 , 3UTC
+
+300 
+
+
+
+Friday September 13, 2024 05:05:34 PM Logging Planet Ephem
+
+jRBG: 10, 1_337 , 3
+
+RBG: 10, 1 - 337 , 3UTC
+
+300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 
+
+
+
+Friday September 13, 2024 05:05:52 PM Logging Planet Ephem
+
+jRBG: 10, 1_337 , 3
+
+RBG: 10, 1 - 337 , 3UTC
+
+300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 
+
+
+
+Friday September 13, 2024 05:06:13 PM Logging Planet Ephem
+
+jRBG: 10, 1_337 , 3
+
+RBG: 10, 1 - 337 , 3UTC
+
+300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 
+
+
+
+Friday September 13, 2024 05:07:25 PM Logging Planet Ephem
+
+jRBG: 10, 1_337 , 3
+
+RBG: 10, 1 - 337 , 3UTC
+
+300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 
+
+
+
+Friday September 13, 2024 05:08:06 PM Logging Planet Ephem
+
+jRBG: 10, 1_337 , 3
+
+RBG: 10, 1 - 337 , 3UTC
+
+300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 2024-09-09 (yyyy-mm-dd), 09:48.1 UT  CM I 203.5° CM II 133.3° CM III 253.7°
+
+
+
+Friday September 13, 2024 05:08:47 PM Logging Planet Ephem
+
+j2024-09-09_09-49.1
+
+2024-09-09 - 09-49.1UTC
+
+CM I 204.1° CM II 133.9° CM III 254.3°
+
+Dia:39.1",mag:-2.3
+Alt:2024-09-09 (yyyy-mm-dd), 09:49.1 UT  CM I 204.1° CM II 133.9° CM III 254.3°, Ls:68°
+Elong: 87.3°  [ W ]
+
+
+
+Friday September 13, 2024 05:10:29 PM Logging Planet Ephem
+
+j2024-09-09_09-49.1
+
+2024-09-09 - 09-49.1UTC
+
+CM I 204.1° CM II 133.9° CM III 254.3°2024-09-09 (yyyy-mm-dd), 09:49.1 UT  CM I 204.1° CM II 133.9° CM III 254.3°Rise              :   4 h  4 min UT
+Meridian passage  :  11 h 15 min UT
+Set               :  18 h 26 min UT
+
+Sun rise          :  10 h 53 min UT
+Sun set           :  23 h 30 min UT
+
+Elongation        :  87.3°  [ W ]
+Light-time        :  41.5   min
+Diameter
+(phase corrected) :  39.1"  equat.
+Position angle    : 356.13° equat.
+                  :  45.97° horiz.
+Equ. phase angle  :  11.5°  p. limb
+Visual magnitude  :  -2.3   mag
+Declin. of Sun    :   2.9°
+           Earth  :   2.9°, B"   3.3°
+Longitude of Sun  :  68°
+Julian date (JD)  : 2460562.90910
+
+
+
+Sunday September 15, 2024 11:36:55 AM Logging Planet Ephem
+
+j2024-09-09_09-46.1
+
+2024-09-09 - 09-46.1UTC
+
+CM I 202.3° CM II 132.1° CM III 252.5°
+
+Dia:39.1",mag:-2.3
+Alt:66°, Ls:68°
+Elong: 87.3°  [ W ]
+
+
+
+Sunday September 15, 2024 02:27:23 PM Logging Planet Ephem
+
+j2024-09-10_09-25.2
+
+2024-09-10 - 09-25.2UTC
+
+CM I 347.4° CM II 269.7° CM III  30.4°
+
+Dia:39.2",mag:-2.3
+Alt:63°, Ls:68°
+Elong: 88.2°  [ W ]
+
+
+
+Friday September 20, 2024 02:22:54 PM Logging Planet Ephem
+
+j2024-09-10_09-47.1
+
+2024-09-10 - 09-47.1UTC
+
+CM I   0.8° CM II 282.9° CM III  43.6°
+
+Dia:39.2",mag:-2.3
+Alt:67°, Ls:68°
+Elong: 88.2°  [ W ]
+
+
+
+Friday October 4, 2024 03:07:41 PM Logging Planet Ephem
+
+s2024-10-03_03-19.0
+
+2024-10-03 - 03-19.0UTC
+
+CM I 204.3° CM II 358.6° CM III 187.6°
+LoS=173°
+
+Dia:19.0",mag: 0.7
+Alt:46°, Rings: 5.6°
+Elong:153.7°  [ E ]
+
+
+
+Saturday October 12, 2024 01:43:19 PM Logging Planet Ephem
+
+sRBG: 10, 1_450 , 5
+
+RBG: 10, 1 - 450 , 5UTC
+
+
+
+Saturday October 12, 2024 01:43:35 PM Logging Planet Ephem
+
+s2024-10-07_03-06.1
+
+2024-10-07 - 03-06.1UTC
+
+CM I 334.0° CM II 359.4° CM III 183.6°
+LoS=173°
+
+Dia:18.9",mag: 0.7
+Alt:46°, Rings: 5.8°
+Elong:149.6°  [ E ]
+
+
+
+Sunday October 13, 2024 10:31:55 AM Logging Planet Ephem
+
+s2024-10-07_03-19.8
+
+2024-10-07 - 03-19.8UTC
+
+CM I 342.0° CM II   7.1° CM III 191.3°
+LoS=173°
+
+Dia:18.9",mag: 0.7
+Alt:46°, Rings: 5.8°
+Elong:149.5°  [ E ]
+
+
+
+Tuesday October 22, 2024 03:54:40 PM Logging Planet Ephem
+
+sG:\A-Inbox_2
+
+G:\A-Inbox - 2UTC
+
+
+
+Tuesday October 22, 2024 03:55:07 PM Logging Planet Ephem
+
+sG:\A-Inbox_2G-\A-I
+
+G:\A-Inbox - 2G-\A-IUTC
+
+Saturn\20241022G:\A-Inbox\Saturn\20241022
+LoS=174°
+
+Dia:18.6",mag: 0.8
+Alt:46°, Rings: 6.2°
+Elong:134.0°  [ E ]
+
+
+
+Tuesday October 22, 2024 03:55:23 PM Logging Planet Ephem
+
+s2024-10-22_02-02.3
+
+2024-10-22 - 02-02.3UTC
+
+CM I   1.0° CM II 263.4° CM III  69.6°
+LoS=174°
+
+Dia:18.6",mag: 0.8
+Alt:46°, Rings: 6.2°
+Elong:134.0°  [ E ]
+
+
+
+Thursday October 24, 2024 01:16:47 PM Logging Planet Ephem
+
+2
+=============================
+Mars
+m_
+
+ - UTC
+
+
+
+
+
+Thursday October 24, 2024 01:17:20 PM Logging Planet Ephem
+
+Rise              :  20 h 40 min UT
+Meridian passage  :   4 h 42 min UT
+Set               :  12 h 42 min UT
+
+Sun rise          :   5 h 35 min UT
+Sun set           :  15 h 52 min UT
+
+Elongation        :  94.9°  [ W ]
+Light-time        :   9.0   min
+Diameter          :   8.7"  equat.
+Phase             :   0.12  of diam.
+Maximum phase     : 292.9°  from n.pole
+Position angle    : 347.7°  equat.
+                  : 304.79° horiz.
+Visual magnitude  :   0.2   mag
+Longitude of Sun  : 350°
+Declin. of Earth  :  12.9°
+Declin. of Sun    :  -4.3°
+C.M. heliocentric : 171.8°
+Julian date (JD)  : 2460606.85174
+=============================
+Mars
+m2024-10-23_08-26.5
+
+2024-10-23 - 08-26.5UTC
+
+CM 135.1°
+
+Dia: 8.7", mag: 0.2
+Alt: Azimuth           :  79° [ W ], Ls:50°
+Elong: 94.9°  [ W ]
+
+
+
+Thursday October 24, 2024 01:18:08 PM Logging Planet Ephem
+
+Rise              :  20 h 40 min UT
+Meridian passage  :   4 h 42 min UT
+Set               :  12 h 42 min UT
+
+Sun rise          :   5 h 35 min UT
+Sun set           :  15 h 52 min UT
+
+Elongation        :  94.9°  [ W ]
+Light-time        :   9.0   min
+Diameter          :   8.7"  equat.
+Phase             :   0.12  of diam.
+Maximum phase     : 292.9°  from n.pole
+Position angle    : 347.7°  equat.
+                  : 304.79° horiz.
+Visual magnitude  :   0.2   mag
+Longitude of Sun  : 350°
+Declin. of Earth  :  12.9°
+Declin. of Sun    :  -4.3°
+C.M. heliocentric : 171.8°
+Julian date (JD)  : 2460606.85174
+=============================
+Mars
+m2024-10-23_08-26.5
+
+2024-10-23 - 08-26.5UTC
+
+CM 135.1°
+
+Dia: 8.7", mag: 0.2
+Alt:38°, Ls:50°
+Elong: 94.9°  [ W ]
+
+
+
+Thursday October 24, 2024 09:33:03 PM Logging Planet Ephem
+
+Rise              :   3 h 45 min UT
+Meridian passage  :  10 h 53 min UT
+Set               :  18 h  2 min UT
+
+Sun rise          :  11 h 25 min UT
+Sun set           :  22 h 27 min UT
+
+Elongation        :  94.9°  [ W ]
+Light-time        :   9.0   min
+Diameter          :   8.7"  equat.
+Phase             :   0.12  of diam.
+Maximum phase     : 292.9°  from n.pole
+Position angle    : 347.7°  equat.
+                  :  47.64° horiz.
+Visual magnitude  :   0.2   mag
+Longitude of Sun  : 350°
+Declin. of Earth  :  12.9°
+Declin. of Sun    :  -4.3°
+C.M. heliocentric : 171.8°
+Julian date (JD)  : 2460606.85174
+=============================
+Mars
+m2024-10-23_08-26.5
+
+2024-10-23 - 08-26.5UTC
+
+CM 135.1°
+
+Dia: 8.7", mag: 0.2
+Alt:55°, Ls:50°
+Elong: 94.9°  [ W ]
+
+
+
+Saturday November 9, 2024 12:08:18 AM Logging Planet Ephem
+
+s2024-10-21_02-07.4
+
+2024-10-21 - 02-07.4UTC
+
+CM I 239.7° CM II 174.3° CM III 341.7°
+LoS=174°
+
+Dia:18.6",mag: 0.8
+Alt:46°, Rings: 6.2°
+Elong:135.0°  [ E ]
+
+
+
+Monday November 11, 2024 05:50:23 PM Logging Planet Ephem
+
+Rise              :   3 h 41 min UT
+Meridian passage  :  10 h 49 min UT
+Set               :  17 h 57 min UT
+
+Sun rise          :  11 h 27 min UT
+Sun set           :  22 h 24 min UT
+
+Elongation        :  96.2°  [ W ]
+Light-time        :   8.9   min
+Diameter          :   8.8"  equat.
+Phase             :   0.12  of diam.
+Maximum phase     : 292.6°  from n.pole
+Position angle    : 348.2°  equat.
+                  : 331.32° horiz.
+Visual magnitude  :   0.2   mag
+Longitude of Sun  : 351°
+Declin. of Earth  :  13.1°
+Declin. of Sun    :  -3.9°
+C.M. heliocentric : 192.1°
+Julian date (JD)  : 2460608.96410
+=============================
+Mars
+m2024-10-25_11-08.3
+
+2024-10-25 - 11-08.3UTC
+
+CM 155.5°
+
+Dia: 8.8", mag: 0.2
+Alt:76°, Ls:51°
+Elong: 96.2°  [ W ]
+
+
+
+Wednesday November 13, 2024 11:18:02 AM Logging Planet Ephem
+
+j_
+
+ - UTC
+
+
+
+
+
+Wednesday November 13, 2024 11:19:16 AM Logging Planet Ephem
+
+j  C.M.:   _    46.
+
+  C.M.:    -     46.UTC
+
+.M.:   289.7°   275.3°    46.3°
+
+
+
+Wednesday November 13, 2024 11:21:47 AM Logging Planet Ephem
+
+j2024-10-19_06-45.7
+
+2024-10-19 - 06-45.7UTC
+
+CM I 289.7° CM II 275.3° CM III  46.3°
+
+
+
+Wednesday November 13, 2024 11:26:57 AM Logging Planet Ephem
+
+j2024-10-19_06-45.7
+
+2024-10-19 - 06-45.7UTC
+
+CM I 289.7° CM II 275.3° CM III  46.3°
+
+Dia:44.3",mag:-2.6
+Alt:Azimuth           : 289° [ESE], Ls:72°
+Elong:125.2°  [ W ]
+
+
+
+Wednesday November 13, 2024 11:28:51 AM Logging Planet Ephem
+
+j2024-10-19_06-45.7
+
+2024-10-19 - 06-45.7UTC
+
+CM I 289.7° CM II 275.3° CM III  46.3°
+
+Dia:44.3",mag:-2.6
+Alt:Azimuth           : 289° [ESE], Ls:72°
+Elong:125.2°  [ W ]
+
+
+
+Wednesday November 13, 2024 11:29:44 AM Logging Planet Ephem
+
+j2024-10-19_06-45.7
+
+2024-10-19 - 06-45.7UTC
+
+CM I 289.7° CM II 275.3° CM III  46.3°
+
+Dia:44.3",mag:-2.6
+Alt:  C.M.:   289.7°   275.3°    46.3°, Ls:72°
+Elong:125.2°  [ W ]
+
+
+
+Wednesday November 13, 2024 11:30:22 AM Logging Planet Ephem
+
+j2024-10-19_06-45.7
+
+2024-10-19 - 06-45.7UTC
+
+CM I 289.7° CM II 275.3° CM III  46.3°
+
+Dia:44.3",mag:-2.6
+Alt:61°, Ls:72°
+Elong:125.2°  [ W ]
+
+
+
+Friday November 15, 2024 05:54:46 PM Logging Planet Ephem
+
+j2024-10-25_04-33.5
+
+2024-10-25 - 04-33.5UTC
+
+CM I  77.1° CM II  17.5° CM III 150.1°
+
+Dia:45.1",mag:-2.6
+Alt:40°, Ls:72°
+Elong:131.3°  [ W ]
+
+
+
+Sunday November 17, 2024 12:44:44 PM Logging Planet Ephem
+
+Rise              :   2 h 45 min UT
+Meridian passage  :   9 h 51 min UT
+Set               :  16 h 56 min UT
+
+Sun rise          :  11 h 49 min UT
+Sun set           :  22 h  5 min UT
+
+Elongation        : 111.7°  [ W ]
+Light-time        :   7.5   min
+Diameter          :  10.4"  equat.
+Phase             :   0.10  of diam.
+Maximum phase     : 289.9°  from n.pole
+Position angle    : 353.0°  equat.
+                  :  11.13° horiz.
+Visual magnitude  :  -0.2   mag
+Longitude of Sun  :   3°
+Declin. of Earth  :  15.2°
+Declin. of Sun    :   1.1°
+C.M. heliocentric : 308.2°
+Julian date (JD)  : 2460631.89500
+=============================
+Mars
+m2024-11-17_09-28.8
+
+2024-11-17 - 09-28.8UTC
+
+CM 274.7°
+
+Dia:10.4", mag:-0.2
+Alt:75°, Ls: 3°
+Elong:111.7°  [ W ]
+

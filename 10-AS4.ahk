@@ -19,10 +19,10 @@ PreferredStackDepth := IniRead("00-setup.ini", "Autostakkert", "PreferredStackDe
 AS4 := IniRead("00-setup.ini", "Programs", "Autostakkert")
 VideoFileType := IniRead("00-setup.ini", "Autostakkert", "VideoFileType")
 Enabled := IniRead("00-setup.ini", "MQTT", "Enabled")
-STATUS := IniRead("00-setup.ini", "MQTT", "STATUS")
-MQTTERROR := IniRead("00-setup.ini", "MQTT", "MQTTERROR")
-FILTER := IniRead("00-setup.ini", "MQTT", "FILTER")
 Target := IniRead("00-setup.ini", "MQTT", "Target")
+STATUS := IniRead("00-setup.ini", "MQTT", "STATUS")
+FILTER := IniRead("00-setup.ini", "MQTT", "FILTER")
+MQTTERROR := IniRead("00-setup.ini", "MQTT", "MQTTERROR")
 ;
 ;
 ; ================================================================================
@@ -81,6 +81,86 @@ PATH := A_Args[1]
 ;
 ;
 ; ================================================================================
+; Copy of 41-FC-Settings-Parser for ease of use
+; ================================================================================
+;
+;
+;
+try
+{
+	Loop Files, PATH "\*R.txt"
+	{
+		RedFile := A_LoopFilePath
+	}
+	Loop Files, PATH "\*G.txt"
+	{
+		GreenFile := A_LoopFilePath
+	}
+	Loop Files, PATH "\*B.txt"
+	{
+		BlueFile := A_LoopFilePath
+	}
+	;
+	Loop read, RedFile
+	;
+	{
+		if InStr(A_LoopReadLine, "Shutter")
+			RedShutter := A_LoopReadLine	
+		if InStr(A_LoopReadLine, "Gain")
+			RedGain := A_LoopReadLine	
+	}
+	RedShutter := SubStr(RedShutter, 9 , 4)
+	RedShutter := Round(RedShutter,0)
+	RedGain := SubStr(RedGain, 6 , 4)
+	RedGain := RedGain
+	;
+	;Loop read,  "C:\Personal\B-Sorted\Astronomy\20-Stacked\SolarSystem\Jupiter\Jupiter_2023_09_04\2023-09-04-0819_1-G.txt"
+	;Loop read, "P:\Personal\E-Delete\FC-Expiring--20240309\Saturn\Saturn_2023_09_01\2023-09-01-0342_9-G.txt"
+	;
+	Loop read, GreenFile
+	{
+		if InStr(A_LoopReadLine, "Shutter")
+			GreenShutter := A_LoopReadLine	
+		if InStr(A_LoopReadLine, "Gain")
+			GreenGain := A_LoopReadLine	
+	}
+	GreenShutter := SubStr(GreenShutter, 9 , 4)
+	GreenShutter := Round(GreenShutter,0)
+	GreenGain := SubStr(GreenGain, 6 , 4)
+	GreenGain := GreenGain
+	;
+	;Loop read,  "C:\Personal\B-Sorted\Astronomy\20-Stacked\SolarSystem\Jupiter\Jupiter_2023_09_04\2023-09-04-0818_6-B.txt"
+	;Loop read, "P:\Personal\E-Delete\FC-Expiring--20240309\Saturn\Saturn_2023_09_01\2023-09-01-0340_9-B.txt"
+	Loop read, BlueFile
+	{
+		if InStr(A_LoopReadLine, "Shutter")
+			BlueShutter := A_LoopReadLine	
+		if InStr(A_LoopReadLine, "Gain")
+			BlueGain := A_LoopReadLine	
+	}
+	BlueShutter := SubStr(BlueShutter, 9 , 4)
+	BlueShutter := Round(BlueShutter,0)
+	BlueGain := SubStr(BlueGain, 6 , 4)
+	BlueGain := BlueGain
+	;
+	;
+	TrayTip "RBG: " RedShutter  ", " BlueShutter  ", " GreenShutter  " ms`nGain: " RedGain  ", " BlueGain  ", " GreenGain
+	A_Clipboard := "RBG: " RedShutter  ", " BlueShutter  ", " GreenShutter  " ms`nGain: " RedGain  ", " BlueGain  ", " GreenGain
+	;
+	FileAppend "`n`n" FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") "`nRedFile= " RedFile "`nBlueFile= " BlueFile "`nGreenFile= " GreenFile, "FCSettings.txt"
+	FileAppend "`n" FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Logging Firecapture Exposure Settings`n`n" A_Clipboard, "FCSettings.txt"
+}
+;
+;
+; ================================================================================
+; END of 41-FC-Settings-Parser for ease of use
+; ================================================================================
+;
+;
+;
+;
+;
+; ================================================================================
 ; Count files, and log start times
 ; ================================================================================
 ;
@@ -115,7 +195,7 @@ if Enabled = 1
 	{
 		try
 		{
-			Run TARGET '"AS4"'
+			Run TARGET '"Autostakkert4"'
 			Run FILTER q COUTTXT q
 			Run STATUS '"Starting AS4 setup"'
 		}

@@ -9,6 +9,15 @@
 
 ;Variables
 q := chr(34) ; https://www.autohotkey.com/board/topic/33688-storing-quotation-marks-in-a-variable/#:~:text=Use%20the%20accent%20symbol%20before%20each%20quote%20mark.,a%20variable%20to%20another%20variable%20and%20need%20quotes.
+DaysFromNow := IniRead("00-setup.ini", "Expiration", "DaysFromNow")
+MonthsFromNow := IniRead("00-setup.ini", "Expiration", "MonthsFromNow")
+ArchiveDrive := IniRead("00-setup.ini", "Expiration", "ArchiveDrive")
+ArchiveDriveName := IniRead("00-setup.ini", "Expiration", "ArchiveDriveName")
+ArchiveFolder := IniRead("00-setup.ini", "Expiration", "ArchiveFolder")
+ExplorerSleep := IniRead("00-setup.ini", "Expiration", "ExplorerSleep")
+VideoFileType := IniRead("00-setup.ini", "Autostakkert", "VideoFileType")
+ASOutputFileType := IniRead("00-setup.ini", "Autostakkert", "ASOutputFileType")
+ExplorerFileField := IniRead("00-setup.ini", "Programs", "ExplorerFileField")
 CMD := IniRead("00-setup.ini", "ImageMagick", "CMD")
 CMD := Chr(34) . CMD . Chr(34)
 PreferredStackDepth := IniRead("00-setup.ini", "Autostakkert", "PreferredStackDepth")
@@ -20,6 +29,9 @@ STATUS := IniRead("00-setup.ini", "MQTT", "STATUS")
 MQTTERROR := IniRead("00-setup.ini", "MQTT", "MQTTERROR")
 FILTER := IniRead("00-setup.ini", "MQTT", "FILTER")
 Target := IniRead("00-setup.ini", "MQTT", "Target")
+LocalDST := IniRead("00-setup.ini", "ExportFolders", "LocalDST")
+LocalDST2 := IniRead("00-setup.ini", "ExportFolders", "LocalDST2")
+LocalDST3 := IniRead("00-setup.ini", "ExportFolders", "LocalDST3")
 
 ;
 FileAppend "`n`n" FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Starting WSL RGB Assembly.`n", "Log.txt"
@@ -50,10 +62,27 @@ Planet := FCInput[3]
 ;TrayTip Planet
 DateSet := FCInput[4]
 CurrentSet := FCRoot "\" Planet "\" DateSet "\"
+Expiration := DateAdd(A_Now, DaysFromNow, "days")
+Expiration := FormatTime(Expiration, "yyyyMMdd")
+;
+; This Section Creates the expiry folder
+;
+ExpPath := ArchiveDrive "\" ArchiveFolder "\" "FC-Expiring--" Expiration "\" Planet "\" DateSet
+DirCreate ExpPath
+FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Archived Folder is: " ExpPath " named " ArchiveDrive "`n", "Log.txt"
+;
+
+;
+if (Planet = "Mars")
+{
+	Blur := IniRead("00-setup.ini", "AI Settings", "MarsBlur")
+	Iter := IniRead("00-setup.ini", "AI Settings", "MarsIter")
+	TrayTip "Planet = " Planet
+}
 if (Planet = "Jupiter")
 {
-	Blur := IniRead("00-setup.ini", "AI Settings", "AvgJupiterBlur")
-	Iter := IniRead("00-setup.ini", "AI Settings", "AvgJupiterIter")
+	Blur := IniRead("00-setup.ini", "AI Settings", "JupiterBlur")
+	Iter := IniRead("00-setup.ini", "AI Settings", "JupiterIter")
 	TrayTip "Planet = " Planet
 }
 else if (Planet = "Saturn")
@@ -80,16 +109,21 @@ else
 	Iter := IniRead("00-setup.ini", "AI Settings", "Iter")
 	TrayTip "Planet = " Planet
 }
+FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " DeCon settings are for " Planet " are: Blur= " Blur " and Iter= " Iter "`n", "Log.txt"
+
 ;
 ; This section fixes a weired path issue I ran into
 ;
 ;
 if A_Args.Length < 1
 {
-	UserPathIn := UserPathIn "\" PreferredStackDepth "\LrD-" Blur "-" Iter 
+	WholeCapFolder := UserPathIn
+	UserPathIn := UserPathIn "\" PreferredStackDepth "\LrD-" Blur "-" Iter
+	
 }
 else
 {
+	WholeCapFolder := CurrentSet
 	UserPathIn := UserPathIn
 
 }
@@ -102,10 +136,15 @@ WTCLI := "wsl -e " CMD
 ;TrayTip WTCLI
 
 Run WTCLI " " UserPathIn " \" MyPATH
-WinWait "ahk_exe WindowsTerminal.exe"
-TrayTip "Python RGB Script launched successfully!"
-Send "#{Right}"
 FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " CMD= " WTCLI " " UserPathIn "`n", "Log.txt"
+WinWait "ahk_exe WindowsTerminal.exe"
+sleep 2000
+Send "#{Right}"
+sleep 800
+Send "Esc"
+sleep 800
+Send "Esc"
+TrayTip "Python RGB Script launched successfully!"
 WinWaitClose "ahk_exe WindowsTerminal.exe"
 FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Blind launch of script should be complete.`n", "Log.txt"
 ;
@@ -118,5 +157,140 @@ FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Blind launch of 
 ;
 ;
 TrayTip "Python RGB Script complete!"
-Run "explorer " UserPathIn "\Anims\RGB+labels-bestsfastanimrock.gif"
-Send "#{Left}"
+DateSet := LTrim(DateSet, "Mars_")
+DateSet := LTrim(DateSet, "Jupiter_")
+DateSet := LTrim(DateSet, "Saturn_")
+DateSet := StrReplace(DateSet, "_", "-")
+FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " explorer " UserPathIn "\Anims\" DateSet "-RGB+labels-bestsfastanimrock.gif`n", "Log.txt"
+;
+; ================================================================================
+; This secion copies anims to LocalDST2 and 3
+; ================================================================================
+;
+try
+	{
+	FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") "Starting copies to LocalDST2 and LocalDST3`n", "Log.txt"
+	OneDrive := LocalDST2  "\" Planet "\" DateSet  "\Anims"
+	DirCreate OneDrive
+	FileCopy UserPathIn "\Anims\RGB+labels-bestsfastanimrock.gif" , OneDrive "\" DateSet "-RGB+labels-bestsfastanimrock.gif" , 1
+	FileCopy UserPathIn "\Anims\RGB+labels-bestsfastanimrock.gif" , LocalDST3 , 1
+	FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") "Completed copies to LocalDST2 and LocalDST3`n", "Log.txt"
+	;Run UserPathIn LocalDST3
+	;sleep 800
+	;Send "#{Right}"
+	;sleep 800
+	;Send "Esc"
+	;sleep 800
+	;Send "Esc"
+	}
+catch as e  ; Handles the first error thrown by the block above.
+	{
+	;MsgBox "Could not move " UserPathIn "\Anims\RGB+labels-bestsfastanimrock.gif" " into " LocalDST3 " or " LocalDST2 "because: " e.Message
+	FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") "Could not move " UserPathIn "\Anims\RGB+labels-bestsfastanimrock.gif into " OneDrive "because: " e.Message "`n", "Log.txt"
+
+	if Enabled = 1
+		{
+		Run STATUS '"Final file copy and opening failed"'
+		}
+	}
+
+;
+;
+; ================================================================================
+; Open file cleanup
+; ================================================================================
+;
+try
+	{
+	sleep 20000
+	WinClose "RGB"
+	WinClose "tif"
+	}
+;
+sleep 2000
+;
+;
+; ================================================================================
+; This secion archives via copy to LocalDST
+; ================================================================================
+;
+try
+	{
+	FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Starting file copies to LocalDST`n", "Log.txt"
+	TrayTip "Starting file copy"
+	CURR := LocalDST "\" Planet "\" DateSet
+	RunWait Format('{} /c Robocopy {} {} /ETA /MIR', A_ComSpec, CurrentSet, CURR) ; via lots of copilot
+	FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Completed File COPY Process`n", "Log.txt"
+	FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Src= " WholeCapFolder "  Dst= " CURR "`n", "Log.txt"
+	TrayTip "Completed File COPY Process"
+	}
+catch as e  ; Handles the first error thrown by the block above.
+	{
+	;MsgBox "An error was thrown!`nSpecifically: " e.Message
+	; Report each problem folder by name.
+	MsgBox "Could not copy " WholeCapFolder " into " CURR "because: " e.Message
+	FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " FAILED File COPY Process, because: " e.Message "`n", "Log.txt"
+	TrayTip "FAILED File copy Process"
+	Exit
+	}
+;
+;
+;
+;
+; ================================================================================
+; This secion archives via move to expiry folders
+; ================================================================================
+;
+try
+	{
+	FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Starting file transfers`n", "Log.txt"
+	TrayTip "Starting file MOVES"
+	CURR := ExpPath
+	RunWait Format('{} /c Robocopy {} {} /MOVE /MIR /ETA', A_ComSpec, WholeCapFolder, CURR) ; via lots of copilot
+	FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Completed File Moving Process`n", "Log.txt"
+	FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Src= " WholeCapFolder "  Dst= " CURR "`n", "Log.txt"
+	TrayTip "Completed File Moving Process"
+	}
+catch as e  ; Handles the first error thrown by the block above.
+	{
+	;MsgBox "An error was thrown!`nSpecifically: " e.Message
+	; Report each problem folder by name.
+	MsgBox "Could not move " WholeCapFolder " into " CURR "because: " e.Message
+	FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " FAILED File Moving Process, because: " e.Message "`n", "Log.txt"
+	TrayTip "FAILED File Moving Process"
+	Exit
+	}
+;
+;
+; ================================================================================
+; reopen anim and stills
+; ================================================================================
+;
+try
+	{
+	CURR := LocalDST "\" Planet "\" DateSet  "\" PreferredStackDepth "\LrD-" Blur "-" Iter
+	Run CURR "\Anims\RGB+labels-bestsfastanimrock.gif"
+	sleep 1500
+	Run CURR "\RGB+labels-bests"
+	sleep 1500
+	Send "{Right}"
+	sleep 1500
+	Send "{Left}"
+	sleep 1500
+	Send "{End}"
+	sleep 1500
+	Send "{Enter}"
+	;
+	sleep 1500
+	WinActivate "rock"
+	sleep 200
+	Send "#{Right}"
+	sleep 1800
+	Send "Esc"
+	WinActivate "tif"
+	sleep 200
+	Send "#{Left}"
+	sleep 1800
+	Send "Esc"
+	FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Launched " CURR "\Anims\RGB+labels-bestsfastanimrock.gif`n", "Log.txt"
+	}

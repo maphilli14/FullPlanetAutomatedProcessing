@@ -35,3 +35,120 @@ Saturday August 17, 2024 01:25:18 PM Logging Firecapture Exposure Settings
 
 RBG:20, 25, 20
 Gain: 3000, 3200, 3000
+
+Wednesday August 28, 2024 10:43:33 PM
+RedFile= E:\A-Inbox\Mars\Mars_2024_08_26\2024-08-26-1012_1-R.txt
+BlueFile= E:\A-Inbox\Mars\Mars_2024_08_26\2024-08-26-1013_2-B.txt
+GreenFile= E:\A-Inbox\Mars\Mars_2024_08_26\2024-08-26-1014_3-G.txt
+Wednesday August 28, 2024 10:43:33 PM Logging Firecapture Exposure Settings
+
+RBG:10, 15, 10
+Gain: 2000, 2500, 2100ms
+
+Wednesday August 28, 2024 10:44:45 PM
+RedFile= E:\A-Inbox\Mars\Mars_2024_08_26\2024-08-26-1012_1-R.txt
+BlueFile= E:\A-Inbox\Mars\Mars_2024_08_26\2024-08-26-1013_2-B.txt
+GreenFile= E:\A-Inbox\Mars\Mars_2024_08_26\2024-08-26-1014_3-G.txt
+Wednesday August 28, 2024 10:44:45 PM Logging Firecapture Exposure Settings
+
+RBG:10, 15, 10 ms
+Gain: 2000, 2500, 2100
+
+Wednesday August 28, 2024 10:45:12 PM
+RedFile= E:\A-Inbox\Mars\Mars_2024_08_26\2024-08-26-1012_1-R.txt
+BlueFile= E:\A-Inbox\Mars\Mars_2024_08_26\2024-08-26-1013_2-B.txt
+GreenFile= E:\A-Inbox\Mars\Mars_2024_08_26\2024-08-26-1014_3-G.txt
+Wednesday August 28, 2024 10:45:12 PM Logging Firecapture Exposure Settings
+
+RBG: 10, 15, 10 ms
+Gain: 2000, 2500, 2100
+
+Monday September 2, 2024 03:28:43 PM
+RedFile= C:\A-Inbox\Jupiter\Jupiter_2024_08_27\2024-08-27-1040_7-R.txt
+BlueFile= C:\A-Inbox\Jupiter\Jupiter_2024_08_27\2024-08-27-1039_9-B.txt
+GreenFile= C:\A-Inbox\Jupiter\Jupiter_2024_08_27\2024-08-27-1040_4-G.txt
+Monday September 2, 2024 03:28:43 PM Logging Firecapture Exposure Settings
+
+RBG: 12, 14, 12 ms
+Gain: 2500, 2750, 2500
+
+Tuesday September 3, 2024 07:01:27 PM
+RedFile= C:\A-Inbox\Jupiter\Jupiter_2024_08_26\2024-08-26-1048_3-R.txt
+BlueFile= C:\A-Inbox\Jupiter\Jupiter_2024_08_26\2024-08-26-1048_8-B.txt
+GreenFile= C:\A-Inbox\Jupiter\Jupiter_2024_08_26\2024-08-26-1049_3-G.txt
+Tuesday September 3, 2024 07:01:27 PM Logging Firecapture Exposure Settings
+
+RBG: 12, 14, 12 ms
+Gain: 2500, 2750, 2500
+
+Saturday September 7, 2024 03:11:42 PM
+RedFile= C:\Personal\B-Sorted\Astronomy\20-Stacks\Saturn\Saturn_2024_08_25\2024-08-25-0619_1-R.txt
+BlueFile= C:\Personal\B-Sorted\Astronomy\20-Stacks\Saturn\Saturn_2024_08_25\2024-08-25-0619_9-B.txt
+GreenFile= C:\Personal\B-Sorted\Astronomy\20-Stacks\Saturn\Saturn_2024_08_25\2024-08-25-0618_1-G.txt
+Saturday September 7, 2024 03:11:42 PM Logging Firecapture Exposure Settings
+
+RBG: 15, 15, 15 ms
+Gain: 3000, 3750, 3500
+
+Tuesday September 10, 2024 07:45:55 PM
+RedFile= E:\A-Inbox\Mars\Mars_2024_09_10\2024-09-10-1145_2-IR.txt
+BlueFile= E:\A-Inbox\Mars\Mars_2024_09_10\2024-09-10-1144_2-B.txt
+GreenFile= E:\A-Inbox\Mars\Mars_2024_09_10\2024-09-10-1144_8-G.txt
+Tuesday September 10, 2024 07:45:55 PM Logging Firecapture Exposure Settings
+
+RBG: 5, 4, 3 ms
+Gain: 250 , 300 , 250 
+
+Friday September 13, 2024 05:04:04 PM
+RedFile= E:\A-Inbox\Jupiter\Jupiter_2024_09_09\2024-09-09-1009_3-IR.txt
+BlueFile= E:\A-Inbox\Jupiter\Jupiter_2024_09_09\2024-09-09-1007_8-B.txt
+GreenFile= E:\A-Inbox\Jupiter\Jupiter_2024_09_09\2024-09-09-1008_3-G.txt
+Friday September 13, 2024 05:04:04 PM Logging Firecapture Exposure Settings
+
+RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 
+
+Sunday September 15, 2024 11:40:12 AM
+RedFile= E:\A-Inbox\Jupiter\Jupiter_2024_09_09\2024-09-09-1009_3-IR.txt
+BlueFile= E:\A-Inbox\Jupiter\Jupiter_2024_09_09\2024-09-09-1007_8-B.txt
+GreenFile= E:\A-Inbox\Jupiter\Jupiter_2024_09_09\2024-09-09-1008_3-G.txt
+Sunday September 15, 2024 11:40:12 AM Logging Firecapture Exposure Settings
+
+RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 
+
+Sunday September 15, 2024 02:27:16 PM
+RedFile= E:\A-Inbox\Jupiter\Jupiter_2024_09_10\2024-09-10-1016_0-IR.txt
+BlueFile= E:\A-Inbox\Jupiter\Jupiter_2024_09_10\2024-09-10-1014_3-B.txt
+GreenFile= E:\A-Inbox\Jupiter\Jupiter_2024_09_10\2024-09-10-1014_8-G.txt
+Sunday September 15, 2024 02:27:16 PM Logging Firecapture Exposure Settings
+
+RBG: 10, 10, 10 ms
+Gain: 337 , 300 , 300 
+
+Friday October 4, 2024 03:35:31 PM
+RedFile= E:\A-Inbox\Saturn\Saturn_2024_10_03\2024-10-03-0400_1-R.txt
+BlueFile= E:\A-Inbox\Saturn\Saturn_2024_10_03\2024-10-03-0357_1-B.txt
+GreenFile= E:\A-Inbox\Saturn\Saturn_2024_10_03\2024-10-03-0358_1-G.txt
+Friday October 4, 2024 03:35:31 PM Logging Firecapture Exposure Settings
+
+RBG: 10, 10, 10 ms
+Gain: 450 , 500 , 450 
+
+Saturday October 12, 2024 01:43:16 PM
+RedFile= C:\A-Inbox\Saturn\Saturn_2024_10_07\2024-10-07-0338_0-R.txt
+BlueFile= C:\A-Inbox\Saturn\Saturn_2024_10_07\2024-10-07-0336_5-B.txt
+GreenFile= C:\A-Inbox\Saturn\Saturn_2024_10_07\2024-10-07-0337_5-G.txt
+Saturday October 12, 2024 01:43:16 PM Logging Firecapture Exposure Settings
+
+RBG: 10, 10, 10 ms
+Gain: 450 , 500 , 450 
+
+Thursday October 24, 2024 02:23:17 PM
+RedFile= G:\A-Inbox\Mars\Mars_20241023\2024-10-23-0800_8-R.txt
+BlueFile= G:\A-Inbox\Mars\Mars_20241023\2024-10-23-0801_3-B.txt
+GreenFile= G:\A-Inbox\Mars\Mars_20241023\2024-10-23-0801_8-G.txt
+Thursday October 24, 2024 02:23:17 PM Logging Firecapture Exposure Settings
+
+RBG: 7, 8, 7 ms
+Gain: 200 , 250 , 200 

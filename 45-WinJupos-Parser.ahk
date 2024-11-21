@@ -53,6 +53,29 @@ Rest := A_Clipboard
 A_Clipboard := System Alt Rest
 ;
 ;
+if (PLANET = "4")
+{
+	Loop Parse Rest, "`n", "`r"
+	{
+		if InStr(A_LoopField, "Elongation")
+			ELONG := SubStr(A_LoopField, 21, )
+		if InStr(A_LoopField, "Diameter")
+			DIA := SubStr(A_LoopField, 22, 5 )
+		if InStr(A_LoopField, "magnitude")
+			MAG := SubStr(A_LoopField, 22, 4 )
+		if InStr(A_LoopField, "Longitude of Sun")
+			LS := SubStr(A_LoopField, 22,)
+	}
+	FileAppend Rest "`n", "WinJupos.txt"
+	FileAppend "=============================`n", "WinJupos.txt"
+	FileAppend "Mars`n", "WinJupos.txt"
+	FileAppend "m" DATE "_" TIME "`n`n", "WinJupos.txt"
+	FileAppend DATE " - " TIME "UTC`n`n", "WinJupos.txt"
+	FileAppend SYS "`n`n", "WinJupos.txt"
+	PlanetStats := "Dia:" DIA ", mag:" MAG "`n" "Alt:" ALT ", Ls:" LS "`nElong:" ELONG "`n`n"
+	FileAppend  PlanetStats, "WinJupos.txt"
+}
+;
 if (PLANET = "5")
 {
 	Loop Parse Rest, "`n", "`r"

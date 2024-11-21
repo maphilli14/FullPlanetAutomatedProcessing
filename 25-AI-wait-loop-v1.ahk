@@ -81,6 +81,9 @@ FileAppend FormatTime("`n`n" A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " ENDED Ast
 ;
 ;
 
+WinClose "Astra Image"
+TrayTip "Closing AI"
+
 ;Via ChatGPT Openai
 ;PATH := Chr(34) . PATH . Chr(34)
 Run "30-WSL-RBGv1.ahk" " " PATH

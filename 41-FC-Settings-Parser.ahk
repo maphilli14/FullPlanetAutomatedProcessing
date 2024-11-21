@@ -84,8 +84,8 @@ BlueGain := BlueGain
 
 ;
 ;
-TrayTip "RBG:" RedShutter  ", " BlueShutter  ", " GreenShutter  "`nGain: " RedGain  ", " BlueGain  ", " GreenGain "ms"
-A_Clipboard := "RBG:" RedShutter  ", " BlueShutter  ", " GreenShutter  "`nGain: " RedGain  ", " BlueGain  ", " GreenGain "ms"
+TrayTip "RBG: " RedShutter  ", " BlueShutter  ", " GreenShutter  " ms`nGain: " RedGain  ", " BlueGain  ", " GreenGain
+A_Clipboard := "RBG: " RedShutter  ", " BlueShutter  ", " GreenShutter  " ms`nGain: " RedGain  ", " BlueGain  ", " GreenGain
 ;
 FileAppend "`n`n" FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") "`nRedFile= " RedFile "`nBlueFile= " BlueFile "`nGreenFile= " GreenFile, "FCSettings.txt"
 FileAppend "`n" FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Logging Firecapture Exposure Settings`n`n" A_Clipboard, "FCSettings.txt"
