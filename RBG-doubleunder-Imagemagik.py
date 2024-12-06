@@ -337,7 +337,7 @@ for f in L:
 # Make anims
 #
 print("Sleeping to clean up bests for 2min...")
-#time.sleep(120)
+time.sleep(120)
 print("Ready to resume!")
 time.sleep(2)
 #

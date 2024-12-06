@@ -4725,3 +4725,1668 @@ Monday November 18, 2024 09:52:17 PM Starting file transfers
 Monday November 18, 2024 09:52:50 PM Completed File Moving Process
 Monday November 18, 2024 09:52:50 PM Src= G:\A-Inbox\Mars\20241117  Dst= F:\E-Delete\FC-Expiring--20250517\Mars\20241117
 Monday November 18, 2024 09:53:09 PM Launched C:\Personal\B-Sorted\Astronomy\30-Sharped+RGB\Mars\20241117\AS_P50\LrD-1.15-8\Anims\RGB+labels-bestsfastanimrock.gif
+
+
+Wednesday November 20, 2024 10:17:57 PM Starting WSL RGB Assembly.
+Wednesday November 20, 2024 10:18:07 PM Input Path is: G:\A-Inbox\Mars\20241117.
+Wednesday November 20, 2024 10:18:07 PM Found path extraction as: G: | A-Inbox | Mars | 20241117 | .
+Wednesday November 20, 2024 10:18:11 PM Archived Folder is: F:\E-Delete\FC-Expiring--20250519\Mars\20241117 named F:
+Wednesday November 20, 2024 10:18:11 PM DeCon settings are for Mars are: Blur= 1.15 and Iter= 8
+Wednesday November 20, 2024 10:18:11 PM Starting Imagemagik processing.
+Wednesday November 20, 2024 10:18:12 PM CMD= wsl -e "/mnt/c/Users/maphilli14-work2/Documents/GitHub/FullPlanetAutomatedProcessing/RBG-doubleunder-Imagemagik.py" G:\A-Inbox\Mars\20241117\AS_P50\LrD-1.15-8
+ERROR:__main__: Wednesday November 20, 2024 10:18:15 PM Starting RGB Assembly
+INFO:__main__: Wednesday November 20, 2024 10:18:15 PM G:\A-Inbox\Mars\20241117\AS_P50\LrD-1.15-8
+INFO:__main__:Wednesday November 20, 2024 10:18:15 PM RBG counter= 1 of 24
+INFO:__main__:Wednesday November 20, 2024 10:18:15 PM RBG counter= 2 of 24
+INFO:__main__:Wednesday November 20, 2024 10:18:15 PM RBG counter= 3 of 24
+INFO:__main__:Wednesday November 20, 2024 10:18:15 PM RBG counter= 4 of 24
+INFO:__main__:Wednesday November 20, 2024 10:18:15 PM RBG counter= 5 of 24
+INFO:__main__:Wednesday November 20, 2024 10:18:15 PM RBG counter= 6 of 24
+INFO:__main__:Wednesday November 20, 2024 10:18:15 PM RBG counter= 7 of 24
+INFO:__main__:Wednesday November 20, 2024 10:18:15 PM RBG counter= 8 of 24
+INFO:__main__:Wednesday November 20, 2024 10:18:15 PM RBG counter= 9 of 24
+INFO:__main__:Wednesday November 20, 2024 10:18:15 PM RBG counter= 10 of 24
+INFO:__main__:Wednesday November 20, 2024 10:18:15 PM RBG counter= 11 of 24
+INFO:__main__:Wednesday November 20, 2024 10:18:15 PM RBG counter= 12 of 24
+INFO:__main__:Wednesday November 20, 2024 10:18:15 PM RBG counter= 13 of 24
+INFO:__main__:Wednesday November 20, 2024 10:18:15 PM RBG counter= 14 of 24
+INFO:__main__:Wednesday November 20, 2024 10:18:15 PM RBG counter= 15 of 24
+INFO:__main__:Wednesday November 20, 2024 10:18:15 PM RBG counter= 16 of 24
+INFO:__main__:Wednesday November 20, 2024 10:18:15 PM RBG counter= 17 of 24
+INFO:__main__:Wednesday November 20, 2024 10:18:15 PM RBG counter= 18 of 24
+INFO:__main__:Wednesday November 20, 2024 10:18:15 PM RBG counter= 19 of 24
+INFO:__main__:Wednesday November 20, 2024 10:18:15 PM RBG counter= 20 of 24
+INFO:__main__:Wednesday November 20, 2024 10:18:15 PM RBG counter= 21 of 24
+INFO:__main__:Wednesday November 20, 2024 10:18:15 PM RBG counter= 22 of 24
+INFO:__main__:Wednesday November 20, 2024 10:18:15 PM RBG counter= 23 of 24
+INFO:__main__:Wednesday November 20, 2024 10:18:15 PM RBG counter= 24 of 24
+INFO:__main__:
+
+Wednesday November 20, 2024 10:18:15 PM Making an animation out of the RGB channel.
+INFO:__main__:
+
+Wednesday November 20, 2024 10:18:15 PM Making an animation out of the RGB+labels channel.
+INFO:__main__:
+
+Wednesday November 20, 2024 10:18:15 PM Making an animation out of the RGB+labels-bests channel.
+INFO:__main__:
+Wednesday November 20, 2024 10:21:19 PM cmd.exe /c "G:\A-Inbox\Mars\20241117\AS_P50\LrD-1.15-8\Anims\RGB+labels-bestsfastanimrock.gif" /s
+INFO:__main__:
+Wednesday November 20, 2024 10:21:19 PM G:\A-Inbox\Mars\20241117\AS_P50\LrD-1.15-8\\Anims\\RGB+labels-bestsfastanimrock.gif
+INFO:__main__:
+Wednesday November 20, 2024 10:21:19 PM FILE
+INFO:__main__:
+
+Wednesday November 20, 2024 10:21:19 PM RGB Animation READY
+Wednesday November 20, 2024 10:21:19 PM Blind launch of script should be complete.
+Wednesday November 20, 2024 10:21:19 PM explorer G:\A-Inbox\Mars\20241117\AS_P50\LrD-1.15-8\Anims\20241117-RGB+labels-bestsfastanimrock.gif
+Wednesday November 20, 2024 10:21:19 PMStarting copies to LocalDST2 and LocalDST3
+Wednesday November 20, 2024 10:21:19 PMCompleted copies to LocalDST2 and LocalDST3
+Wednesday November 20, 2024 10:21:41 PM Starting file copies to LocalDST
+Wednesday November 20, 2024 10:21:43 PM Completed File COPY Process
+Wednesday November 20, 2024 10:21:43 PM Src= G:\A-Inbox\Mars\20241117  Dst= C:\Personal\B-Sorted\Astronomy\30-Sharped+RGB\Mars\20241117
+Wednesday November 20, 2024 10:21:43 PM Starting file transfers
+Wednesday November 20, 2024 10:22:05 PM Completed File Moving Process
+Wednesday November 20, 2024 10:22:05 PM Src= G:\A-Inbox\Mars\20241117  Dst= F:\E-Delete\FC-Expiring--20250519\Mars\20241117
+Wednesday November 20, 2024 10:22:19 PM Launched C:\Personal\B-Sorted\Astronomy\30-Sharped+RGB\Mars\20241117\AS_P50\LrD-1.15-8\Anims\RGB+labels-bestsfastanimrock.gif
+
+
+Thursday November 21, 2024 10:38:36 AM Starting AS4 Stacking Setup.
+Thursday November 21, 2024 10:38:55 AM G:\A-Inbox\Saturn\20241023\*.avi: Input File count is: 136
+Thursday November 21, 2024 10:38:55 AM Starting AS4 setup.
+Thursday November 21, 2024 10:39:59 AM AS4 Stacking started.
+Thursday November 21, 2024 10:40:09 AM Starting AS3 Stacking watcher.
+Thursday November 21, 2024 10:40:09 AM Stacking should be started.  Found 0 stacked Files in G:\A-Inbox\Saturn\20241023\\AS_P50\*.tif
+Thursday November 21, 2024 10:40:09 AM Found 136 Video Files in G:\A-Inbox\Saturn\20241023\\*.avi
+Thursday November 21, 2024 10:40:09 AM Starting AstraImage Script.  Using Blur=1.2 and Iter=8 AstraImage settings
+Thursday November 21, 2024 10:40:39 AM Starting AstraImage.exe
+Thursday November 21, 2024 10:41:09 AM Starting AstraImage.exe
+Thursday November 21, 2024 10:41:09 AM Starting AstraImage.exe
+Thursday November 21, 2024 10:41:09 AM Please check setup for AI.exe location
+Thursday November 21, 2024 10:41:19 AM Found stacked file for AI Preview
+Thursday November 21, 2024 10:42:14 AM Starting AstraImage.exe
+Thursday November 21, 2024 10:42:14 AM Please check setup for AI.exe location
+Thursday November 21, 2024 10:42:25 AM Found stacked file for AI Preview
+Thursday November 21, 2024 10:43:12 AM Starting AstraImage.exe
+Thursday November 21, 2024 10:43:12 AM Please check setup for AI.exe location
+Thursday November 21, 2024 10:43:22 AM Found stacked file for AI Preview
+Thursday November 21, 2024 10:44:11 AM Starting AstraImage.exe
+Thursday November 21, 2024 10:44:11 AM Please check setup for AI.exe location
+Thursday November 21, 2024 10:44:21 AM Found stacked file for AI Preview
+Thursday November 21, 2024 10:45:09 AM Starting AstraImage.exe
+Thursday November 21, 2024 10:45:09 AM Please check setup for AI.exe location
+Thursday November 21, 2024 10:45:19 AM Found stacked file for AI Preview
+Thursday November 21, 2024 10:46:08 AM Starting AstraImage.exe
+Thursday November 21, 2024 10:46:08 AM Please check setup for AI.exe location
+Thursday November 21, 2024 10:46:18 AM Found stacked file for AI Preview
+Thursday November 21, 2024 10:47:08 AM Starting AstraImage.exe
+Thursday November 21, 2024 10:47:08 AM Please check setup for AI.exe location
+Thursday November 21, 2024 10:47:18 AM Found stacked file for AI Preview
+Thursday November 21, 2024 10:48:08 AM Starting AstraImage.exe
+Thursday November 21, 2024 10:48:08 AM Please check setup for AI.exe location
+Thursday November 21, 2024 10:48:18 AM Found stacked file for AI Preview
+Thursday November 21, 2024 10:49:07 AM Starting AstraImage.exe
+Thursday November 21, 2024 10:49:07 AM Please check setup for AI.exe location
+Thursday November 21, 2024 10:49:18 AM Found stacked file for AI Preview
+Thursday November 21, 2024 10:50:08 AM Starting AstraImage.exe
+Thursday November 21, 2024 10:50:08 AM Please check setup for AI.exe location
+Thursday November 21, 2024 10:50:18 AM Found stacked file for AI Preview
+Thursday November 21, 2024 10:51:08 AM Starting AstraImage.exe
+Thursday November 21, 2024 10:51:08 AM Please check setup for AI.exe location
+Thursday November 21, 2024 10:51:18 AM Found stacked file for AI Preview
+Thursday November 21, 2024 10:52:08 AM Starting AstraImage.exe
+Thursday November 21, 2024 10:52:08 AM Please check setup for AI.exe location
+Thursday November 21, 2024 10:52:19 AM Found stacked file for AI Preview
+Thursday November 21, 2024 10:53:09 AM Starting AstraImage.exe
+Thursday November 21, 2024 10:53:09 AM Please check setup for AI.exe location
+Thursday November 21, 2024 10:53:19 AM Found stacked file for AI Preview
+Thursday November 21, 2024 10:54:09 AM Starting AstraImage.exe
+Thursday November 21, 2024 10:54:10 AM Please check setup for AI.exe location
+Thursday November 21, 2024 10:54:20 AM Found stacked file for AI Preview
+Thursday November 21, 2024 10:55:11 AM Starting AstraImage.exe
+Thursday November 21, 2024 10:55:11 AM Please check setup for AI.exe location
+Thursday November 21, 2024 10:55:21 AM Found stacked file for AI Preview
+Thursday November 21, 2024 10:56:12 AM Starting AstraImage.exe
+Thursday November 21, 2024 10:56:12 AM Please check setup for AI.exe location
+Thursday November 21, 2024 10:56:22 AM Found stacked file for AI Preview
+Thursday November 21, 2024 10:57:13 AM Starting AstraImage.exe
+Thursday November 21, 2024 10:57:13 AM Please check setup for AI.exe location
+Thursday November 21, 2024 10:57:23 AM Found stacked file for AI Preview
+Thursday November 21, 2024 10:58:13 AM Starting AstraImage.exe
+Thursday November 21, 2024 10:58:13 AM Please check setup for AI.exe location
+Thursday November 21, 2024 10:58:23 AM Found stacked file for AI Preview
+Thursday November 21, 2024 10:59:12 AM Starting AstraImage.exe
+Thursday November 21, 2024 10:59:12 AM Please check setup for AI.exe location
+Thursday November 21, 2024 10:59:22 AM Found stacked file for AI Preview
+Thursday November 21, 2024 11:00:12 AM Starting AstraImage.exe
+Thursday November 21, 2024 11:00:12 AM Please check setup for AI.exe location
+Thursday November 21, 2024 11:00:22 AM Found stacked file for AI Preview
+Thursday November 21, 2024 11:01:13 AM Starting AstraImage.exe
+Thursday November 21, 2024 11:01:13 AM Please check setup for AI.exe location
+Thursday November 21, 2024 11:01:23 AM Found stacked file for AI Preview
+Thursday November 21, 2024 11:02:05 AM Starting AstraImage.exe
+Thursday November 21, 2024 11:02:05 AM Please check setup for AI.exe location
+Thursday November 21, 2024 11:02:15 AM Found stacked file for AI Preview
+Thursday November 21, 2024 11:03:06 AM Starting AstraImage.exe
+Thursday November 21, 2024 11:03:06 AM Please check setup for AI.exe location
+Thursday November 21, 2024 11:03:16 AM Found stacked file for AI Preview
+Thursday November 21, 2024 11:04:07 AM Starting AstraImage.exe
+Thursday November 21, 2024 11:04:08 AM Please check setup for AI.exe location
+Thursday November 21, 2024 11:04:18 AM Found stacked file for AI Preview
+Thursday November 21, 2024 11:05:08 AM Starting AstraImage.exe
+Thursday November 21, 2024 11:05:08 AM Please check setup for AI.exe location
+Thursday November 21, 2024 11:05:18 AM Found stacked file for AI Preview
+Thursday November 21, 2024 11:06:09 AM Starting AstraImage.exe
+Thursday November 21, 2024 11:06:09 AM Please check setup for AI.exe location
+Thursday November 21, 2024 11:06:19 AM Found stacked file for AI Preview
+Thursday November 21, 2024 11:07:10 AM Starting AstraImage.exe
+Thursday November 21, 2024 11:07:10 AM Please check setup for AI.exe location
+Thursday November 21, 2024 11:07:20 AM Found stacked file for AI Preview
+Thursday November 21, 2024 11:08:11 AM Starting AstraImage.exe
+Thursday November 21, 2024 11:08:11 AM Please check setup for AI.exe location
+Thursday November 21, 2024 11:08:21 AM Found stacked file for AI Preview
+Thursday November 21, 2024 11:09:11 AM Starting AstraImage.exe
+Thursday November 21, 2024 11:09:11 AM Please check setup for AI.exe location
+Thursday November 21, 2024 11:09:21 AM Found stacked file for AI Preview
+Thursday November 21, 2024 11:10:12 AM Starting AstraImage.exe
+Thursday November 21, 2024 11:10:12 AM Please check setup for AI.exe location
+Thursday November 21, 2024 11:10:22 AM Found stacked file for AI Preview
+Thursday November 21, 2024 11:11:13 AM Starting AstraImage.exe
+Thursday November 21, 2024 11:11:13 AM Please check setup for AI.exe location
+Thursday November 21, 2024 11:11:24 AM Found stacked file for AI Preview
+Thursday November 21, 2024 11:12:14 AM Starting AstraImage.exe
+Thursday November 21, 2024 11:12:14 AM Please check setup for AI.exe location
+Thursday November 21, 2024 11:12:25 AM Found stacked file for AI Preview
+Thursday November 21, 2024 11:13:15 AM Starting AstraImage.exe
+Thursday November 21, 2024 11:13:15 AM Please check setup for AI.exe location
+Thursday November 21, 2024 11:13:25 AM Found stacked file for AI Preview
+Thursday November 21, 2024 11:14:16 AM Starting AstraImage.exe
+Thursday November 21, 2024 11:14:16 AM Please check setup for AI.exe location
+Thursday November 21, 2024 11:14:26 AM Found stacked file for AI Preview
+Thursday November 21, 2024 11:15:17 AM Starting AstraImage.exe
+Thursday November 21, 2024 11:15:17 AM Please check setup for AI.exe location
+Thursday November 21, 2024 11:15:27 AM Found stacked file for AI Preview
+Thursday November 21, 2024 11:16:19 AM Starting AstraImage.exe
+Thursday November 21, 2024 11:16:19 AM Please check setup for AI.exe location
+Thursday November 21, 2024 11:16:29 AM Found stacked file for AI Preview
+Thursday November 21, 2024 11:17:20 AM Starting AstraImage.exe
+Thursday November 21, 2024 11:17:20 AM Please check setup for AI.exe location
+Thursday November 21, 2024 11:17:30 AM Found stacked file for AI Preview
+Thursday November 21, 2024 11:18:21 AM Starting AstraImage.exe
+Thursday November 21, 2024 11:18:21 AM Please check setup for AI.exe location
+Thursday November 21, 2024 11:18:31 AM Found stacked file for AI Preview
+Thursday November 21, 2024 11:19:21 AM Starting AstraImage.exe
+Thursday November 21, 2024 11:19:22 AM Please check setup for AI.exe location
+Thursday November 21, 2024 11:19:32 AM Found stacked file for AI Preview
+Thursday November 21, 2024 11:20:23 AM Starting AstraImage.exe
+Thursday November 21, 2024 11:20:23 AM Please check setup for AI.exe location
+Thursday November 21, 2024 11:20:33 AM Found stacked file for AI Preview
+Thursday November 21, 2024 11:21:24 AM Starting AstraImage.exe
+Thursday November 21, 2024 11:21:24 AM Please check setup for AI.exe location
+Thursday November 21, 2024 11:21:34 AM Found stacked file for AI Preview
+Thursday November 21, 2024 11:22:24 AM Starting AstraImage.exe
+Thursday November 21, 2024 11:22:24 AM Please check setup for AI.exe location
+Thursday November 21, 2024 11:22:34 AM Found stacked file for AI Preview
+Thursday November 21, 2024 11:23:26 AM Starting AstraImage.exe
+Thursday November 21, 2024 11:23:26 AM Please check setup for AI.exe location
+Thursday November 21, 2024 11:23:36 AM Found stacked file for AI Preview
+Thursday November 21, 2024 11:24:26 AM Starting AstraImage.exe
+Thursday November 21, 2024 11:24:26 AM Please check setup for AI.exe location
+Thursday November 21, 2024 11:24:36 AM Found stacked file for AI Preview
+
+
+Thursday November 21, 2024 04:35:25 PM Starting AS4 Stacking Setup.
+Thursday November 21, 2024 04:35:42 PM G:\A-Inbox\Saturn\20241023\*.avi: Input File count is: 12
+Thursday November 21, 2024 04:35:42 PM Starting AS4 setup.
+Thursday November 21, 2024 04:36:42 PM AS4 Stacking started.
+
+
+Thursday November 21, 2024 04:42:23 PM Starting AS4 Stacking Setup.
+Thursday November 21, 2024 04:42:42 PM G:\A-Inbox\Saturn\20241023\*.avi: Input File count is: 12
+Thursday November 21, 2024 04:42:42 PM Starting AS4 setup.
+
+
+Thursday November 21, 2024 04:44:13 PM Starting AS4 Stacking Setup.
+Thursday November 21, 2024 04:44:30 PM G:\A-Inbox\Saturn\20241023\*.avi: Input File count is: 12
+Thursday November 21, 2024 04:44:30 PM Starting AS4 setup.
+Thursday November 21, 2024 04:45:28 PM AS4 Stacking started.
+Thursday November 21, 2024 04:45:38 PM Starting AS3 Stacking watcher.
+Thursday November 21, 2024 04:45:39 PM Stacking should be started.  Found 0 stacked Files in G:\A-Inbox\Saturn\20241023\\AS_P50\*.tif
+Thursday November 21, 2024 04:45:39 PM Found 12 Video Files in G:\A-Inbox\Saturn\20241023\\*.avi
+Thursday November 21, 2024 04:45:39 PM Starting AstraImage Script.  Using Blur=1.15 and Iter=8 AstraImage settings
+Thursday November 21, 2024 04:46:09 PM Starting AstraImage.exe
+Thursday November 21, 2024 04:46:09 PM NO FILE EVER STACKED
+Thursday November 21, 2024 04:46:39 PM Recovered from error.
+Thursday November 21, 2024 04:46:39 PM Finished AS3 Stacking watcher.
+Thursday November 21, 2024 04:46:39 PM COMPLETED AS4 processing.
+
+
+Thursday November 21, 2024 04:46:47 PM Starting 17-FCFileMove1, Video Archive process.
+Thursday November 21, 2024 04:46:51 PM Archived Folder is: F:\E-Delete\FC-Expiring--20250520\Saturn\20241023 named F:
+Thursday November 21, 2024 04:46:51 PM Found 4 stacked Files in G:\A-Inbox\Saturn\20241023\AS_P50\*.tif
+
+
+Thursday November 21, 2024 04:53:03 PM Starting AS4 Stacking Setup.
+Thursday November 21, 2024 04:53:22 PM G:\A-Inbox\Saturn\20241023\*.avi: Input File count is: 12
+Thursday November 21, 2024 04:53:22 PM Starting AS4 setup.
+Thursday November 21, 2024 04:55:28 PM AS4 Stacking started.
+Thursday November 21, 2024 04:55:38 PM Starting AS3 Stacking watcher.
+Thursday November 21, 2024 04:55:39 PM Stacking should be started.  Found 0 stacked Files in G:\A-Inbox\Saturn\20241023\\AS_P50\*.tif
+Thursday November 21, 2024 04:55:39 PM Found 12 Video Files in G:\A-Inbox\Saturn\20241023\\*.avi
+Thursday November 21, 2024 04:55:39 PM Starting AstraImage Script.  Using Blur=1.15 and Iter=8 AstraImage settings
+Thursday November 21, 2024 04:56:09 PM Starting AstraImage.exe
+Thursday November 21, 2024 04:56:09 PM NO FILE EVER STACKED
+Thursday November 21, 2024 04:56:39 PM Recovered from error.
+Thursday November 21, 2024 04:56:39 PM Finished AS3 Stacking watcher.
+Thursday November 21, 2024 04:56:39 PM COMPLETED AS4 processing.
+
+
+Thursday November 21, 2024 04:56:46 PM Starting 17-FCFileMove1, Video Archive process.
+Thursday November 21, 2024 04:56:46 PM Archived Folder is: F:\E-Delete\FC-Expiring--20250520\Saturn\20241023 named F:
+Thursday November 21, 2024 04:56:46 PM Found 4 stacked Files in G:\A-Inbox\Saturn\20241023\AS_P50\*.tif
+
+
+Thursday November 21, 2024 05:23:00 PM Starting AS4 Stacking Setup.
+Thursday November 21, 2024 05:23:18 PM G:\A-Inbox\Saturn\20241023\*.avi: Input File count is: 12
+Thursday November 21, 2024 05:23:18 PM Starting AS4 setup.
+
+
+Thursday November 21, 2024 05:24:03 PM Starting AS4 Stacking Setup.
+
+
+Thursday November 21, 2024 05:24:11 PM Starting AS4 Stacking Setup.
+
+
+Thursday November 21, 2024 05:24:37 PM Starting AS4 Stacking Setup.
+Thursday November 21, 2024 05:24:51 PM G:\A-Inbox\Saturn\20241023\*.avi: Input File count is: 12
+Thursday November 21, 2024 05:24:51 PM Starting AS4 setup.
+Thursday November 21, 2024 05:25:50 PM AS4 Stacking started.
+Thursday November 21, 2024 05:26:00 PM Starting AS4 Stacking watcher.
+Thursday November 21, 2024 05:26:01 PM Stacking should be started.  Found 0 stacked Files in G:\A-Inbox\Saturn\20241023\\AS_P50\*.tif
+Thursday November 21, 2024 05:26:01 PM Found 12 Video Files in G:\A-Inbox\Saturn\20241023\\*.avi
+Thursday November 21, 2024 05:26:01 PM Starting AstraImage Script.  Using Blur=1.15 and Iter=8 AstraImage settings
+Thursday November 21, 2024 05:26:01 PM Starting AstraImage.exe
+Thursday November 21, 2024 05:26:11 PM NO FILE EVER STACKED
+Thursday November 21, 2024 05:26:42 PM Recovered from error.
+Thursday November 21, 2024 05:26:42 PM Finished AS3 Stacking watcher.
+Thursday November 21, 2024 05:26:42 PM COMPLETED AS4 processing.
+
+
+Thursday November 21, 2024 05:30:36 PM Starting AS4 Stacking Setup.
+Thursday November 21, 2024 05:31:20 PM G:\A-Inbox\Saturn\20241023\*.avi: Input File count is: 12
+Thursday November 21, 2024 05:31:20 PM Starting AS4 setup.
+Thursday November 21, 2024 05:32:21 PM AS4 Stacking started.
+Thursday November 21, 2024 05:32:31 PM Starting AS4 Stacking watcher.
+Thursday November 21, 2024 05:32:31 PM Stacking should be started.  Found 0 stacked Files in G:\A-Inbox\Saturn\20241023\\AS_P50\*.tif
+Thursday November 21, 2024 05:32:32 PM Found 12 Video Files in G:\A-Inbox\Saturn\20241023\\*.avi
+Thursday November 21, 2024 05:32:32 PM Starting AstraImage Script.  Using Blur=1.15 and Iter=8 AstraImage settings
+Thursday November 21, 2024 05:32:32 PM Starting AstraImage.exe
+Thursday November 21, 2024 05:32:42 PM Starting AstraImage.exe
+Thursday November 21, 2024 05:32:42 PM NO FILE EVER STACKED
+Thursday November 21, 2024 05:32:42 PM Starting AstraImage.exe
+Thursday November 21, 2024 05:32:43 PM Found stacked file for AI Preview
+
+
+Thursday November 21, 2024 05:40:17 PM Starting AS4 Stacking Setup.
+Thursday November 21, 2024 05:40:37 PM G:\A-Inbox\Saturn\20241023\*.avi: Input File count is: 12
+Thursday November 21, 2024 05:40:37 PM Starting AS4 setup.
+Thursday November 21, 2024 05:42:03 PM AS4 Stacking started.
+Thursday November 21, 2024 05:42:14 PM Starting AS4 Stacking watcher.
+Thursday November 21, 2024 05:42:14 PM Stacking should be started.  Found 0 stacked Files in G:\A-Inbox\Saturn\20241023\\AS_P50\*.tif
+Thursday November 21, 2024 05:42:14 PM Found 12 Video Files in G:\A-Inbox\Saturn\20241023\\*.avi
+Thursday November 21, 2024 05:42:14 PM Starting AstraImage Script.  Using Blur=1.15 and Iter=8 AstraImage settings
+Thursday November 21, 2024 05:42:14 PM Starting AstraImage.exe
+Thursday November 21, 2024 05:42:24 PM Starting AstraImage.exe
+Thursday November 21, 2024 05:42:24 PM NO FILE EVER STACKED
+Thursday November 21, 2024 05:42:24 PM Starting AstraImage.exe
+Thursday November 21, 2024 05:42:24 PM Found stacked file for AI Preview
+
+
+Thursday November 21, 2024 06:23:37 PM Starting AS4 Stacking Setup.
+Thursday November 21, 2024 06:23:56 PM G:\A-Inbox\Saturn\20241023\*.avi: Input File count is: 12
+Thursday November 21, 2024 06:23:56 PM Starting AS4 setup.
+Thursday November 21, 2024 06:24:55 PM AS4 Stacking started.
+Thursday November 21, 2024 06:25:05 PM Starting AS4 Stacking watcher.
+Thursday November 21, 2024 06:25:05 PM Stacking should be started.  Found 0 stacked Files in G:\A-Inbox\Saturn\20241023\\AS_P50\*.tif
+Thursday November 21, 2024 06:25:05 PM Found 12 Video Files in G:\A-Inbox\Saturn\20241023\\*.avi
+Thursday November 21, 2024 06:25:06 PM Starting AstraImage Script.  Using Blur=1.15 and Iter=8 AstraImage settings
+Thursday November 21, 2024 06:25:06 PM Starting AstraImage.exe
+Thursday November 21, 2024 06:25:16 PM Starting AstraImage.exe
+Thursday November 21, 2024 06:25:26 PM Starting AstraImage.exe
+Thursday November 21, 2024 06:25:26 PM NO FILE EVER STACKED
+
+
+Thursday November 21, 2024 06:26:59 PM Starting AS4 Stacking Setup.
+Thursday November 21, 2024 06:27:18 PM G:\A-Inbox\Saturn\20241023\*.avi: Input File count is: 12
+Thursday November 21, 2024 06:27:18 PM Starting AS4 setup.
+Thursday November 21, 2024 06:28:33 PM AS4 Stacking started.
+Thursday November 21, 2024 06:28:43 PM Starting AS4 Stacking watcher.
+Thursday November 21, 2024 06:28:43 PM Stacking should be started.  Found 0 stacked Files in G:\A-Inbox\Saturn\20241023\\AS_P50\*.tif
+Thursday November 21, 2024 06:28:43 PM Found 12 Video Files in G:\A-Inbox\Saturn\20241023\\*.avi
+Thursday November 21, 2024 06:28:43 PM Starting AstraImage Script.  Using Blur=1.15 and Iter=8 AstraImage settings
+Thursday November 21, 2024 06:28:43 PM Starting AstraImage.exe
+Thursday November 21, 2024 06:28:54 PM Starting AstraImage.exe
+Thursday November 21, 2024 06:28:54 PM NO FILE EVER STACKED
+
+
+Thursday November 21, 2024 06:29:41 PM Starting AS4 Stacking Setup.
+Thursday November 21, 2024 06:30:09 PM G:\A-Inbox\Saturn\20241023\*.avi: Input File count is: 12
+Thursday November 21, 2024 06:30:09 PM Starting AS4 setup.
+Thursday November 21, 2024 06:31:38 PM AS4 Stacking started.
+Thursday November 21, 2024 06:31:48 PM Starting AS4 Stacking watcher.
+Thursday November 21, 2024 06:31:48 PM Stacking should be started.  Found 0 stacked Files in G:\A-Inbox\Saturn\20241023\\AS_P50\*.tif
+Thursday November 21, 2024 06:31:49 PM Found 12 Video Files in G:\A-Inbox\Saturn\20241023\\*.avi
+Thursday November 21, 2024 06:31:49 PM Starting AstraImage Script.  Using Blur=1.15 and Iter=8 AstraImage settings
+Thursday November 21, 2024 06:31:49 PM Starting AstraImage.exe
+Thursday November 21, 2024 06:31:59 PM Starting AstraImage.exe
+Thursday November 21, 2024 06:32:09 PM Starting AstraImage.exe
+Thursday November 21, 2024 06:32:09 PM NO FILE EVER STACKED
+Thursday November 21, 2024 06:32:09 PM Starting AstraImage.exe
+Thursday November 21, 2024 06:32:09 PM Found stacked file for AI Preview
+
+
+Friday November 22, 2024 12:50:59 PM Starting AS4 Stacking Setup.
+
+
+Friday November 22, 2024 12:57:27 PM Starting AS4 Stacking Setup.
+
+
+Friday November 22, 2024 01:03:04 PM Starting AS4 Stacking Setup.
+Friday November 22, 2024 01:03:39 PM G:\A-Inbox\Saturn\20241023\*.avi: Input File count is: 12
+Friday November 22, 2024 01:03:39 PM Starting AS4 setup.
+
+
+Friday November 22, 2024 01:06:07 PM Starting AS4 Stacking Setup.
+
+
+Friday November 22, 2024 01:06:18 PM Starting AS4 Stacking Setup.
+
+
+Friday November 22, 2024 01:06:35 PM Starting AS4 Stacking Setup.
+Friday November 22, 2024 01:06:48 PM G:\A-Inbox\Saturn\20241023\*.avi: Input File count is: 12
+Friday November 22, 2024 01:06:48 PM Starting AS4 setup.
+Friday November 22, 2024 01:07:48 PM AS4 Stacking started.
+Friday November 22, 2024 01:07:58 PM Starting AS4 Stacking watcher.
+Friday November 22, 2024 01:07:58 PM Stacking should be started.  Found 0 stacked Files in G:\A-Inbox\Saturn\20241023\\AS_P50\*.tif
+Friday November 22, 2024 01:07:58 PM Found 12 Video Files in G:\A-Inbox\Saturn\20241023\\*.avi
+Friday November 22, 2024 01:07:58 PM Starting AstraImage Script.  Using Blur=1.15 and Iter=8 AstraImage settings
+Friday November 22, 2024 01:07:58 PM Starting AstraImage.exe
+Friday November 22, 2024 01:08:08 PM Starting AstraImage.exe
+Friday November 22, 2024 01:08:18 PM Starting AstraImage.exe
+Friday November 22, 2024 01:08:18 PM NO FILE EVER STACKED
+Friday November 22, 2024 01:08:18 PM Starting AstraImage.exe
+Friday November 22, 2024 01:08:19 PM Found stacked file for AI Preview
+
+
+Friday November 22, 2024 01:14:09 PM Starting AS4 Stacking Setup.
+Friday November 22, 2024 01:14:24 PM G:\A-Inbox\Saturn\20241023\*.avi: Input File count is: 12
+Friday November 22, 2024 01:14:24 PM Starting AS4 setup.
+Friday November 22, 2024 01:15:24 PM AS4 Stacking started.
+Friday November 22, 2024 01:15:38 PM Starting AS4 Stacking watcher.
+Friday November 22, 2024 01:15:39 PM Stacking should be started.  Found 0 stacked Files in G:\A-Inbox\Saturn\20241023\\AS_P50\*.tif
+Friday November 22, 2024 01:15:39 PM Found 12 Video Files in G:\A-Inbox\Saturn\20241023\\*.avi
+Friday November 22, 2024 01:15:39 PM Starting AstraImage Script.  Using Blur=1.15 and Iter=8 AstraImage settings
+Friday November 22, 2024 01:15:39 PM Starting AstraImage.exe
+Friday November 22, 2024 01:15:49 PM Starting AstraImage.exe
+Friday November 22, 2024 01:15:49 PM NO FILE EVER STACKED
+Friday November 22, 2024 01:16:46 PM Recovered from error.
+Friday November 22, 2024 01:16:46 PM Finished AS3 Stacking watcher.
+Friday November 22, 2024 01:16:46 PM COMPLETED AS4 processing.
+
+
+Friday November 22, 2024 01:16:54 PM Starting 17-FCFileMove1, Video Archive process.
+
+
+Friday November 22, 2024 01:23:06 PM Starting AS4 Stacking Setup.
+Friday November 22, 2024 01:23:30 PM G:\A-Inbox\Saturn\20241023\*.avi: Input File count is: 12
+Friday November 22, 2024 01:23:30 PM Starting AS4 setup.
+Friday November 22, 2024 01:24:29 PM AS4 Stacking started.
+
+
+Friday November 22, 2024 01:27:23 PM Starting AS4 Stacking Setup.
+Friday November 22, 2024 01:27:36 PM G:\A-Inbox\Saturn\20241023\*.avi: Input File count is: 12
+Friday November 22, 2024 01:27:36 PM Starting AS4 setup.
+Friday November 22, 2024 01:28:36 PM AS4 Stacking started.
+Friday November 22, 2024 01:28:46 PM Starting AS4 Stacking watcher.
+Friday November 22, 2024 01:28:46 PM Stacking should be started.  Found 0 stacked Files in G:\A-Inbox\Saturn\20241023\\AS_P50\*.tif
+Friday November 22, 2024 01:28:46 PM Found 12 Video Files in G:\A-Inbox\Saturn\20241023\\*.avi
+Friday November 22, 2024 01:28:46 PM Starting AstraImage Script.  Using Blur=1.15 and Iter=8 AstraImage settings
+Friday November 22, 2024 01:28:46 PM Starting AstraImage.exe
+Friday November 22, 2024 01:28:56 PM Starting AstraImage.exe
+Friday November 22, 2024 01:28:56 PM Found 1st file, moving to next step
+Friday November 22, 2024 01:28:56 PM NO FILE EVER STACKED
+Friday November 22, 2024 01:29:54 PM Recovered from error.
+Friday November 22, 2024 01:29:54 PM Finished AS3 Stacking watcher.
+Friday November 22, 2024 01:29:54 PM COMPLETED AS4 processing.
+
+
+Friday November 22, 2024 01:37:22 PM Starting AS4 Stacking Setup.
+Friday November 22, 2024 01:37:53 PM G:\A-Inbox\Saturn\20241023\*.avi: Input File count is: 12
+Friday November 22, 2024 01:37:53 PM Starting AS4 setup.
+Friday November 22, 2024 01:38:53 PM AS4 Stacking started.
+Friday November 22, 2024 01:38:55 PM Starting AS4 Stacking watcher.
+Friday November 22, 2024 01:38:55 PM Stacking should be started.  Found 0 stacked Files in G:\A-Inbox\Saturn\20241023\\AS_P50\*.tif
+Friday November 22, 2024 01:38:55 PM Found 12 Video Files in G:\A-Inbox\Saturn\20241023\\*.avi
+Friday November 22, 2024 01:38:55 PM Starting AstraImage Script.  Using Blur=1.15 and Iter=8 AstraImage settings
+Friday November 22, 2024 01:38:55 PM Starting AstraImage.exe
+Friday November 22, 2024 01:38:57 PM Starting AstraImage.exe
+Friday November 22, 2024 01:38:59 PM Starting AstraImage.exe
+Friday November 22, 2024 01:39:01 PM Starting AstraImage.exe
+Friday November 22, 2024 01:39:03 PM Starting AstraImage.exe
+Friday November 22, 2024 01:39:05 PM Starting AstraImage.exe
+Friday November 22, 2024 01:39:07 PM Starting AstraImage.exe
+Friday November 22, 2024 01:39:09 PM Starting AstraImage.exe
+Friday November 22, 2024 01:39:11 PM Starting AstraImage.exe
+Friday November 22, 2024 01:39:11 PM Found 1st file, moving to next step
+Friday November 22, 2024 01:39:11 PM NO FILE EVER STACKED
+
+
+Friday November 22, 2024 02:25:37 PM Starting AS4 Stacking Setup.
+Friday November 22, 2024 02:25:54 PM G:\A-Inbox\Saturn\20241023\*.avi: Input File count is: 12
+Friday November 22, 2024 02:25:54 PM Starting AS4 setup.
+Friday November 22, 2024 02:26:54 PM AS4 Stacking started.
+
+
+Friday November 22, 2024 02:34:10 PM Starting AS4 Stacking Setup.
+Friday November 22, 2024 02:34:51 PM G:\A-Inbox\Saturn\20241023\*.avi: Input File count is: 12
+Friday November 22, 2024 02:34:51 PM Starting AS4 setup.
+Friday November 22, 2024 02:35:50 PM AS4 Stacking started.
+
+
+Friday November 22, 2024 02:36:03 PM Starting AS4 Stacking Setup.
+Friday November 22, 2024 02:40:02 PM G:\A-Inbox\Saturn\20241023\*.avi: Input File count is: 12
+Friday November 22, 2024 02:40:02 PM Starting AS4 setup.
+Friday November 22, 2024 02:41:01 PM AS4 Stacking started.
+
+
+Friday November 22, 2024 02:41:15 PM Starting AS4 Stacking Setup.
+Friday November 22, 2024 02:41:27 PM if CountOUT >= 1\*.avi: Input File count is: 0
+Friday November 22, 2024 02:41:27 PM Starting AS4 setup.
+Friday November 22, 2024 02:41:58 PM Starting AS4 Stacking watcher.
+
+
+Friday November 22, 2024 02:42:06 PM Starting AS4 Stacking Setup.
+Friday November 22, 2024 02:47:23 PM G:\A-Inbox\Saturn\20241023\*.avi: Input File count is: 12
+Friday November 22, 2024 02:47:23 PM Starting AS4 setup.
+Friday November 22, 2024 02:48:23 PM AS4 Stacking started.
+Friday November 22, 2024 02:48:24 PM Starting AS4 Stacking watcher.
+Friday November 22, 2024 02:48:24 PM Stacking should be started.  Found 0 stacked Files in G:\A-Inbox\Saturn\20241023\\AS_P50\*.tif
+Friday November 22, 2024 02:48:24 PM Found 12 Video Files in G:\A-Inbox\Saturn\20241023\\*.avi
+Friday November 22, 2024 02:48:24 PM Starting AstraImage Script.  Using Blur=1.15 and Iter=8 AstraImage settings
+Friday November 22, 2024 02:48:24 PM Waiting for 1st file
+Friday November 22, 2024 02:48:26 PM Waiting for 1st file
+Friday November 22, 2024 02:48:28 PM Waiting for 1st file
+Friday November 22, 2024 02:48:30 PM Waiting for 1st file
+Friday November 22, 2024 02:48:32 PM Waiting for 1st file
+Friday November 22, 2024 02:48:34 PM Waiting for 1st file
+Friday November 22, 2024 02:48:36 PM Waiting for 1st file
+Friday November 22, 2024 02:48:38 PM Waiting for 1st file
+Friday November 22, 2024 02:48:40 PM Waiting for 1st file
+Friday November 22, 2024 02:48:40 PM Found 1st file, moving to next step
+Friday November 22, 2024 02:49:38 PM Recovered from error.
+Friday November 22, 2024 02:49:38 PM Finished AS3 Stacking watcher.
+Friday November 22, 2024 02:49:38 PM COMPLETED AS4 processing.
+
+
+Friday November 22, 2024 02:49:45 PM Starting 17-FCFileMove1, Video Archive process.
+
+
+Friday November 22, 2024 03:16:09 PM Starting AS4 Stacking Setup.
+Friday November 22, 2024 03:16:21 PM G:\A-Inbox\Saturn\20241023\*.avi: Input File count is: 12
+Friday November 22, 2024 03:16:21 PM Starting AS4 setup.
+Friday November 22, 2024 03:17:21 PM AS4 Stacking started.
+Friday November 22, 2024 03:17:23 PM Starting AS4 Stacking watcher.
+Friday November 22, 2024 03:17:23 PM Stacking should be started.  Found 0 stacked Files in G:\A-Inbox\Saturn\20241023\\AS_P50\*.tif
+Friday November 22, 2024 03:17:23 PM Found 12 Video Files in G:\A-Inbox\Saturn\20241023\\*.avi
+Friday November 22, 2024 03:17:23 PM Starting AstraImage Script.  Using Blur=1.15 and Iter=8 AstraImage settings
+Friday November 22, 2024 03:17:23 PM Waiting for 1st file
+Friday November 22, 2024 03:17:25 PM Waiting for 1st file
+Friday November 22, 2024 03:17:27 PM Waiting for 1st file
+Friday November 22, 2024 03:17:29 PM Waiting for 1st file
+Friday November 22, 2024 03:17:31 PM Waiting for 1st file
+Friday November 22, 2024 03:17:33 PM Waiting for 1st file
+Friday November 22, 2024 03:17:35 PM Waiting for 1st file
+Friday November 22, 2024 03:17:37 PM Waiting for 1st file
+Friday November 22, 2024 03:17:39 PM Waiting for 1st file
+Friday November 22, 2024 03:17:39 PM Found 1st file, moving to next step
+Friday November 22, 2024 03:17:39 PM More videos than stacks, will try to sharpen
+Friday November 22, 2024 03:17:39 PM Starting AstraImage.exe
+Friday November 22, 2024 03:17:40 PM Found stacked file for AI Preview
+Friday November 22, 2024 03:17:54 PM More videos than stacks, will try to sharpen
+Friday November 22, 2024 03:17:54 PM Starting AstraImage.exe
+Friday November 22, 2024 03:17:55 PM Found stacked file for AI Preview
+Friday November 22, 2024 03:18:08 PM More videos than stacks, will try to sharpen
+Friday November 22, 2024 03:18:08 PM Starting AstraImage.exe
+Friday November 22, 2024 03:18:09 PM Found stacked file for AI Preview
+Friday November 22, 2024 03:18:49 PM More videos than stacks, will try to sharpen
+Friday November 22, 2024 03:18:49 PM Starting AstraImage.exe
+Friday November 22, 2024 03:18:50 PM Found stacked file for AI Preview
+Friday November 22, 2024 03:19:04 PM More videos than stacks, will try to sharpen
+Friday November 22, 2024 03:19:04 PM Starting AstraImage.exe
+Friday November 22, 2024 03:19:05 PM Found stacked file for AI Preview
+Friday November 22, 2024 03:19:19 PM More videos than stacks, will try to sharpen
+Friday November 22, 2024 03:19:19 PM Starting AstraImage.exe
+Friday November 22, 2024 03:19:19 PM Found stacked file for AI Preview
+Friday November 22, 2024 03:19:34 PM More videos than stacks, will try to sharpen
+Friday November 22, 2024 03:19:34 PM Starting AstraImage.exe
+Friday November 22, 2024 03:19:35 PM Found stacked file for AI Preview
+Friday November 22, 2024 03:45:29 PM More videos than stacks, will try to sharpen
+Friday November 22, 2024 03:45:29 PM Starting AstraImage.exe
+Friday November 22, 2024 03:45:29 PM Found stacked file for AI Preview
+Friday November 22, 2024 03:45:43 PM More videos than stacks, will try to sharpen
+Friday November 22, 2024 03:45:43 PM Starting AstraImage.exe
+Friday November 22, 2024 03:45:44 PM Found stacked file for AI Preview
+Friday November 22, 2024 03:46:06 PM More videos than stacks, will try to sharpen
+Friday November 22, 2024 03:46:06 PM Starting AstraImage.exe
+Friday November 22, 2024 03:46:06 PM Found stacked file for AI Preview
+Friday November 22, 2024 03:46:12 PM More videos than stacks, will try to sharpen
+Friday November 22, 2024 03:46:12 PM Starting AstraImage.exe
+Friday November 22, 2024 03:46:12 PM Found stacked file for AI Preview
+Friday November 22, 2024 03:46:48 PM Recovered from error.
+Friday November 22, 2024 03:46:48 PM Finished AS4 Stacking watcher.
+Friday November 22, 2024 03:46:48 PM COMPLETED AS4 processing.
+
+
+Friday November 22, 2024 03:53:50 PM Starting AS4 Stacking Setup.
+Friday November 22, 2024 03:54:34 PM G:\A-Inbox\Saturn\20241023\*.avi: Input File count is: 12
+Friday November 22, 2024 03:54:34 PM Starting AS4 setup.
+Friday November 22, 2024 03:55:34 PM AS4 Stacking started.
+Friday November 22, 2024 03:56:53 PM Starting AS4 Stacking watcher.
+
+
+Friday November 22, 2024 03:57:08 PM Starting AS4 Stacking Setup.
+Friday November 22, 2024 03:57:15 PM G:\A-Inbox\Saturn\20241023\*.avi: Input File count is: 12
+Friday November 22, 2024 03:57:15 PM Starting AS4 setup.
+Friday November 22, 2024 03:58:14 PM AS4 Stacking started.
+Friday November 22, 2024 03:58:15 PM Starting AS4 Stacking watcher.
+Friday November 22, 2024 03:58:16 PM Stacking should be started.  Found 0 stacked Files in G:\A-Inbox\Saturn\20241023\\AS_P50\*.tif
+Friday November 22, 2024 03:58:16 PM Found 12 Video Files in G:\A-Inbox\Saturn\20241023\\*.avi
+Friday November 22, 2024 03:58:16 PM Starting AstraImage Script.  Using Blur=1.15 and Iter=8 AstraImage settings
+Friday November 22, 2024 03:58:16 PM Waiting for 1st file
+Friday November 22, 2024 03:58:18 PM Waiting for 1st file
+Friday November 22, 2024 03:58:20 PM Waiting for 1st file
+Friday November 22, 2024 03:58:22 PM Waiting for 1st file
+Friday November 22, 2024 03:58:24 PM Waiting for 1st file
+Friday November 22, 2024 03:58:26 PM Waiting for 1st file
+Friday November 22, 2024 03:58:28 PM Waiting for 1st file
+Friday November 22, 2024 03:58:30 PM Waiting for 1st file
+Friday November 22, 2024 03:58:32 PM Waiting for 1st file
+Friday November 22, 2024 03:58:32 PM Found 1st file, moving to next step
+Friday November 22, 2024 03:58:32 PM More videos than stacks, will try to sharpen
+Friday November 22, 2024 03:58:32 PM Starting AstraImage.exe
+Friday November 22, 2024 03:58:33 PM Found stacked file for AI Preview 
+ Stacked files= 2 and Video Files= 12
+Friday November 22, 2024 03:58:33 PM Found stacked file for AI Preview
+Friday November 22, 2024 03:58:47 PM More videos than stacks, will try to sharpen
+Friday November 22, 2024 03:58:47 PM Starting AstraImage.exe
+Friday November 22, 2024 03:58:48 PM Found stacked file for AI Preview 
+ Stacked files= 2 and Video Files= 12
+Friday November 22, 2024 03:58:48 PM Found stacked file for AI Preview
+Friday November 22, 2024 03:59:02 PM More videos than stacks, will try to sharpen
+Friday November 22, 2024 03:59:02 PM Starting AstraImage.exe
+Friday November 22, 2024 03:59:02 PM Found stacked file for AI Preview 
+ Stacked files= 4 and Video Files= 12
+Friday November 22, 2024 03:59:02 PM Found stacked file for AI Preview
+Friday November 22, 2024 03:59:16 PM More videos than stacks, will try to sharpen
+Friday November 22, 2024 03:59:16 PM Starting AstraImage.exe
+Friday November 22, 2024 03:59:17 PM Found stacked file for AI Preview 
+ Stacked files= 6 and Video Files= 12
+Friday November 22, 2024 03:59:17 PM Found stacked file for AI Preview
+Friday November 22, 2024 03:59:46 PM More videos than stacks, will try to sharpen
+Friday November 22, 2024 03:59:46 PM Starting AstraImage.exe
+Friday November 22, 2024 03:59:46 PM Found stacked file for AI Preview 
+ Stacked files= 10 and Video Files= 12
+Friday November 22, 2024 03:59:46 PM Found stacked file for AI Preview
+Friday November 22, 2024 04:00:00 PM More videos than stacks, will try to sharpen
+Friday November 22, 2024 04:00:00 PM Starting AstraImage.exe
+Friday November 22, 2024 04:00:01 PM Found stacked file for AI Preview 
+ Stacked files= 10 and Video Files= 12
+Friday November 22, 2024 04:00:01 PM Found stacked file for AI Preview
+Friday November 22, 2024 04:00:17 PM More videos than stacks, will try to sharpen
+Friday November 22, 2024 04:00:17 PM Starting AstraImage.exe
+Friday November 22, 2024 04:00:18 PM Found stacked file for AI Preview 
+ Stacked files= 12 and Video Files= 12
+Friday November 22, 2024 04:00:18 PM Found stacked file for AI Preview
+Friday November 22, 2024 04:00:32 PM More videos than stacks, will try to sharpen
+Friday November 22, 2024 04:00:32 PM Starting AstraImage.exe
+Friday November 22, 2024 04:00:33 PM Found stacked file for AI Preview 
+ Stacked files= 14 and Video Files= 12
+Friday November 22, 2024 04:00:33 PM Found stacked file for AI Preview
+Friday November 22, 2024 04:01:32 PM Recovered from error.
+Friday November 22, 2024 04:01:32 PM Finished AS4 Stacking watcher.
+Friday November 22, 2024 04:01:32 PM COMPLETED AS4 processing.
+
+
+Friday November 22, 2024 04:01:39 PM Starting 17-FCFileMove1, Video Archive process.
+
+
+Friday November 22, 2024 04:25:14 PM Starting AS4 Stacking Setup.
+Friday November 22, 2024 04:25:37 PM G:\A-Inbox\Saturn\20241023\*.avi: Input File count is: 12
+Friday November 22, 2024 04:25:37 PM Starting AS4 setup.
+Friday November 22, 2024 04:26:37 PM AS4 Stacking started.
+Friday November 22, 2024 04:26:38 PM Starting AS4 Stacking watcher.
+Friday November 22, 2024 04:26:38 PM Stacking should be started.  Found 0 stacked Files in G:\A-Inbox\Saturn\20241023\\AS_P50\*.tif
+Friday November 22, 2024 04:26:38 PM Found 12 Video Files in G:\A-Inbox\Saturn\20241023\\*.avi
+Friday November 22, 2024 04:26:38 PM Starting AstraImage Script.  Using Blur=1.15 and Iter=8 AstraImage settings
+Friday November 22, 2024 04:26:38 PM Waiting for 1st file
+Friday November 22, 2024 04:26:40 PM Waiting for 1st file
+Friday November 22, 2024 04:26:42 PM Waiting for 1st file
+Friday November 22, 2024 04:26:44 PM Waiting for 1st file
+Friday November 22, 2024 04:26:46 PM Waiting for 1st file
+Friday November 22, 2024 04:26:48 PM Waiting for 1st file
+Friday November 22, 2024 04:26:50 PM Waiting for 1st file
+Friday November 22, 2024 04:26:52 PM Waiting for 1st file
+Friday November 22, 2024 04:26:54 PM Waiting for 1st file
+Friday November 22, 2024 04:26:55 PM Found 1st file, moving to next step
+Friday November 22, 2024 04:28:44 PM Starting AS4 Stacking watcher.
+
+
+Friday November 22, 2024 04:29:44 PM Starting AS4 Stacking Setup.
+Friday November 22, 2024 04:29:55 PM G:\A-Inbox\Saturn\20241023\*.avi: Input File count is: 12
+Friday November 22, 2024 04:29:55 PM Starting AS4 setup.
+Friday November 22, 2024 04:30:54 PM AS4 Stacking started.
+Friday November 22, 2024 04:30:56 PM Starting AS4 Stacking watcher.
+Friday November 22, 2024 04:30:56 PM Stacking should be started.  Found 0 stacked Files in G:\A-Inbox\Saturn\20241023\\AS_P50\*.tif
+Friday November 22, 2024 04:30:56 PM Found 12 Video Files in G:\A-Inbox\Saturn\20241023\\*.avi
+Friday November 22, 2024 04:30:56 PM Starting AstraImage Script.  Using Blur=1.15 and Iter=8 AstraImage settings
+Friday November 22, 2024 04:30:56 PM Waiting for 1st file
+Friday November 22, 2024 04:30:58 PM Waiting for 1st file
+Friday November 22, 2024 04:31:00 PM Waiting for 1st file
+Friday November 22, 2024 04:31:02 PM Waiting for 1st file
+Friday November 22, 2024 04:31:04 PM Waiting for 1st file
+Friday November 22, 2024 04:31:06 PM Waiting for 1st file
+Friday November 22, 2024 04:31:08 PM Waiting for 1st file
+Friday November 22, 2024 04:31:10 PM Waiting for 1st file
+Friday November 22, 2024 04:31:12 PM Waiting for 1st file
+Friday November 22, 2024 04:31:12 PM Found 1st file, moving to next step
+Friday November 22, 2024 04:31:13 PM Found stacked file for AI Preview 
+ Stacked files= 1 and Video Files= 12
+Friday November 22, 2024 04:32:05 PM Found stacked file for AI Preview 
+ Stacked files= 3 and Video Files= 12
+
+
+Friday November 22, 2024 04:34:47 PM Starting AS4 Stacking Setup.
+Friday November 22, 2024 04:34:58 PM G:\A-Inbox\Saturn\20241023\*.avi: Input File count is: 12
+Friday November 22, 2024 04:34:58 PM Starting AS4 setup.
+Friday November 22, 2024 04:35:57 PM AS4 Stacking started.
+Friday November 22, 2024 04:35:58 PM Starting AS4 Stacking watcher.
+Friday November 22, 2024 04:35:59 PM Stacking should be started.  Found 0 stacked Files in G:\A-Inbox\Saturn\20241023\\AS_P50\*.tif
+Friday November 22, 2024 04:35:59 PM Found 12 Video Files in G:\A-Inbox\Saturn\20241023\\*.avi
+Friday November 22, 2024 04:35:59 PM Starting AstraImage Script.  Using Blur=1.15 and Iter=8 AstraImage settings
+Friday November 22, 2024 04:35:59 PM Waiting for 1st file
+Friday November 22, 2024 04:36:01 PM Waiting for 1st file
+Friday November 22, 2024 04:36:03 PM Waiting for 1st file
+Friday November 22, 2024 04:36:05 PM Waiting for 1st file
+Friday November 22, 2024 04:36:07 PM Waiting for 1st file
+Friday November 22, 2024 04:36:09 PM Waiting for 1st file
+Friday November 22, 2024 04:36:11 PM Waiting for 1st file
+Friday November 22, 2024 04:36:13 PM Waiting for 1st file
+Friday November 22, 2024 04:36:15 PM Waiting for 1st file
+Friday November 22, 2024 04:36:17 PM Waiting for 1st file
+Friday November 22, 2024 04:36:19 PM Waiting for 1st file
+Friday November 22, 2024 04:36:19 PM Found 1st file, moving to next step
+Friday November 22, 2024 04:36:20 PM Found stacked file for AI Preview 
+ Stacked files= 1 and Video Files= 12
+Friday November 22, 2024 04:36:33 PM Found stacked file for AI Preview 
+ Stacked files= 1 and Video Files= 12
+Friday November 22, 2024 05:34:49 PM Found stacked file for AI Preview 
+ Stacked files= 13 and Video Files= 12
+
+
+Sunday November 24, 2024 10:05:32 AM Starting AS4 Stacking Setup.
+Sunday November 24, 2024 10:07:26 AM G:\A-Inbox\Saturn\20241023\*.avi: Input File count is: 12
+Sunday November 24, 2024 10:07:26 AM Starting AS4 setup.
+Sunday November 24, 2024 10:08:26 AM AS4 Stacking started.
+Sunday November 24, 2024 10:08:27 AM Starting AS4 Stacking watcher.
+Sunday November 24, 2024 10:08:27 AM Stacking should be started.  Found 0 stacked Files in G:\A-Inbox\Saturn\20241023\\AS_P50\*.tif
+Sunday November 24, 2024 10:08:27 AM Found 12 Video Files in G:\A-Inbox\Saturn\20241023\\*.avi
+Sunday November 24, 2024 10:08:27 AM Starting AstraImage Script.  Using Blur=1.15 and Iter=8 AstraImage settings
+Sunday November 24, 2024 10:08:27 AM Waiting for 1st file
+Sunday November 24, 2024 10:08:29 AM Waiting for 1st file
+Sunday November 24, 2024 10:08:31 AM Waiting for 1st file
+Sunday November 24, 2024 10:08:33 AM Waiting for 1st file
+Sunday November 24, 2024 10:08:35 AM Waiting for 1st file
+Sunday November 24, 2024 10:08:37 AM Waiting for 1st file
+Sunday November 24, 2024 10:08:39 AM Waiting for 1st file
+Sunday November 24, 2024 10:08:41 AM Waiting for 1st file
+Sunday November 24, 2024 10:08:43 AM Waiting for 1st file
+Sunday November 24, 2024 10:08:45 AM Waiting for 1st file
+Sunday November 24, 2024 10:08:47 AM Waiting for 1st file
+Sunday November 24, 2024 10:08:47 AM Found 1st file, moving to next step
+Sunday November 24, 2024 10:08:48 AM Found stacked file for AI Preview 
+ Stacked files= 1 and Video Files= 12
+
+
+Sunday November 24, 2024 10:10:12 AM Starting AS4 Stacking Setup.
+Sunday November 24, 2024 10:10:30 AM G:\A-Inbox\Saturn\20241023\*.avi: Input File count is: 12
+Sunday November 24, 2024 10:10:30 AM Starting AS4 setup.
+Sunday November 24, 2024 10:11:30 AM AS4 Stacking started.
+Sunday November 24, 2024 10:11:34 AM Starting AS4 Stacking watcher.
+Sunday November 24, 2024 10:11:35 AM Stacking should be started.  Found 0 stacked Files in G:\A-Inbox\Saturn\20241023\\AS_P50\*.tif
+Sunday November 24, 2024 10:11:35 AM Found 12 Video Files in G:\A-Inbox\Saturn\20241023\\*.avi
+Sunday November 24, 2024 10:11:35 AM Starting AstraImage Script.  Using Blur=1.15 and Iter=8 AstraImage settings
+Sunday November 24, 2024 10:11:35 AM Waiting for 1st file
+Sunday November 24, 2024 10:11:37 AM Waiting for 1st file
+Sunday November 24, 2024 10:11:39 AM Waiting for 1st file
+Sunday November 24, 2024 10:11:41 AM Waiting for 1st file
+Sunday November 24, 2024 10:11:43 AM Waiting for 1st file
+Sunday November 24, 2024 10:11:45 AM Waiting for 1st file
+Sunday November 24, 2024 10:11:47 AM Waiting for 1st file
+Sunday November 24, 2024 10:11:49 AM Waiting for 1st file
+Sunday November 24, 2024 10:11:49 AM Found 1st file, moving to next step
+Sunday November 24, 2024 10:11:50 AM Found stacked file for AI Preview 
+ Stacked files= 1 and Video Files= 12
+Sunday November 24, 2024 10:12:16 AM Found stacked file for AI Preview 
+ Stacked files= 2 and Video Files= 12
+Sunday November 24, 2024 10:12:43 AM Found stacked file for AI Preview 
+ Stacked files= 3 and Video Files= 12
+Sunday November 24, 2024 10:13:09 AM Found stacked file for AI Preview 
+ Stacked files= 5 and Video Files= 12
+Sunday November 24, 2024 10:13:36 AM Found stacked file for AI Preview 
+ Stacked files= 6 and Video Files= 12
+Sunday November 24, 2024 10:14:02 AM Found stacked file for AI Preview 
+ Stacked files= 7 and Video Files= 12
+Sunday November 24, 2024 10:14:29 AM Found stacked file for AI Preview 
+ Stacked files= 9 and Video Files= 12
+Sunday November 24, 2024 10:14:56 AM Found stacked file for AI Preview 
+ Stacked files= 10 and Video Files= 12
+Sunday November 24, 2024 10:15:23 AM Found stacked file for AI Preview 
+ Stacked files= 11 and Video Files= 12
+Sunday November 24, 2024 10:15:49 AM Found stacked file for AI Preview 
+ Stacked files= 12 and Video Files= 12
+Sunday November 24, 2024 10:16:20 AM Found stacked file for AI Preview 
+ Stacked files= 12 and Video Files= 12
+
+
+Sunday November 24, 2024 10:17:07 AM Starting AS4 Stacking Setup.
+Sunday November 24, 2024 10:17:24 AM G:\A-Inbox\Saturn\20241023\*.avi: Input File count is: 12
+Sunday November 24, 2024 10:17:24 AM Starting AS4 setup.
+Sunday November 24, 2024 10:18:24 AM AS4 Stacking started.
+Sunday November 24, 2024 10:18:25 AM Starting AS4 Stacking watcher.
+Sunday November 24, 2024 10:18:25 AM Stacking should be started.  Found 0 stacked Files in G:\A-Inbox\Saturn\20241023\\AS_P50\*.tif
+Sunday November 24, 2024 10:18:25 AM Found 12 Video Files in G:\A-Inbox\Saturn\20241023\\*.avi
+Sunday November 24, 2024 10:18:25 AM Starting AstraImage Script.  Using Blur=1.15 and Iter=8 AstraImage settings
+Sunday November 24, 2024 10:18:25 AM Waiting for 1st file
+Sunday November 24, 2024 10:18:27 AM Waiting for 1st file
+Sunday November 24, 2024 10:18:29 AM Waiting for 1st file
+Sunday November 24, 2024 10:18:31 AM Waiting for 1st file
+Sunday November 24, 2024 10:18:33 AM Waiting for 1st file
+Sunday November 24, 2024 10:18:35 AM Waiting for 1st file
+Sunday November 24, 2024 10:18:37 AM Waiting for 1st file
+Sunday November 24, 2024 10:18:39 AM Waiting for 1st file
+Sunday November 24, 2024 10:18:41 AM Waiting for 1st file
+Sunday November 24, 2024 10:18:43 AM Waiting for 1st file
+Sunday November 24, 2024 10:18:43 AM Found 1st file, moving to next step
+Sunday November 24, 2024 10:18:44 AM Found stacked file for AI Preview 
+ Stacked files= 1 and Video Files= 12
+Sunday November 24, 2024 10:19:11 AM Found stacked file for AI Preview 
+ Stacked files= 2 and Video Files= 12
+
+
+Sunday November 24, 2024 10:24:51 AM Starting AS4 Stacking Setup.
+Sunday November 24, 2024 10:25:08 AM G:\A-Inbox\Saturn\20241023\*.avi: Input File count is: 12
+Sunday November 24, 2024 10:25:08 AM Starting AS4 setup.
+Sunday November 24, 2024 10:26:07 AM AS4 Stacking started.
+Sunday November 24, 2024 10:26:08 AM Starting AS4 Stacking watcher.
+Sunday November 24, 2024 10:26:08 AM Stacking should be started.  Found 0 stacked Files in G:\A-Inbox\Saturn\20241023\\AS_P50\*.tif
+Sunday November 24, 2024 10:26:08 AM Found 12 Video Files in G:\A-Inbox\Saturn\20241023\\*.avi
+Sunday November 24, 2024 10:26:08 AM Starting AstraImage Script.  Using Blur=1.15 and Iter=8 AstraImage settings
+Sunday November 24, 2024 10:26:08 AM Waiting for 1st file
+Sunday November 24, 2024 10:26:10 AM Waiting for 1st file
+Sunday November 24, 2024 10:26:12 AM Waiting for 1st file
+Sunday November 24, 2024 10:26:14 AM Waiting for 1st file
+Sunday November 24, 2024 10:26:16 AM Waiting for 1st file
+Sunday November 24, 2024 10:26:18 AM Waiting for 1st file
+Sunday November 24, 2024 10:26:20 AM Waiting for 1st file
+Sunday November 24, 2024 10:26:22 AM Waiting for 1st file
+Sunday November 24, 2024 10:26:24 AM Waiting for 1st file
+Sunday November 24, 2024 10:26:26 AM Waiting for 1st file
+Sunday November 24, 2024 10:26:28 AM Waiting for 1st file
+Sunday November 24, 2024 10:26:30 AM Waiting for 1st file
+Sunday November 24, 2024 10:26:32 AM Waiting for 1st file
+Sunday November 24, 2024 10:26:34 AM Waiting for 1st file
+Sunday November 24, 2024 10:26:34 AM Found 1st file, moving to next step
+Sunday November 24, 2024 10:26:35 AM Found stacked file for AI Preview 
+ Stacked files= 1 and Video Files= 12
+Sunday November 24, 2024 10:27:01 AM Found stacked file for AI Preview 
+ Stacked files= 2 and Video Files= 12
+Sunday November 24, 2024 10:29:58 AM Found stacked file for AI Preview 
+ Stacked files= 8 and Video Files= 12
+Sunday November 24, 2024 10:30:25 AM Found stacked file for AI Preview 
+ Stacked files= 9 and Video Files= 12
+Sunday November 24, 2024 10:31:11 AM Found stacked file for AI Preview 
+ Stacked files= 11 and Video Files= 12
+Sunday November 24, 2024 10:31:37 AM Found stacked file for AI Preview 
+ Stacked files= 12 and Video Files= 12
+Sunday November 24, 2024 10:32:49 AM Recovered from error.
+Sunday November 24, 2024 10:32:49 AM Finished AS4 Stacking watcher.
+Sunday November 24, 2024 10:32:49 AM COMPLETED AS4 processing.
+
+
+Sunday November 24, 2024 10:32:56 AM Starting 17-FCFileMove1, Video Archive process.
+Sunday November 24, 2024 10:33:01 AM Archived Folder is: F:\E-Delete\FC-Expiring--20250523\Saturn\20241023 named F:
+Sunday November 24, 2024 10:33:01 AM Found 12 stacked Files in G:\A-Inbox\Saturn\20241023\AS_P50\*.tif
+Sunday November 24, 2024 10:33:04 AM Found 12 Video Files in G:\A-Inbox\Saturn\20241023\*.avi
+Sunday November 24, 2024 10:33:04 AM Found same or more stacked files vs FC Video
+Sunday November 24, 2024 10:33:04 AM Starting file transfers
+Sunday November 24, 2024 10:34:52 AM Completed File Moving Process
+Sunday November 24, 2024 10:34:52 AM Blur=1.15 and Iter=8are your AstraImage settings
+Sunday November 24, 2024 10:34:52 AM Found 0 AI sharp files in G:\A-Inbox\Saturn\20241023\AS_P50\LrD-1.15-8\*.tif
+Sunday November 24, 2024 10:34:52 AM Found 12 stacked Files in G:\A-Inbox\Saturn\20241023\\AS_P50\*.tif
+Sunday November 24, 2024 10:34:52 AM Found LESS Sharp vs stacked files, rerunning AI scripts.
+
+
+Sunday November 24, 2024 10:34:52 AM Starting AstraImage Setup.
+
+
+Sunday November 24, 2024 10:34:52 AM Starting AstraImage Script.
+Sunday November 24, 2024 10:34:53 AM Starting AstraImage.exe
+Sunday November 24, 2024 10:34:53 AM Switching to app to start workflow.
+Sunday November 24, 2024 10:34:54 AM Opened Simple Deconvolution.
+Sunday November 24, 2024 10:34:54 AM Clicked add files.
+Sunday November 24, 2024 10:35:10 AM Pasting G:\A-Inbox\Saturn\20241023\AS_P50
+Sunday November 24, 2024 10:35:13 AM Selecting ALL.
+Sunday November 24, 2024 10:35:13 AM Pressing OPEN.
+Sunday November 24, 2024 10:35:14 AM Opening OUTPUT Path dialog.
+Sunday November 24, 2024 10:35:15 AM Pasting G:\A-Inbox\Saturn\20241023\AS_P50\LrD-1.15-8.
+Sunday November 24, 2024 10:35:16 AM Pressing Select Folder.
+Sunday November 24, 2024 10:35:17 AM Clicking Blur field.
+Sunday November 24, 2024 10:35:20 AM Clicking Iter field.
+Sunday November 24, 2024 10:35:23 AM Pressing Start.
+Sunday November 24, 2024 10:35:23 AM Finished AstraImage Setup.
+
+
+Sunday November 24, 2024 10:35:23 AM Starting AstraImage WATCHER
+Sunday November 24, 2024 10:35:44 AM ENDED AstraImage WATCHER
+
+
+Sunday November 24, 2024 10:35:44 AM Starting WSL RGB Assembly.
+Sunday November 24, 2024 10:35:44 AM Input Path is: G:\A-Inbox\Saturn\20241023\AS_P50\LrD-1.15-8.
+Sunday November 24, 2024 10:35:44 AM Found path extraction as: G: | A-Inbox | Saturn | 20241023 | AS_P50 | LrD-1.15-8 | .
+Sunday November 24, 2024 10:35:44 AM Archived Folder is: F:\E-Delete\FC-Expiring--20250523\Saturn\20241023 named F:
+Sunday November 24, 2024 10:35:44 AM DeCon settings are for Saturn are: Blur= 1.15 and Iter= 8
+Sunday November 24, 2024 10:35:44 AM Starting Imagemagik processing.
+Sunday November 24, 2024 10:35:44 AM CMD= wsl -e "/mnt/c/Users/maphilli14-work2/Documents/GitHub/FullPlanetAutomatedProcessing/RBG-doubleunder-Imagemagik.py" G:\A-Inbox\Saturn\20241023\AS_P50\LrD-1.15-8
+ERROR:__main__: Sunday November 24, 2024 10:35:48 AM Starting RGB Assembly
+INFO:__main__: Sunday November 24, 2024 10:35:48 AM G:\A-Inbox\Saturn\20241023\AS_P50\LrD-1.15-8
+INFO:__main__:
+
+Sunday November 24, 2024 10:35:48 AM Making an animation out of the RGB channel.
+INFO:__main__:
+
+Sunday November 24, 2024 10:35:48 AM Making an animation out of the RGB+labels channel.
+INFO:__main__:
+
+Sunday November 24, 2024 10:35:48 AM Making an animation out of the RGB+labels-bests channel.
+INFO:__main__:
+Sunday November 24, 2024 10:35:52 AM cmd.exe /c "G:\A-Inbox\Saturn\20241023\AS_P50\LrD-1.15-8\Anims\RGB+labels-bestsfastanimrock.gif" /s
+INFO:__main__:
+Sunday November 24, 2024 10:35:52 AM G:\A-Inbox\Saturn\20241023\AS_P50\LrD-1.15-8\\Anims\\RGB+labels-bestsfastanimrock.gif
+INFO:__main__:
+Sunday November 24, 2024 10:35:52 AM FILE
+INFO:__main__:
+
+Sunday November 24, 2024 10:35:52 AM RGB Animation READY
+Sunday November 24, 2024 10:35:52 AM Blind launch of script should be complete.
+Sunday November 24, 2024 10:35:52 AM explorer G:\A-Inbox\Saturn\20241023\AS_P50\LrD-1.15-8\Anims\20241023-RGB+labels-bestsfastanimrock.gif
+Sunday November 24, 2024 10:35:52 AMStarting copies to LocalDST2 and LocalDST3
+Sunday November 24, 2024 10:35:52 AMCould not move G:\A-Inbox\Saturn\20241023\AS_P50\LrD-1.15-8\Anims\RGB+labels-bestsfastanimrock.gif into C:\Users\maphilli14-work2\OneDrive\B-Sorted\Astronomy\30-Sharped+RGB\Saturn\20241023\Animsbecause: Failed
+Sunday November 24, 2024 10:36:14 AM Starting file copies to LocalDST
+Sunday November 24, 2024 10:36:17 AM Completed File COPY Process
+Sunday November 24, 2024 10:36:17 AM Src= G:\A-Inbox\Saturn\20241023\  Dst= C:\Personal\B-Sorted\Astronomy\30-Sharped+RGB\Saturn\20241023
+Sunday November 24, 2024 10:36:17 AM Starting file transfers
+Sunday November 24, 2024 10:36:24 AM Completed File Moving Process
+Sunday November 24, 2024 10:36:24 AM Src= G:\A-Inbox\Saturn\20241023\  Dst= F:\E-Delete\FC-Expiring--20250523\Saturn\20241023
+
+
+Sunday November 24, 2024 12:26:18 PM Starting AS4 Stacking Setup.
+Sunday November 24, 2024 12:36:07 PM G:\A-Inbox\Saturn\20241023\*.avi: Input File count is: 17
+Sunday November 24, 2024 12:36:07 PM Starting AS4 setup.
+Sunday November 24, 2024 12:37:07 PM AS4 Stacking started.
+Sunday November 24, 2024 12:37:08 PM Starting AS4 Stacking watcher.
+Sunday November 24, 2024 12:37:08 PM Stacking should be started.  Found 0 stacked Files in G:\A-Inbox\Saturn\20241023\\AS_P50\*.tif
+Sunday November 24, 2024 12:37:08 PM Found 17 Video Files in G:\A-Inbox\Saturn\20241023\\*.avi
+Sunday November 24, 2024 12:37:08 PM Starting AstraImage Script.  Using Blur=1.15 and Iter=8 AstraImage settings
+Sunday November 24, 2024 12:37:08 PM Waiting for 1st file
+Sunday November 24, 2024 12:37:10 PM Waiting for 1st file
+Sunday November 24, 2024 12:37:12 PM Waiting for 1st file
+Sunday November 24, 2024 12:37:14 PM Waiting for 1st file
+Sunday November 24, 2024 12:37:16 PM Waiting for 1st file
+Sunday November 24, 2024 12:37:18 PM Waiting for 1st file
+Sunday November 24, 2024 12:37:20 PM Waiting for 1st file
+Sunday November 24, 2024 12:37:22 PM Waiting for 1st file
+Sunday November 24, 2024 12:37:24 PM Waiting for 1st file
+Sunday November 24, 2024 12:37:26 PM Waiting for 1st file
+Sunday November 24, 2024 12:37:26 PM Found 1st file, moving to next step
+Sunday November 24, 2024 12:37:27 PM Found stacked file for AI Preview 
+ Stacked files= 1 and Video Files= 17
+Sunday November 24, 2024 12:37:53 PM Found stacked file for AI Preview 
+ Stacked files= 2 and Video Files= 17
+
+
+Sunday November 24, 2024 12:39:40 PM Starting AS4 Stacking Setup.
+
+
+Sunday November 24, 2024 12:40:06 PM Starting AS4 Stacking Setup.
+Sunday November 24, 2024 12:40:23 PM G:\A-Inbox\Saturn\20241023\*.avi: Input File count is: 17
+Sunday November 24, 2024 12:40:23 PM Starting AS4 setup.
+Sunday November 24, 2024 12:41:23 PM AS4 Stacking started.
+Sunday November 24, 2024 12:41:24 PM Starting AS4 Stacking watcher.
+Sunday November 24, 2024 12:41:25 PM Stacking should be started.  Found 0 stacked Files in G:\A-Inbox\Saturn\20241023\\AS_P50\*.tif
+Sunday November 24, 2024 12:41:25 PM Found 17 Video Files in G:\A-Inbox\Saturn\20241023\\*.avi
+Sunday November 24, 2024 12:41:25 PM Starting AstraImage Script.  Using Blur=1.15 and Iter=8 AstraImage settings
+Sunday November 24, 2024 12:41:25 PM Waiting for 1st file
+Sunday November 24, 2024 12:41:27 PM Waiting for 1st file
+Sunday November 24, 2024 12:41:29 PM Waiting for 1st file
+Sunday November 24, 2024 12:41:31 PM Waiting for 1st file
+Sunday November 24, 2024 12:41:33 PM Waiting for 1st file
+Sunday November 24, 2024 12:41:35 PM Waiting for 1st file
+Sunday November 24, 2024 12:41:37 PM Waiting for 1st file
+Sunday November 24, 2024 12:41:39 PM Waiting for 1st file
+Sunday November 24, 2024 12:41:41 PM Waiting for 1st file
+Sunday November 24, 2024 12:41:41 PM Found 1st file, moving to next step
+Sunday November 24, 2024 12:41:42 PM Found stacked file for AI Preview 
+ Stacked files= 1 and Video Files= 17
+
+
+Sunday November 24, 2024 12:49:39 PM Starting AS4 Stacking Setup.
+Sunday November 24, 2024 12:49:49 PM G:\A-Inbox\Saturn\20241023\*.avi: Input File count is: 17
+Sunday November 24, 2024 12:49:49 PM Starting AS4 setup.
+Sunday November 24, 2024 12:50:54 PM AS4 Stacking started.
+Sunday November 24, 2024 12:51:52 PM Starting AS4 Stacking watcher.
+Sunday November 24, 2024 12:51:52 PM Stacking should be started.  Found 3 stacked Files in G:\A-Inbox\Saturn\20241023\\AS_P50\*.tif
+Sunday November 24, 2024 12:51:52 PM Found 17 Video Files in G:\A-Inbox\Saturn\20241023\\*.avi
+Sunday November 24, 2024 12:51:52 PM Starting AstraImage Script.  Using Blur=1.15 and Iter=8 AstraImage settings
+Sunday November 24, 2024 12:51:53 PM Found stacked file for AI Preview 
+ Stacked files= 3 and Video Files= 17
+Sunday November 24, 2024 12:52:17 PM Found stacked file for AI Preview 
+ Stacked files= 4 and Video Files= 17
+Sunday November 24, 2024 12:52:41 PM Found stacked file for AI Preview 
+ Stacked files= 5 and Video Files= 17
+Sunday November 24, 2024 12:53:06 PM Found stacked file for AI Preview 
+ Stacked files= 7 and Video Files= 17
+Sunday November 24, 2024 12:53:30 PM Found stacked file for AI Preview 
+ Stacked files= 8 and Video Files= 17
+Sunday November 24, 2024 12:53:54 PM Found stacked file for AI Preview 
+ Stacked files= 9 and Video Files= 17
+Sunday November 24, 2024 12:54:21 PM Found stacked file for AI Preview 
+ Stacked files= 10 and Video Files= 17
+Sunday November 24, 2024 12:54:48 PM Found stacked file for AI Preview 
+ Stacked files= 12 and Video Files= 17
+Sunday November 24, 2024 12:55:15 PM Found stacked file for AI Preview 
+ Stacked files= 13 and Video Files= 17
+Sunday November 24, 2024 12:55:39 PM Found stacked file for AI Preview 
+ Stacked files= 14 and Video Files= 17
+Sunday November 24, 2024 12:56:35 PM Found stacked file for AI Preview 
+ Stacked files= 17 and Video Files= 17
+Sunday November 24, 2024 12:57:28 PM Recovered from error.
+Sunday November 24, 2024 12:57:28 PM Finished AS4 Stacking watcher.
+Sunday November 24, 2024 12:57:28 PM COMPLETED AS4 processing.
+
+
+Sunday November 24, 2024 12:57:35 PM Starting 17-FCFileMove1, Video Archive process.
+Sunday November 24, 2024 12:57:40 PM Archived Folder is: F:\E-Delete\FC-Expiring--20250523\Saturn\20241023 named F:
+Sunday November 24, 2024 12:57:40 PM Found 17 stacked Files in G:\A-Inbox\Saturn\20241023\AS_P50\*.tif
+
+
+Sunday November 24, 2024 01:01:17 PM Starting AstraImage Setup.
+
+
+Sunday November 24, 2024 01:01:25 PM Starting AstraImage Script.
+Sunday November 24, 2024 01:01:26 PM Starting AstraImage.exe
+Sunday November 24, 2024 01:01:26 PM Switching to app to start workflow.
+Sunday November 24, 2024 01:01:27 PM Opened Simple Deconvolution.
+Sunday November 24, 2024 01:01:28 PM Clicked add files.
+Sunday November 24, 2024 01:01:43 PM Pasting G:\A-Inbox\Saturn\20241023\AS_P50
+Sunday November 24, 2024 01:01:47 PM Selecting ALL.
+Sunday November 24, 2024 01:01:47 PM Pressing OPEN.
+Sunday November 24, 2024 01:01:48 PM Opening OUTPUT Path dialog.
+Sunday November 24, 2024 01:01:48 PM Pasting G:\A-Inbox\Saturn\20241023\AS_P50\LrD-1.15-8.
+Sunday November 24, 2024 01:01:49 PM Pressing Select Folder.
+Sunday November 24, 2024 01:01:50 PM Clicking Blur field.
+Sunday November 24, 2024 01:01:53 PM Clicking Iter field.
+Sunday November 24, 2024 01:01:56 PM Pressing Start.
+Sunday November 24, 2024 01:01:56 PM Finished AstraImage Setup.
+
+
+Sunday November 24, 2024 01:01:57 PM Starting AstraImage WATCHER
+Sunday November 24, 2024 01:02:22 PM ENDED AstraImage WATCHER
+
+
+Sunday November 24, 2024 01:02:22 PM Starting WSL RGB Assembly.
+Sunday November 24, 2024 01:02:22 PM Input Path is: G:\A-Inbox\Saturn\20241023\AS_P50\LrD-1.15-8.
+Sunday November 24, 2024 01:02:22 PM Found path extraction as: G: | A-Inbox | Saturn | 20241023 | AS_P50 | LrD-1.15-8 | .
+Sunday November 24, 2024 01:02:22 PM Archived Folder is: F:\E-Delete\FC-Expiring--20250523\Saturn\20241023 named F:
+Sunday November 24, 2024 01:02:22 PM DeCon settings are for Saturn are: Blur= 1.15 and Iter= 8
+Sunday November 24, 2024 01:02:22 PM Starting Imagemagik processing.
+Sunday November 24, 2024 01:02:22 PM CMD= wsl -e "/mnt/c/Users/maphilli14-work2/Documents/GitHub/FullPlanetAutomatedProcessing/RBG-doubledash-Imagemagik.py" G:\A-Inbox\Saturn\20241023\AS_P50\LrD-1.15-8
+ERROR:__main__: Sunday November 24, 2024 01:02:26 PM Starting RGB Assembly
+INFO:__main__: Sunday November 24, 2024 01:02:26 PM G:\A-Inbox\Saturn\20241023\AS_P50\LrD-1.15-8
+INFO:__main__:Sunday November 24, 2024 01:02:26 PM RBG counter= 1 of 6
+INFO:__main__:Sunday November 24, 2024 01:02:26 PM RBG counter= 2 of 6
+INFO:__main__:Sunday November 24, 2024 01:02:26 PM RBG counter= 3 of 6
+INFO:__main__:Sunday November 24, 2024 01:02:26 PM RBG counter= 4 of 6
+INFO:__main__:Sunday November 24, 2024 01:02:26 PM RBG counter= 5 of 6
+Sunday November 24, 2024 01:02:57 PM Blind launch of script should be complete.
+Sunday November 24, 2024 01:02:57 PM explorer G:\A-Inbox\Saturn\20241023\AS_P50\LrD-1.15-8\Anims\20241023-RGB+labels-bestsfastanimrock.gif
+Sunday November 24, 2024 01:02:57 PMStarting copies to LocalDST2 and LocalDST3
+Sunday November 24, 2024 01:02:57 PMCould not move G:\A-Inbox\Saturn\20241023\AS_P50\LrD-1.15-8\Anims\RGB+labels-bestsfastanimrock.gif into C:\Users\maphilli14-work2\OneDrive\B-Sorted\Astronomy\30-Sharped+RGB\Saturn\20241023\Animsbecause: Failed
+Sunday November 24, 2024 01:03:19 PM Starting file copies to LocalDST
+Sunday November 24, 2024 01:04:19 PM Completed File COPY Process
+Sunday November 24, 2024 01:04:19 PM Src= G:\A-Inbox\Saturn\20241023\  Dst= C:\Personal\B-Sorted\Astronomy\30-Sharped+RGB\Saturn\20241023
+Sunday November 24, 2024 01:04:19 PM Starting file transfers
+Sunday November 24, 2024 01:07:04 PM Completed File Moving Process
+Sunday November 24, 2024 01:07:04 PM Src= G:\A-Inbox\Saturn\20241023\  Dst= F:\E-Delete\FC-Expiring--20250523\Saturn\20241023
+
+
+Sunday November 24, 2024 01:39:58 PM Starting WSL RGB Assembly.
+Sunday November 24, 2024 01:40:05 PM Input Path is: G:\A-Inbox\Saturn\20241023.
+Sunday November 24, 2024 01:40:05 PM Found path extraction as: G: | A-Inbox | Saturn | 20241023 | .
+Sunday November 24, 2024 01:40:05 PM Archived Folder is: F:\E-Delete\FC-Expiring--20250523\Saturn\20241023 named F:
+Sunday November 24, 2024 01:40:05 PM DeCon settings are for Saturn are: Blur= 1.15 and Iter= 8
+Sunday November 24, 2024 01:40:05 PM Starting Imagemagik processing.
+Sunday November 24, 2024 01:40:05 PM CMD= wsl -e "/mnt/c/Users/maphilli14-work2/Documents/GitHub/FullPlanetAutomatedProcessing/RBG-doubledash-Imagemagik.py" G:\A-Inbox\Saturn\20241023\AS_P50\LrD-1.15-8
+ERROR:__main__: Sunday November 24, 2024 01:40:09 PM Starting RGB Assembly
+INFO:__main__: Sunday November 24, 2024 01:40:09 PM G:\A-Inbox\Saturn\20241023\AS_P50\LrD-1.15-8
+Sunday November 24, 2024 01:40:10 PM Blind launch of script should be complete.
+Sunday November 24, 2024 01:40:10 PM explorer G:\A-Inbox\Saturn\20241023\AS_P50\LrD-1.15-8\Anims\20241023-RGB+labels-bestsfastanimrock.gif
+Sunday November 24, 2024 01:40:10 PMStarting copies to LocalDST2 and LocalDST3
+Sunday November 24, 2024 01:40:10 PMCould not move G:\A-Inbox\Saturn\20241023\AS_P50\LrD-1.15-8\Anims\RGB+labels-bestsfastanimrock.gif into C:\Users\maphilli14-work2\OneDrive\B-Sorted\Astronomy\30-Sharped+RGB\Saturn\20241023\Animsbecause: Failed
+Sunday November 24, 2024 01:40:32 PM Starting file copies to LocalDST
+Sunday November 24, 2024 01:40:32 PM Completed File COPY Process
+Sunday November 24, 2024 01:40:32 PM Src= G:\A-Inbox\Saturn\20241023  Dst= C:\Personal\B-Sorted\Astronomy\30-Sharped+RGB\Saturn\20241023
+Sunday November 24, 2024 01:40:32 PM Starting file transfers
+Sunday November 24, 2024 01:40:40 PM Completed File Moving Process
+Sunday November 24, 2024 01:40:40 PM Src= G:\A-Inbox\Saturn\20241023  Dst= F:\E-Delete\FC-Expiring--20250523\Saturn\20241023
+Sunday November 24, 2024 01:40:40 PM FAILED to launch C:\Personal\B-Sorted\Astronomy\30-Sharped+RGB\Saturn\20241023\AS_P50\LrD-1.15-8\Anims\RGB+labels-bestsfastanimrock.gif
+
+
+Sunday November 24, 2024 01:54:55 PM Starting WSL RGB Assembly.
+Sunday November 24, 2024 01:55:01 PM Input Path is: G:\A-Inbox\Saturn\20241023.
+Sunday November 24, 2024 01:55:01 PM Found path extraction as: G: | A-Inbox | Saturn | 20241023 | .
+Sunday November 24, 2024 01:55:01 PM Archived Folder is: F:\E-Delete\FC-Expiring--20250523\Saturn\20241023 named F:
+Sunday November 24, 2024 01:55:01 PM DeCon settings are for Saturn are: Blur= 1.15 and Iter= 8
+Sunday November 24, 2024 01:55:01 PM Starting Imagemagik processing.
+Sunday November 24, 2024 01:55:01 PM CMD= wsl -e "/mnt/c/Users/maphilli14-work2/Documents/GitHub/FullPlanetAutomatedProcessing/RBG-doubledash-Imagemagik.py" G:\A-Inbox\Saturn\20241023\AS_P50\LrD-1.15-8
+ERROR:__main__: Sunday November 24, 2024 01:55:05 PM Starting RGB Assembly
+INFO:__main__: Sunday November 24, 2024 01:55:05 PM G:\A-Inbox\Saturn\20241023\AS_P50\LrD-1.15-8
+Sunday November 24, 2024 01:55:06 PM Blind launch of script should be complete.
+Sunday November 24, 2024 01:55:06 PM explorer G:\A-Inbox\Saturn\20241023\AS_P50\LrD-1.15-8\Anims\20241023-RGB+labels-bestsfastanimrock.gif
+Sunday November 24, 2024 01:55:06 PMStarting copies to LocalDST2 and LocalDST3
+Sunday November 24, 2024 01:55:06 PMCould not move G:\A-Inbox\Saturn\20241023\AS_P50\LrD-1.15-8\Anims\RGB+labels-bestsfastanimrock.gif into C:\Users\maphilli14-work2\OneDrive\B-Sorted\Astronomy\30-Sharped+RGB\Saturn\20241023\Animsbecause: Failed
+ERROR:__main__: Sunday November 24, 2024 01:56:23 PM Starting RGB Assembly
+INFO:__main__: Sunday November 24, 2024 01:56:23 PM G:\A-Inbox\Saturn\20241023\AS_P50\LrD-1.15-8
+
+
+Sunday November 24, 2024 02:45:53 PM Starting AstraImage Setup.
+
+
+Sunday November 24, 2024 02:45:55 PM Starting AstraImage Script.
+Sunday November 24, 2024 02:45:55 PM Starting AstraImage.exe
+Sunday November 24, 2024 02:45:56 PM Switching to app to start workflow.
+Sunday November 24, 2024 02:45:57 PM Opened Simple Deconvolution.
+Sunday November 24, 2024 02:45:57 PM Clicked add files.
+Sunday November 24, 2024 02:46:13 PM Pasting G:\A-Inbox\Saturn\20241023\AS_P50
+Sunday November 24, 2024 02:46:16 PM Selecting ALL.
+Sunday November 24, 2024 02:46:16 PM Pressing OPEN.
+Sunday November 24, 2024 02:46:23 PM Opening OUTPUT Path dialog.
+Sunday November 24, 2024 02:46:23 PM Pasting G:\A-Inbox\Saturn\20241023\AS_P50\LrD-1.15-8.
+Sunday November 24, 2024 02:46:24 PM Pressing Select Folder.
+Sunday November 24, 2024 02:46:25 PM Clicking Blur field.
+Sunday November 24, 2024 02:46:28 PM Clicking Iter field.
+Sunday November 24, 2024 02:46:31 PM Pressing Start.
+Sunday November 24, 2024 02:46:31 PM Finished AstraImage Setup.
+
+
+Sunday November 24, 2024 02:46:32 PM Starting AstraImage WATCHER
+Sunday November 24, 2024 02:47:38 PM ENDED AstraImage WATCHER
+
+
+Sunday November 24, 2024 02:47:38 PM Starting WSL RGB Assembly.
+Sunday November 24, 2024 02:47:38 PM Input Path is: G:\A-Inbox\Saturn\20241023\AS_P50\LrD-1.15-8.
+Sunday November 24, 2024 02:47:38 PM Found path extraction as: G: | A-Inbox | Saturn | 20241023 | AS_P50 | LrD-1.15-8 | .
+Sunday November 24, 2024 02:47:38 PM Archived Folder is: F:\E-Delete\FC-Expiring--20250523\Saturn\20241023 named F:
+Sunday November 24, 2024 02:47:38 PM DeCon settings are for Saturn are: Blur= 1.15 and Iter= 8
+Sunday November 24, 2024 02:47:38 PM Starting Imagemagik processing.
+Sunday November 24, 2024 02:47:38 PM CMD= wsl -e "/mnt/c/Users/maphilli14-work2/Documents/GitHub/FullPlanetAutomatedProcessing/RBG-doubledash-Imagemagik.py" G:\A-Inbox\Saturn\20241023\AS_P50\LrD-1.15-8
+ERROR:__main__: Sunday November 24, 2024 02:47:42 PM Starting RGB Assembly
+INFO:__main__: Sunday November 24, 2024 02:47:42 PM G:\A-Inbox\Saturn\20241023\AS_P50\LrD-1.15-8
+INFO:__main__:Sunday November 24, 2024 02:47:42 PM RBG counter= 1 of 16
+INFO:__main__:Sunday November 24, 2024 02:47:42 PM RBG counter= 2 of 16
+INFO:__main__:Sunday November 24, 2024 02:47:42 PM RBG counter= 3 of 16
+INFO:__main__:Sunday November 24, 2024 02:47:42 PM RBG counter= 4 of 16
+INFO:__main__:Sunday November 24, 2024 02:47:42 PM RBG counter= 5 of 16
+INFO:__main__:Sunday November 24, 2024 02:47:42 PM RBG counter= 6 of 16
+INFO:__main__:Sunday November 24, 2024 02:47:42 PM RBG counter= 7 of 16
+INFO:__main__:Sunday November 24, 2024 02:47:42 PM RBG counter= 8 of 16
+INFO:__main__:Sunday November 24, 2024 02:47:42 PM RBG counter= 9 of 16
+INFO:__main__:Sunday November 24, 2024 02:47:42 PM RBG counter= 10 of 16
+INFO:__main__:Sunday November 24, 2024 02:47:42 PM RBG counter= 11 of 16
+INFO:__main__:Sunday November 24, 2024 02:47:42 PM RBG counter= 12 of 16
+INFO:__main__:Sunday November 24, 2024 02:47:42 PM RBG counter= 13 of 16
+INFO:__main__:Sunday November 24, 2024 02:47:42 PM RBG counter= 14 of 16
+INFO:__main__:Sunday November 24, 2024 02:47:42 PM RBG counter= 15 of 16
+INFO:__main__:Sunday November 24, 2024 02:47:42 PM RBG counter= 16 of 16
+INFO:__main__:
+
+Sunday November 24, 2024 02:47:42 PM Making an animation out of the RGB channel.
+INFO:__main__:
+
+Sunday November 24, 2024 02:47:42 PM Making an animation out of the RGB+labels channel.
+INFO:__main__:
+
+Sunday November 24, 2024 02:47:42 PM Making an animation out of the RGB+labels-bests channel.
+INFO:__main__:
+Sunday November 24, 2024 02:51:41 PM cmd.exe /c "G:\A-Inbox\Saturn\20241023\AS_P50\LrD-1.15-8\Anims\RGB+labels-bestsfastanimrock.gif" /s
+INFO:__main__:
+Sunday November 24, 2024 02:51:41 PM G:\A-Inbox\Saturn\20241023\AS_P50\LrD-1.15-8\\Anims\\RGB+labels-bestsfastanimrock.gif
+INFO:__main__:
+Sunday November 24, 2024 02:51:41 PM FILE
+INFO:__main__:
+
+Sunday November 24, 2024 02:51:41 PM RGB Animation READY
+Sunday November 24, 2024 02:51:41 PM Blind launch of script should be complete.
+Sunday November 24, 2024 02:51:41 PM explorer G:\A-Inbox\Saturn\20241023\AS_P50\LrD-1.15-8\Anims\20241023-RGB+labels-bestsfastanimrock.gif
+Sunday November 24, 2024 02:51:41 PMStarting copies to LocalDST2 and LocalDST3
+Sunday November 24, 2024 02:51:41 PMCompleted copies to LocalDST2 and LocalDST3
+Sunday November 24, 2024 02:52:04 PM Starting file copies to LocalDST
+Sunday November 24, 2024 02:52:05 PM Completed File COPY Process
+Sunday November 24, 2024 02:52:05 PM Src= G:\A-Inbox\Saturn\20241023\  Dst= C:\Personal\B-Sorted\Astronomy\30-Sharped+RGB\Saturn\20241023
+Sunday November 24, 2024 02:52:05 PM Starting file transfers
+Sunday November 24, 2024 02:52:20 PM Completed File Moving Process
+Sunday November 24, 2024 02:52:20 PM Src= G:\A-Inbox\Saturn\20241023\  Dst= F:\E-Delete\FC-Expiring--20250523\Saturn\20241023
+Sunday November 24, 2024 02:52:34 PM Launched C:\Personal\B-Sorted\Astronomy\30-Sharped+RGB\Saturn\20241023\AS_P50\LrD-1.15-8\Anims\RGB+labels-bestsfastanimrock.gif
+
+
+Sunday November 24, 2024 04:41:53 PM Starting AstraImage Setup.
+
+
+Sunday November 24, 2024 04:43:14 PM Starting AstraImage Script.
+Sunday November 24, 2024 04:43:15 PM Starting AstraImage.exe
+Sunday November 24, 2024 04:43:15 PM Switching to app to start workflow.
+Sunday November 24, 2024 04:43:16 PM Opened Simple Deconvolution.
+Sunday November 24, 2024 04:43:16 PM Clicked add files.
+Sunday November 24, 2024 04:43:32 PM Pasting G:\A-Inbox\Saturn\20241029\AS_P50
+Sunday November 24, 2024 04:43:35 PM Selecting ALL.
+Sunday November 24, 2024 04:43:36 PM Pressing OPEN.
+Sunday November 24, 2024 04:43:36 PM Opening OUTPUT Path dialog.
+Sunday November 24, 2024 04:43:37 PM Pasting G:\A-Inbox\Saturn\20241029\AS_P50\LrD-1.15-8.
+Sunday November 24, 2024 04:43:38 PM Pressing Select Folder.
+Sunday November 24, 2024 04:43:39 PM Clicking Blur field.
+Sunday November 24, 2024 04:43:42 PM Clicking Iter field.
+Sunday November 24, 2024 04:43:45 PM Pressing Start.
+Sunday November 24, 2024 04:43:45 PM Finished AstraImage Setup.
+
+
+Sunday November 24, 2024 04:43:45 PM Starting AstraImage WATCHER
+Sunday November 24, 2024 04:47:10 PM ENDED AstraImage WATCHER
+
+
+Sunday November 24, 2024 04:47:10 PM Starting WSL RGB Assembly.
+Sunday November 24, 2024 04:47:10 PM Input Path is: G:\A-Inbox\Saturn\20241029\AS_P50\LrD-1.15-8.
+Sunday November 24, 2024 04:47:10 PM Found path extraction as: G: | A-Inbox | Saturn | 20241029 | AS_P50 | LrD-1.15-8 | .
+Sunday November 24, 2024 04:47:15 PM Archived Folder is: F:\E-Delete\FC-Expiring--20250523\Saturn\20241029 named F:
+Sunday November 24, 2024 04:47:15 PM DeCon settings are for Saturn are: Blur= 1.15 and Iter= 8
+Sunday November 24, 2024 04:47:15 PM Starting Imagemagik processing.
+Sunday November 24, 2024 04:47:15 PM CMD= wsl -e "/mnt/c/Users/maphilli14-work2/Documents/GitHub/FullPlanetAutomatedProcessing/RBG-doubledash-Imagemagik.py" G:\A-Inbox\Saturn\20241029\AS_P50\LrD-1.15-8
+ERROR:__main__: Sunday November 24, 2024 04:47:18 PM Starting RGB Assembly
+INFO:__main__: Sunday November 24, 2024 04:47:18 PM G:\A-Inbox\Saturn\20241029\AS_P50\LrD-1.15-8
+INFO:__main__:Sunday November 24, 2024 04:47:18 PM RBG counter= 1 of 35
+INFO:__main__:Sunday November 24, 2024 04:47:18 PM RBG counter= 2 of 35
+INFO:__main__:Sunday November 24, 2024 04:47:18 PM RBG counter= 3 of 35
+INFO:__main__:Sunday November 24, 2024 04:47:18 PM RBG counter= 4 of 35
+INFO:__main__:Sunday November 24, 2024 04:47:18 PM RBG counter= 5 of 35
+INFO:__main__:Sunday November 24, 2024 04:47:18 PM RBG counter= 6 of 35
+INFO:__main__:Sunday November 24, 2024 04:47:18 PM RBG counter= 7 of 35
+INFO:__main__:Sunday November 24, 2024 04:47:18 PM RBG counter= 8 of 35
+INFO:__main__:Sunday November 24, 2024 04:47:18 PM RBG counter= 9 of 35
+INFO:__main__:Sunday November 24, 2024 04:47:18 PM RBG counter= 10 of 35
+INFO:__main__:Sunday November 24, 2024 04:47:18 PM RBG counter= 11 of 35
+INFO:__main__:Sunday November 24, 2024 04:47:18 PM RBG counter= 12 of 35
+INFO:__main__:Sunday November 24, 2024 04:47:18 PM RBG counter= 13 of 35
+INFO:__main__:Sunday November 24, 2024 04:47:18 PM RBG counter= 14 of 35
+INFO:__main__:Sunday November 24, 2024 04:47:18 PM RBG counter= 15 of 35
+INFO:__main__:Sunday November 24, 2024 04:47:18 PM RBG counter= 16 of 35
+INFO:__main__:Sunday November 24, 2024 04:47:18 PM RBG counter= 17 of 35
+INFO:__main__:Sunday November 24, 2024 04:47:18 PM RBG counter= 18 of 35
+INFO:__main__:Sunday November 24, 2024 04:47:18 PM RBG counter= 19 of 35
+INFO:__main__:Sunday November 24, 2024 04:47:18 PM RBG counter= 20 of 35
+INFO:__main__:Sunday November 24, 2024 04:47:18 PM RBG counter= 21 of 35
+INFO:__main__:Sunday November 24, 2024 04:47:18 PM RBG counter= 22 of 35
+INFO:__main__:Sunday November 24, 2024 04:47:18 PM RBG counter= 23 of 35
+INFO:__main__:Sunday November 24, 2024 04:47:18 PM RBG counter= 24 of 35
+INFO:__main__:Sunday November 24, 2024 04:47:18 PM RBG counter= 25 of 35
+INFO:__main__:Sunday November 24, 2024 04:47:18 PM RBG counter= 26 of 35
+INFO:__main__:Sunday November 24, 2024 04:47:18 PM RBG counter= 27 of 35
+INFO:__main__:Sunday November 24, 2024 04:47:18 PM RBG counter= 28 of 35
+INFO:__main__:Sunday November 24, 2024 04:47:18 PM RBG counter= 29 of 35
+INFO:__main__:Sunday November 24, 2024 04:47:18 PM RBG counter= 30 of 35
+INFO:__main__:Sunday November 24, 2024 04:47:18 PM RBG counter= 31 of 35
+INFO:__main__:Sunday November 24, 2024 04:47:18 PM RBG counter= 32 of 35
+INFO:__main__:Sunday November 24, 2024 04:47:18 PM RBG counter= 33 of 35
+INFO:__main__:Sunday November 24, 2024 04:47:18 PM RBG counter= 34 of 35
+INFO:__main__:Sunday November 24, 2024 04:47:18 PM RBG counter= 35 of 35
+INFO:__main__:
+
+Sunday November 24, 2024 04:47:18 PM Making an animation out of the RGB channel.
+INFO:__main__:
+
+Sunday November 24, 2024 04:47:18 PM Making an animation out of the RGB+labels channel.
+INFO:__main__:
+
+Sunday November 24, 2024 04:47:18 PM Making an animation out of the RGB+labels-bests channel.
+INFO:__main__:
+Sunday November 24, 2024 04:58:02 PM cmd.exe /c "G:\A-Inbox\Saturn\20241029\AS_P50\LrD-1.15-8\Anims\RGB+labels-bestsfastanimrock.gif" /s
+INFO:__main__:
+Sunday November 24, 2024 04:58:02 PM G:\A-Inbox\Saturn\20241029\AS_P50\LrD-1.15-8\\Anims\\RGB+labels-bestsfastanimrock.gif
+INFO:__main__:
+Sunday November 24, 2024 04:58:02 PM FILE
+INFO:__main__:
+
+Sunday November 24, 2024 04:58:02 PM RGB Animation READY
+Sunday November 24, 2024 04:58:02 PM Blind launch of script should be complete.
+Sunday November 24, 2024 04:58:02 PM explorer G:\A-Inbox\Saturn\20241029\AS_P50\LrD-1.15-8\Anims\20241029-RGB+labels-bestsfastanimrock.gif
+Sunday November 24, 2024 04:58:02 PMStarting copies to LocalDST2 and LocalDST3
+Sunday November 24, 2024 04:58:04 PMCompleted copies to LocalDST2 and LocalDST3
+Sunday November 24, 2024 04:58:26 PM Starting file copies to LocalDST
+Sunday November 24, 2024 04:58:29 PM Completed File COPY Process
+Sunday November 24, 2024 04:58:29 PM Src= G:\A-Inbox\Saturn\20241029\  Dst= C:\Personal\B-Sorted\Astronomy\30-Sharped+RGB\Saturn\20241029
+Sunday November 24, 2024 04:58:29 PM Starting file transfers
+Sunday November 24, 2024 04:59:28 PM Completed File Moving Process
+Sunday November 24, 2024 04:59:28 PM Src= G:\A-Inbox\Saturn\20241029\  Dst= F:\E-Delete\FC-Expiring--20250523\Saturn\20241029
+Sunday November 24, 2024 04:59:41 PM Launched C:\Personal\B-Sorted\Astronomy\30-Sharped+RGB\Saturn\20241029\AS_P50\LrD-1.15-8\Anims\RGB+labels-bestsfastanimrock.gif
+
+
+Sunday November 24, 2024 05:06:54 PM Starting AstraImage Setup.
+
+
+Sunday November 24, 2024 05:06:56 PM Starting AstraImage Script.
+Sunday November 24, 2024 05:06:57 PM Starting AstraImage.exe
+Sunday November 24, 2024 05:06:57 PM Switching to app to start workflow.
+Sunday November 24, 2024 05:06:58 PM Opened Simple Deconvolution.
+Sunday November 24, 2024 05:06:58 PM Clicked add files.
+Sunday November 24, 2024 05:07:14 PM Pasting G:\A-Inbox\Mars\Mars_2024_09_09\AS_P50
+Sunday November 24, 2024 05:07:17 PM Selecting ALL.
+Sunday November 24, 2024 05:07:17 PM Pressing OPEN.
+Sunday November 24, 2024 05:07:18 PM Opening OUTPUT Path dialog.
+Sunday November 24, 2024 05:07:19 PM Pasting G:\A-Inbox\Mars\Mars_2024_09_09\AS_P50\LrD-1.15-8.
+Sunday November 24, 2024 05:07:20 PM Pressing Select Folder.
+Sunday November 24, 2024 05:07:21 PM Clicking Blur field.
+Sunday November 24, 2024 05:07:24 PM Clicking Iter field.
+Sunday November 24, 2024 05:07:27 PM Pressing Start.
+Sunday November 24, 2024 05:07:27 PM Finished AstraImage Setup.
+
+
+Sunday November 24, 2024 05:07:27 PM Starting AstraImage WATCHER
+Sunday November 24, 2024 05:09:09 PM ENDED AstraImage WATCHER
+
+
+Sunday November 24, 2024 05:09:10 PM Starting WSL RGB Assembly.
+Sunday November 24, 2024 05:09:10 PM Input Path is: G:\A-Inbox\Mars\Mars_2024_09_09\AS_P50\LrD-1.15-8.
+Sunday November 24, 2024 05:09:10 PM Found path extraction as: G: | A-Inbox | Mars | Mars_2024_09_09 | AS_P50 | LrD-1.15-8 | .
+Sunday November 24, 2024 05:09:14 PM Archived Folder is: F:\E-Delete\FC-Expiring--20250523\Mars\Mars_2024_09_09 named F:
+Sunday November 24, 2024 05:09:14 PM DeCon settings are for Mars are: Blur= 1.15 and Iter= 8
+Sunday November 24, 2024 05:09:14 PM Starting Imagemagik processing.
+Sunday November 24, 2024 05:09:14 PM CMD= wsl -e "/mnt/c/Users/maphilli14-work2/Documents/GitHub/FullPlanetAutomatedProcessing/RBG-doubledash-Imagemagik.py" G:\A-Inbox\Mars\Mars_2024_09_09\AS_P50\LrD-1.15-8
+ERROR:__main__: Sunday November 24, 2024 05:09:18 PM Starting RGB Assembly
+INFO:__main__: Sunday November 24, 2024 05:09:18 PM G:\A-Inbox\Mars\Mars_2024_09_09\AS_P50\LrD-1.15-8
+Sunday November 24, 2024 05:09:43 PM Blind launch of script should be complete.
+Sunday November 24, 2024 05:09:43 PM explorer G:\A-Inbox\Mars\Mars_2024_09_09\AS_P50\LrD-1.15-8\Anims\2024-09-09-RGB+labels-bestsfastanimrock.gif
+Sunday November 24, 2024 05:09:43 PMStarting copies to LocalDST2 and LocalDST3
+Sunday November 24, 2024 05:09:43 PMCould not move G:\A-Inbox\Mars\Mars_2024_09_09\AS_P50\LrD-1.15-8\Anims\RGB+labels-bestsfastanimrock.gif into C:\Users\maphilli14-work2\OneDrive\B-Sorted\Astronomy\30-Sharped+RGB\Mars\2024-09-09\Animsbecause: Failed
+Sunday November 24, 2024 05:10:05 PM Starting file copies to LocalDST
+Sunday November 24, 2024 05:10:07 PM Completed File COPY Process
+Sunday November 24, 2024 05:10:07 PM Src= G:\A-Inbox\Mars\Mars_2024_09_09\  Dst= C:\Personal\B-Sorted\Astronomy\30-Sharped+RGB\Mars\2024-09-09
+Sunday November 24, 2024 05:10:07 PM Starting file transfers
+
+
+Sunday November 24, 2024 05:10:29 PM Starting WSL RGB Assembly.
+Sunday November 24, 2024 05:10:31 PM Input Path is: G:\A-Inbox\Mars\Mars_2024_09_09.
+Sunday November 24, 2024 05:10:31 PM Found path extraction as: G: | A-Inbox | Mars | Mars_2024_09_09 | .
+Sunday November 24, 2024 05:10:31 PM Archived Folder is: F:\E-Delete\FC-Expiring--20250523\Mars\Mars_2024_09_09 named F:
+Sunday November 24, 2024 05:10:31 PM DeCon settings are for Mars are: Blur= 1.15 and Iter= 8
+Sunday November 24, 2024 05:10:31 PM Starting Imagemagik processing.
+Sunday November 24, 2024 05:10:31 PM CMD= wsl -e "/mnt/c/Users/maphi/OneDrive/D-Permanent/Scripts/Astronomy/AutoHotkey/FullPlanetAutomatedProcessing/RBG-Imagemagik.py" G:\A-Inbox\Mars\Mars_2024_09_09\AS_P50\LrD-1.15-8
+Sunday November 24, 2024 05:10:35 PM Blind launch of script should be complete.
+Sunday November 24, 2024 05:10:35 PM explorer G:\A-Inbox\Mars\Mars_2024_09_09\AS_P50\LrD-1.15-8\Anims\2024-09-09-RGB+labels-bestsfastanimrock.gif
+Sunday November 24, 2024 05:10:35 PMStarting copies to LocalDST2 and LocalDST3
+Sunday November 24, 2024 05:10:35 PMCould not move G:\A-Inbox\Mars\Mars_2024_09_09\AS_P50\LrD-1.15-8\Anims\RGB+labels-bestsfastanimrock.gif into C:\Users\maphilli14-work2\OneDrive\B-Sorted\Astronomy\30-Sharped+RGB\Mars\2024-09-09\Animsbecause: Failed
+
+
+Sunday November 24, 2024 05:12:09 PM Starting WSL RGB Assembly.
+Sunday November 24, 2024 05:12:10 PM Input Path is: G:\A-Inbox\Mars\Mars_2024_09_09.
+Sunday November 24, 2024 05:12:10 PM Found path extraction as: G: | A-Inbox | Mars | Mars_2024_09_09 | .
+Sunday November 24, 2024 05:12:10 PM Archived Folder is: F:\E-Delete\FC-Expiring--20250523\Mars\Mars_2024_09_09 named F:
+Sunday November 24, 2024 05:12:10 PM DeCon settings are for Mars are: Blur= 1.15 and Iter= 8
+Sunday November 24, 2024 05:12:10 PM Starting Imagemagik processing.
+Sunday November 24, 2024 05:12:10 PM CMD= wsl -e "/mnt/c/Users/maphilli14-work2/Documents/GitHub/FullPlanetAutomatedProcessing/RBG-Imagemagik.py" G:\A-Inbox\Mars\Mars_2024_09_09\AS_P50\LrD-1.15-8
+ERROR:__main__: Sunday November 24, 2024 05:12:14 PM Starting RGB Assembly
+INFO:__main__: Sunday November 24, 2024 05:12:14 PM G:\A-Inbox\Mars\Mars_2024_09_09\AS_P50\LrD-1.15-8
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM RBG counter= 1 of 21
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM MQTT successfully sent
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM RBG counter= 2 of 21
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM MQTT successfully sent
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM RBG counter= 3 of 21
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM MQTT successfully sent
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM RBG counter= 4 of 21
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM MQTT successfully sent
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM RBG counter= 5 of 21
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM MQTT successfully sent
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM RBG counter= 6 of 21
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM MQTT successfully sent
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM RBG counter= 7 of 21
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM MQTT successfully sent
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM RBG counter= 8 of 21
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM MQTT successfully sent
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM RBG counter= 9 of 21
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM MQTT successfully sent
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM RBG counter= 10 of 21
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM MQTT successfully sent
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM RBG counter= 11 of 21
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM MQTT successfully sent
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM RBG counter= 12 of 21
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM MQTT successfully sent
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM RBG counter= 13 of 21
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM MQTT successfully sent
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM RBG counter= 14 of 21
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM MQTT successfully sent
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM RBG counter= 15 of 21
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM MQTT successfully sent
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM RBG counter= 16 of 21
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM MQTT successfully sent
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM RBG counter= 17 of 21
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM MQTT successfully sent
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM RBG counter= 18 of 21
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM MQTT successfully sent
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM RBG counter= 19 of 21
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM MQTT successfully sent
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM RBG counter= 20 of 21
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM MQTT successfully sent
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM RBG counter= 21 of 21
+INFO:__main__:Sunday November 24, 2024 05:12:14 PM MQTT successfully sent
+INFO:__main__:
+
+Sunday November 24, 2024 05:12:14 PM Making an animation out of the RGB channel.
+INFO:__main__:
+
+Sunday November 24, 2024 05:12:14 PM Making an animation out of the RGB+labels channel.
+INFO:__main__:
+
+Sunday November 24, 2024 05:12:14 PM Making an animation out of the RGB+labels-bests channel.
+INFO:__main__:
+Sunday November 24, 2024 05:15:56 PM cmd.exe /c "G:\A-Inbox\Mars\Mars_2024_09_09\AS_P50\LrD-1.15-8\Anims\RGB+labels-bestsfastanimrock.gif" /s
+INFO:__main__:
+Sunday November 24, 2024 05:15:56 PM G:\A-Inbox\Mars\Mars_2024_09_09\AS_P50\LrD-1.15-8\\Anims\\RGB+labels-bestsfastanimrock.gif
+INFO:__main__:
+Sunday November 24, 2024 05:15:56 PM FILE
+INFO:__main__:
+
+Sunday November 24, 2024 05:15:56 PM RGB Animation READY
+Sunday November 24, 2024 05:15:56 PM Blind launch of script should be complete.
+Sunday November 24, 2024 05:15:56 PM explorer G:\A-Inbox\Mars\Mars_2024_09_09\AS_P50\LrD-1.15-8\Anims\2024-09-09-RGB+labels-bestsfastanimrock.gif
+Sunday November 24, 2024 05:15:56 PMStarting copies to LocalDST2 and LocalDST3
+Sunday November 24, 2024 05:15:56 PMCould not move G:\A-Inbox\Mars\Mars_2024_09_09\AS_P50\LrD-1.15-8\Anims\RGB+labels-bestsfastanimrock.gif into C:\Users\maphilli14-work2\OneDrive\B-Sorted\Astronomy\30-Sharped+RGB\Mars\2024-09-09\Animsbecause: Failed
+Sunday November 24, 2024 05:16:18 PM Starting file copies to LocalDST
+Sunday November 24, 2024 05:16:19 PM Completed File COPY Process
+Sunday November 24, 2024 05:16:19 PM Src= G:\A-Inbox\Mars\Mars_2024_09_09  Dst= C:\Personal\B-Sorted\Astronomy\30-Sharped+RGB\Mars\2024-09-09
+Sunday November 24, 2024 05:16:19 PM Starting file transfers
+Sunday November 24, 2024 05:16:58 PM Completed File Moving Process
+Sunday November 24, 2024 05:16:58 PM Src= G:\A-Inbox\Mars\Mars_2024_09_09  Dst= F:\E-Delete\FC-Expiring--20250523\Mars\Mars_2024_09_09
+Sunday November 24, 2024 05:16:58 PM FAILED to launch C:\Personal\B-Sorted\Astronomy\30-Sharped+RGB\Mars\2024-09-09\AS_P50\LrD-1.15-8\Anims\RGB+labels-bestsfastanimrock.gif
+ERROR:__main__: Wednesday November 27, 2024 06:38:26 PM Starting RGB Assembly
+INFO:__main__: Wednesday November 27, 2024 06:38:26 PM F:\B-Sorted\Astronomy\30-Sharped+RGB\SolarSystem\Saturn\20241023\AS_P50\LrD-1.15-8redo
+INFO:__main__:Wednesday November 27, 2024 06:38:26 PM RBG counter= 1 of 16
+INFO:__main__:Wednesday November 27, 2024 06:38:26 PM RBG counter= 2 of 16
+INFO:__main__:Wednesday November 27, 2024 06:38:26 PM RBG counter= 3 of 16
+INFO:__main__:Wednesday November 27, 2024 06:38:26 PM RBG counter= 4 of 16
+INFO:__main__:Wednesday November 27, 2024 06:38:26 PM RBG counter= 5 of 16
+INFO:__main__:Wednesday November 27, 2024 06:38:26 PM RBG counter= 6 of 16
+INFO:__main__:Wednesday November 27, 2024 06:38:26 PM RBG counter= 7 of 16
+INFO:__main__:Wednesday November 27, 2024 06:38:26 PM RBG counter= 8 of 16
+INFO:__main__:Wednesday November 27, 2024 06:38:26 PM RBG counter= 9 of 16
+INFO:__main__:Wednesday November 27, 2024 06:38:26 PM RBG counter= 10 of 16
+INFO:__main__:Wednesday November 27, 2024 06:38:26 PM RBG counter= 11 of 16
+INFO:__main__:Wednesday November 27, 2024 06:38:26 PM RBG counter= 12 of 16
+INFO:__main__:Wednesday November 27, 2024 06:38:26 PM RBG counter= 13 of 16
+INFO:__main__:Wednesday November 27, 2024 06:38:26 PM RBG counter= 14 of 16
+INFO:__main__:Wednesday November 27, 2024 06:38:26 PM RBG counter= 15 of 16
+INFO:__main__:Wednesday November 27, 2024 06:38:26 PM RBG counter= 16 of 16
+ERROR:__main__: Wednesday November 27, 2024 06:39:51 PM Starting RGB Assembly
+INFO:__main__: Wednesday November 27, 2024 06:39:51 PM F:\B-Sorted\Astronomy\30-Sharped+RGB\SolarSystem\Saturn\20241023\AS_P50\LrD-1.15-8redo
+INFO:__main__:Wednesday November 27, 2024 06:39:51 PM RBG counter= 1 of 11
+INFO:__main__:Wednesday November 27, 2024 06:39:51 PM RBG counter= 2 of 11
+INFO:__main__:Wednesday November 27, 2024 06:39:51 PM RBG counter= 3 of 11
+INFO:__main__:Wednesday November 27, 2024 06:39:51 PM RBG counter= 4 of 11
+INFO:__main__:Wednesday November 27, 2024 06:39:51 PM RBG counter= 5 of 11
+INFO:__main__:Wednesday November 27, 2024 06:39:51 PM RBG counter= 6 of 11
+INFO:__main__:Wednesday November 27, 2024 06:39:51 PM RBG counter= 7 of 11
+INFO:__main__:Wednesday November 27, 2024 06:39:51 PM RBG counter= 8 of 11
+INFO:__main__:Wednesday November 27, 2024 06:39:51 PM RBG counter= 9 of 11
+INFO:__main__:Wednesday November 27, 2024 06:39:51 PM RBG counter= 10 of 11
+INFO:__main__:Wednesday November 27, 2024 06:39:51 PM RBG counter= 11 of 11
+INFO:__main__:
+
+Wednesday November 27, 2024 06:39:51 PM Making an animation out of the RGB channel.
+INFO:__main__:
+
+Wednesday November 27, 2024 06:39:51 PM Making an animation out of the RGB+labels channel.
+INFO:__main__:
+
+Wednesday November 27, 2024 06:39:51 PM Making an animation out of the RGB+labels-bests channel.
+INFO:__main__:
+Wednesday November 27, 2024 06:43:42 PM cmd.exe /c "F:\B-Sorted\Astronomy\30-Sharped+RGB\SolarSystem\Saturn\20241023\AS_P50\LrD-1.15-8redo\Anims\RGB+labels-bestsfastanimrock.gif" /s
+INFO:__main__:
+Wednesday November 27, 2024 06:43:42 PM F:\B-Sorted\Astronomy\30-Sharped+RGB\SolarSystem\Saturn\20241023\AS_P50\LrD-1.15-8redo\\Anims\\RGB+labels-bestsfastanimrock.gif
+INFO:__main__:
+Wednesday November 27, 2024 06:43:42 PM FILE
+INFO:__main__:
+
+Wednesday November 27, 2024 06:43:42 PM RGB Animation READY
+ERROR:__main__: Thursday November 28, 2024 10:38:35 PM Starting RGB Assembly
+INFO:__main__: Thursday November 28, 2024 10:38:35 PM F:\B-Sorted\Astronomy\30-Sharped+RGB\SolarSystem\Saturn\20241023\AS_P50\LrD-1.0-7redo
+INFO:__main__:Thursday November 28, 2024 10:38:35 PM RBG counter= 1 of 3
+INFO:__main__:Thursday November 28, 2024 10:38:35 PM RBG counter= 2 of 3
+INFO:__main__:
+
+Thursday November 28, 2024 10:38:35 PM Making an animation out of the RGB channel.
+INFO:__main__:
+
+Thursday November 28, 2024 10:38:35 PM Making an animation out of the RGB+labels channel.
+INFO:__main__:
+
+Thursday November 28, 2024 10:38:35 PM Making an animation out of the RGB+labels-bests channel.
+INFO:__main__:
+Thursday November 28, 2024 10:41:07 PM cmd.exe /c "F:\B-Sorted\Astronomy\30-Sharped+RGB\SolarSystem\Saturn\20241023\AS_P50\LrD-1.0-7redo\Anims\RGB+labels-bestsfastanimrock.gif" /s
+INFO:__main__:
+Thursday November 28, 2024 10:41:07 PM F:\B-Sorted\Astronomy\30-Sharped+RGB\SolarSystem\Saturn\20241023\AS_P50\LrD-1.0-7redo\\Anims\\RGB+labels-bestsfastanimrock.gif
+INFO:__main__:
+Thursday November 28, 2024 10:41:07 PM FILE
+INFO:__main__:
+
+Thursday November 28, 2024 10:41:07 PM RGB Animation READY
+ERROR:__main__: Friday November 29, 2024 12:22:16 AM Starting RGB Assembly
+INFO:__main__: Friday November 29, 2024 12:22:16 AM C:\Personal\B-Sorted\Astronomy\30-Sharped+RGB\20241025\AS_P50\1.0-7reset
+ERROR:__main__: Friday November 29, 2024 12:22:22 AM Starting RGB Assembly
+INFO:__main__: Friday November 29, 2024 12:22:22 AM F:\B-Sorted\Astronomy\30-Sharped+RGB\SolarSystem\Saturn\20241023\AS_P50\LrD-1.0-7redo
+INFO:__main__:Friday November 29, 2024 12:22:22 AM RBG counter= 1 of 3
+INFO:__main__:Friday November 29, 2024 12:22:22 AM RBG counter= 2 of 3
+INFO:__main__:Friday November 29, 2024 12:22:22 AM RBG counter= 3 of 3
+INFO:__main__:
+
+Friday November 29, 2024 12:22:22 AM Making an animation out of the RGB channel.
+INFO:__main__:
+
+Friday November 29, 2024 12:22:22 AM Making an animation out of the RGB+labels channel.
+INFO:__main__:
+
+Friday November 29, 2024 12:22:22 AM Making an animation out of the RGB+labels-bests channel.
+INFO:__main__:
+Friday November 29, 2024 12:25:08 AM cmd.exe /c "F:\B-Sorted\Astronomy\30-Sharped+RGB\SolarSystem\Saturn\20241023\AS_P50\LrD-1.0-7redo\Anims\RGB+labels-bestsfastanimrock.gif" /s
+INFO:__main__:
+Friday November 29, 2024 12:25:08 AM F:\B-Sorted\Astronomy\30-Sharped+RGB\SolarSystem\Saturn\20241023\AS_P50\LrD-1.0-7redo\\Anims\\RGB+labels-bestsfastanimrock.gif
+INFO:__main__:
+Friday November 29, 2024 12:25:08 AM FILE
+INFO:__main__:
+
+Friday November 29, 2024 12:25:08 AM RGB Animation READY
+ERROR:__main__: Friday November 29, 2024 05:44:50 PM Starting RGB Assembly
+INFO:__main__: Friday November 29, 2024 05:44:50 PM F:\B-Sorted\Astronomy\30-Sharped+RGB\SolarSystem\Saturn\20241023\AS_P50\LrD-1.0-7redo
+INFO:__main__:Friday November 29, 2024 05:44:50 PM RBG counter= 1 of 3
+INFO:__main__:Friday November 29, 2024 05:44:50 PM RBG counter= 2 of 3
+INFO:__main__:Friday November 29, 2024 05:44:50 PM RBG counter= 3 of 3
+INFO:__main__:
+
+Friday November 29, 2024 05:44:50 PM Making an animation out of the RGB channel.
+INFO:__main__:
+
+Friday November 29, 2024 05:44:50 PM Making an animation out of the RGB+labels channel.
+INFO:__main__:
+
+Friday November 29, 2024 05:44:50 PM Making an animation out of the RGB+labels-bests channel.
+INFO:__main__:
+Friday November 29, 2024 05:47:36 PM cmd.exe /c "F:\B-Sorted\Astronomy\30-Sharped+RGB\SolarSystem\Saturn\20241023\AS_P50\LrD-1.0-7redo\Anims\RGB+labels-bestsfastanimrock.gif" /s
+INFO:__main__:
+Friday November 29, 2024 05:47:36 PM F:\B-Sorted\Astronomy\30-Sharped+RGB\SolarSystem\Saturn\20241023\AS_P50\LrD-1.0-7redo\\Anims\\RGB+labels-bestsfastanimrock.gif
+INFO:__main__:
+Friday November 29, 2024 05:47:36 PM FILE
+INFO:__main__:
+
+Friday November 29, 2024 05:47:36 PM RGB Animation READY
+ERROR:__main__: Saturday November 30, 2024 06:29:02 PM Starting RGB Assembly
+INFO:__main__: Saturday November 30, 2024 06:29:02 PM C:\Personal\B-Sorted\Astronomy\20-Stacks\Saturn\Saturn_2024_06_30\AS_P50\LrD-1.1-10
+INFO:__main__:
+
+Saturday November 30, 2024 06:29:02 PM Making an animation out of the RGB channel.
+ERROR:__main__:
+
+Saturday November 30, 2024 06:29:02 PM SUBFolder Errors
+INFO:__main__:
+
+Saturday November 30, 2024 06:29:02 PM Making an animation out of the RGB+labels channel.
+ERROR:__main__:
+
+Saturday November 30, 2024 06:29:02 PM SUBFolder Errors
+INFO:__main__:
+
+Saturday November 30, 2024 06:29:02 PM Making an animation out of the RGB+labels-bests channel.
+ERROR:__main__:
+
+Saturday November 30, 2024 06:29:02 PM SUBFolder Errors
+ERROR:__main__:
+
+Saturday November 30, 2024 06:29:02 PM SUBChannels Errors
+ERROR:__main__:
+
+Saturday November 30, 2024 06:29:02 PM SUBChannels Errors
+ERROR:__main__:
+
+Saturday November 30, 2024 06:29:02 PM SUBChannels Errors
+INFO:__main__:
+Saturday November 30, 2024 06:29:05 PM cmd.exe /c "C:\Personal\B-Sorted\Astronomy\20-Stacks\Saturn\Saturn_2024_06_30\AS_P50\LrD-1.1-10\Anims\RGB+labels-bestsfastanimrock.gif" /s
+INFO:__main__:
+Saturday November 30, 2024 06:29:05 PM C:\Personal\B-Sorted\Astronomy\20-Stacks\Saturn\Saturn_2024_06_30\AS_P50\LrD-1.1-10\\Anims\\RGB+labels-bestsfastanimrock.gif
+INFO:__main__:
+Saturday November 30, 2024 06:29:05 PM FILE
+INFO:__main__:
+
+Saturday November 30, 2024 06:29:05 PM RGB Animation READY
+ERROR:__main__: Saturday November 30, 2024 06:33:03 PM Starting RGB Assembly
+INFO:__main__: Saturday November 30, 2024 06:33:03 PM C:\Personal\B-Sorted\Astronomy\20-Stacks\Saturn\Saturn_2024_06_30\AS_P50\LrD-1.1-10
+INFO:__main__:
+
+Saturday November 30, 2024 06:33:03 PM Making an animation out of the RGB channel.
+ERROR:__main__:
+
+Saturday November 30, 2024 06:33:03 PM SUBFolder Errors
+INFO:__main__:
+
+Saturday November 30, 2024 06:33:03 PM Making an animation out of the RGB+labels channel.
+ERROR:__main__:
+
+Saturday November 30, 2024 06:33:03 PM SUBFolder Errors
+INFO:__main__:
+
+Saturday November 30, 2024 06:33:03 PM Making an animation out of the RGB+labels-bests channel.
+ERROR:__main__:
+
+Saturday November 30, 2024 06:33:03 PM SUBFolder Errors
+ERROR:__main__:
+
+Saturday November 30, 2024 06:33:03 PM SUBChannels Errors
+ERROR:__main__:
+
+Saturday November 30, 2024 06:33:03 PM SUBChannels Errors
+ERROR:__main__:
+
+Saturday November 30, 2024 06:33:03 PM SUBChannels Errors
+INFO:__main__:
+Saturday November 30, 2024 06:33:04 PM cmd.exe /c "C:\Personal\B-Sorted\Astronomy\20-Stacks\Saturn\Saturn_2024_06_30\AS_P50\LrD-1.1-10\Anims\RGB+labels-bestsfastanimrock.gif" /s
+INFO:__main__:
+Saturday November 30, 2024 06:33:04 PM C:\Personal\B-Sorted\Astronomy\20-Stacks\Saturn\Saturn_2024_06_30\AS_P50\LrD-1.1-10\\Anims\\RGB+labels-bestsfastanimrock.gif
+INFO:__main__:
+Saturday November 30, 2024 06:33:04 PM FILE
+INFO:__main__:
+
+Saturday November 30, 2024 06:33:04 PM RGB Animation READY
+ERROR:__main__: Saturday November 30, 2024 06:35:22 PM Starting RGB Assembly
+INFO:__main__: Saturday November 30, 2024 06:35:22 PM C:\Personal\B-Sorted\Astronomy\20-Stacks\Saturn\Saturn_2024_06_30\AS_P50\LrD-1.0-7
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM RBG counter= 1 of 21
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM MQTT successfully sent
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM RBG counter= 2 of 21
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM MQTT successfully sent
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM RBG counter= 3 of 21
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM MQTT successfully sent
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM RBG counter= 4 of 21
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM MQTT successfully sent
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM RBG counter= 5 of 21
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM MQTT successfully sent
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM RBG counter= 6 of 21
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM MQTT successfully sent
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM RBG counter= 7 of 21
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM MQTT successfully sent
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM RBG counter= 8 of 21
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM MQTT successfully sent
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM RBG counter= 9 of 21
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM MQTT successfully sent
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM RBG counter= 10 of 21
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM MQTT successfully sent
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM RBG counter= 11 of 21
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM MQTT successfully sent
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM RBG counter= 12 of 21
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM MQTT successfully sent
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM RBG counter= 13 of 21
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM MQTT successfully sent
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM RBG counter= 14 of 21
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM MQTT successfully sent
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM RBG counter= 15 of 21
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM MQTT successfully sent
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM RBG counter= 16 of 21
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM MQTT successfully sent
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM RBG counter= 17 of 21
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM MQTT successfully sent
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM RBG counter= 18 of 21
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM MQTT successfully sent
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM RBG counter= 19 of 21
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM MQTT successfully sent
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM RBG counter= 20 of 21
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM MQTT successfully sent
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM RBG counter= 21 of 21
+INFO:__main__:Saturday November 30, 2024 06:35:22 PM MQTT successfully sent
+INFO:__main__:
+
+Saturday November 30, 2024 06:35:22 PM Making an animation out of the RGB channel.
+INFO:__main__:
+
+Saturday November 30, 2024 06:35:22 PM Making an animation out of the RGB+labels channel.
+INFO:__main__:
+
+Saturday November 30, 2024 06:35:22 PM Making an animation out of the RGB+labels-bests channel.
+INFO:__main__:
+Saturday November 30, 2024 06:40:50 PM cmd.exe /c "C:\Personal\B-Sorted\Astronomy\20-Stacks\Saturn\Saturn_2024_06_30\AS_P50\LrD-1.0-7\Anims\RGB+labels-bestsfastanimrock.gif" /s
+INFO:__main__:
+Saturday November 30, 2024 06:40:50 PM C:\Personal\B-Sorted\Astronomy\20-Stacks\Saturn\Saturn_2024_06_30\AS_P50\LrD-1.0-7\\Anims\\RGB+labels-bestsfastanimrock.gif
+INFO:__main__:
+Saturday November 30, 2024 06:40:50 PM FILE
+INFO:__main__:
+
+Saturday November 30, 2024 06:40:50 PM RGB Animation READY

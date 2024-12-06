@@ -11,12 +11,12 @@ PLANET := InputBox("Input Planet's position number:`n EG: 5= Jupiter").value
 ;System right click and copy; you'll need an offset to select menu +10-20 , +10-20
 ;
 WinActivate "ahk_class TDialogHauptfenster"
-sleep 1000
+sleep 100
 ; the following line is the System box, top left under ephem tab
 MouseClick "r",48, 484
-sleep 1000
+sleep 100
 MouseClick ,68, 500
-sleep 1000
+sleep 100
 System := A_Clipboard
 DATE := SubStr(System, 1 , 10)
 TIME := StrReplace(SubStr(System, 26 , 7), ":", "-")
@@ -26,13 +26,13 @@ SYS := SubStr(System, 38 , )
 ;Alt is a drag drop within the alt/az field, Top right x/y and bottom left x/y
 ; USE CLIENT value in spy
 ;
-sleep 1000
-MouseClick ,1024, 390 
-sleep 1000
-MouseClickDrag ,1024, 410 ,1645, 535
-sleep 1000
+sleep 100
+MouseClick ,1000, 430
+sleep 100
+MouseClickDrag ,1000, 430 ,1645, 600
+sleep 100
 Send "^c"
-sleep 1000
+sleep 100
 Alt := A_Clipboard
 Loop Parse Alt, "`n", "`r"
 {
@@ -44,11 +44,11 @@ Loop Parse Alt, "`n", "`r"
 ;
 ;rest of vars are-- right click and copy; you'll need an offset to select menu +10-20 , +10-20
 ;
-sleep 1000
+sleep 100
 MouseClick "r", 1400, 800
-sleep 2000
+sleep 200
 MouseClick "l", 1421, 820
-sleep 1000
+sleep 100
 Rest := A_Clipboard
 ;
 A_Clipboard := System Alt Rest

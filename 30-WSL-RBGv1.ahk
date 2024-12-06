@@ -172,8 +172,21 @@ try
 	FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") "Starting copies to LocalDST2 and LocalDST3`n", "Log.txt"
 	OneDrive := LocalDST2  "\" Planet "\" DateSet  "\Anims"
 	DirCreate OneDrive
+	; copies best rgb anim
 	FileCopy UserPathIn "\Anims\RGB+labels-bestsfastanimrock.gif" , OneDrive "\" DateSet "-RGB+labels-bestsfastanimrock.gif" , 1
 	FileCopy UserPathIn "\Anims\RGB+labels-bestsfastanimrock.gif" , LocalDST3 , 1
+	; copies best RED anim
+	FileCopy UserPathIn "\Anims\REDfastanimrock.gif" , OneDrive "\" DateSet "-REDfastanimrock.gif" , 1
+	;FileCopy UserPathIn "\Anims\REDfastanimrock.gif" , LocalDST3 , 1
+	; copies best GREENfastanimrock anim
+	FileCopy UserPathIn "\Anims\GREENfastanimrock.gif" , OneDrive "\" DateSet "-GREENfastanimrock.gif" , 1
+	;FileCopy UserPathIn "\Anims\GREENfastanimrock.gif" , LocalDST3 , 1
+	; copies best BLUEfastanimrock anim
+	FileCopy UserPathIn "\Anims\BLUEfastanimrock.gif" , OneDrive "\" DateSet "-BLUEfastanimrock.gif" , 1
+	;FileCopy UserPathIn "\Anims\BLUEfastanimrock.gif" , LocalDST3 , 1
+	; copies best ALL labeled rgb anim, NO ROCK
+	FileCopy UserPathIn "\Anims\RGB+labelsanim.gif" , OneDrive "\" DateSet "-RGB+labelsanim.gif" , 1
+	;FileCopy UserPathIn "\Anims\RGB+labelsanim.gif" , LocalDST3 , 1
 	FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") "Completed copies to LocalDST2 and LocalDST3`n", "Log.txt"
 	;Run UserPathIn LocalDST3
 	;sleep 800
@@ -186,7 +199,7 @@ try
 catch as e  ; Handles the first error thrown by the block above.
 	{
 	;MsgBox "Could not move " UserPathIn "\Anims\RGB+labels-bestsfastanimrock.gif" " into " LocalDST3 " or " LocalDST2 "because: " e.Message
-	FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") "Could not move " UserPathIn "\Anims\RGB+labels-bestsfastanimrock.gif into " OneDrive "because: " e.Message "`n", "Log.txt"
+	FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") "Could not move " UserPathIn "\Anims\RGB+labels-bestsfastanimrock.gif into " OneDrive " because: " e.Message "`n", "Log.txt"
 
 	if Enabled = 1
 		{
@@ -293,4 +306,11 @@ try
 	sleep 1800
 	Send "Esc"
 	FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Launched " CURR "\Anims\RGB+labels-bestsfastanimrock.gif`n", "Log.txt"
+	Run TARGET '"FullPlanetAutomation COMPLETE"'
 	}
+catch
+	{
+	FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " FAILED to launch " CURR "\Anims\RGB+labels-bestsfastanimrock.gif`n", "Log.txt"
+	Run TARGET '"FullPlanetAutomation ERROR"'
+	}
+;

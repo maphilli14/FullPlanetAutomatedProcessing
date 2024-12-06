@@ -1422,3 +1422,190 @@ Dia:10.4", mag:-0.2
 Alt:75°, Ls: 3°
 Elong:111.7°  [ W ]
 
+
+
+Saturday November 23, 2024 04:54:01 PM Logging Planet Ephem
+
+s_
+
+ - UTC
+
+
+
+Saturday November 23, 2024 04:54:16 PM Logging Planet Ephem
+
+s2024-10-22_02-01.5
+
+2024-10-22 - 02-01.5UTC
+
+CM I   0.6° CM II 262.9° CM III  69.1°
+LoS=174°
+
+Dia:18.6",mag: 0.8
+Alt:46°, Rings: 6.2°
+Elong:134.0°  [ E ]
+
+
+
+Monday November 25, 2024 03:34:24 PM Logging Planet Ephem
+
+s_
+
+ - UTC
+
+
+
+Monday November 25, 2024 03:34:51 PM Logging Planet Ephem
+
+s2024-10-23_02-47.8
+
+2024-10-23 - 02-47.8UTC
+
+
+
+Monday November 25, 2024 03:35:10 PM Logging Planet Ephem
+
+s2024-10-23_02-47.8
+
+2024-10-23 - 02-47.8UTC
+
+
+
+Monday November 25, 2024 03:35:58 PM Logging Planet Ephem
+
+s2024-10-23_02-47.8
+
+2024-10-23 - 02-47.8UTC
+
+
+
+Monday November 25, 2024 03:37:00 PM Logging Planet Ephem
+
+s2024-10-23_02-47.8
+
+2024-10-23 - 02-47.8UTC
+
+
+
+Monday November 25, 2024 03:37:31 PM Logging Planet Ephem
+
+s2024-10-23_02-47.8
+
+2024-10-23 - 02-47.8UTC
+
+
+
+Monday November 25, 2024 03:39:03 PM Logging Planet Ephem
+
+s2024-10-23_02-47.8
+
+2024-10-23 - 02-47.8UTC
+
+
+
+Monday November 25, 2024 03:40:08 PM Logging Planet Ephem
+
+s2024-10-23_02-47.8
+
+2024-10-23 - 02-47.8UTC
+
+CM I 152.0° CM II  21.0° CM III 186.0°
+LoS=174°
+
+Dia:18.6",mag: 0.8
+Alt:
+ Azimuth           :  14° [SSW], Rings: 6.2°
+Elong:132.9°  [ E ]
+
+
+
+Monday November 25, 2024 03:40:30 PM Logging Planet Ephem
+
+s2024-10-23_02-47.8
+
+2024-10-23 - 02-47.8UTC
+
+CM I 152.0° CM II  21.0° CM III 186.0°
+LoS=174°
+
+Dia:18.6",mag: 0.8
+Alt:
+ Azimuth           :  14° [SSW], Rings: 6.2°
+Elong:132.9°  [ E ]
+
+
+
+Monday November 25, 2024 03:40:43 PM Logging Planet Ephem
+
+s2024-10-23_02-47.8
+
+2024-10-23 - 02-47.8UTC
+
+CM I 152.0° CM II  21.0° CM III 186.0°
+LoS=174°
+
+Dia:18.6",mag: 0.8
+Alt:
+ Azimuth           :  14° [SSW], Rings: 6.2°
+Elong:132.9°  [ E ]
+
+
+
+Monday November 25, 2024 03:40:58 PM Logging Planet Ephem
+
+s2024-10-23_02-47.8
+
+2024-10-23 - 02-47.8UTC
+
+CM I 152.0° CM II  21.0° CM III 186.0°
+LoS=174°
+
+Dia:18.6",mag: 0.8
+Alt:2024-10-23 (yyyy-mm-dd), 02:47.8 UT  CM I 152.0° CM II  21.0° CM III 186.0°, Rings: 6.2°
+Elong:132.9°  [ E ]
+
+
+
+Monday November 25, 2024 03:42:33 PM Logging Planet Ephem
+
+s2024-10-23_02-47.8
+
+2024-10-23 - 02-47.8UTC
+
+CM I 152.0° CM II  21.0° CM III 186.0°
+LoS=174°
+
+Dia:18.6",mag: 0.8
+Alt:45°, Rings: 6.2°
+Elong:132.9°  [ E ]
+
+
+
+Wednesday November 27, 2024 06:50:25 PM Logging Planet Ephem
+
+s2024-10-23_01-33.7
+
+2024-10-23 - 01-33.7UTC
+
+CM I 108.5° CM II 339.2° CM III 144.2°
+LoS=174°
+
+Dia:18.6",mag: 0.8
+Alt:45°, Rings: 6.2°
+Elong:133.0°  [ E ]
+
+
+
+Sunday December 1, 2024 09:45:03 AM Logging Planet Ephem
+
+s2024-06-30_09-31.1
+
+2024-06-30 - 09-31.1UTC
+
+CM I 126.8° CM II 101.3° CM III  44.7°
+LoS=170°
+
+Dia:17.8",mag: 1.1
+Alt:48°, Rings: 2.4°
+Elong:109.6°  [ W ]
+

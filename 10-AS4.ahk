@@ -40,6 +40,57 @@ if Enabled = 1
 	Run STATUS '"Starting AS4 setup..."'
 	}
 ;
+; ================================================================================
+; INTRO!
+; ================================================================================
+;	
+result := MsgBox("Ready for FullPlanetAutomatedProcessing?  `n Pick your folder to process from the open FC root  `n This MsgBox will time out in 10 seconds.  Continue?",, "Y/N T10")
+if (result = "Timeout")
+	{
+	TrayTip "You didn't press YES or NO within the 10-second period."
+    Exit ; Terminate this function as well as the calling function.
+	}
+else if (result = "No")
+	{
+	MsgBox "You pressed NO?!?!"
+    Exit ; Terminate this function as well as the calling function.
+    MsgBox "This MsgBox will never happen because of the Exit."
+	}
+else (result = "Yes")
+	{
+    TrayTip "You Said YES :) `n Do NOT touch, I got this...."
+	}
+;
+; ================================================================================
+; This secion runs Autostakkert
+; ================================================================================
+;
+; minimize all windows
+TrayTip "HANDS OFF, I GOT THIS FOR NOW!!!"
+Send "#m"
+try
+	{
+    Run AS4
+    if Enabled = 1
+		{
+		Run STATUS '"Opening AS4"'
+		}
+	WinWait "AutoStakkert"
+	WinActivate "AutoStakkert"
+    if Enabled = 1
+		{
+		Run STATUS '"AS4 Confirmed open"'
+		}
+	}
+catch
+	{
+    MsgBox "File does not exist."
+    if Enabled = 1
+		{
+		Run MQTTERROR '"AS4 needs input"'
+		}
+	}
+;
 ;
 ; ================================================================================
 ; This secion sets up input video files via prompt or arg passing
@@ -165,11 +216,6 @@ try
 ; ================================================================================
 ;
 ;
-; minimize all windows
-TrayTip "HANDS OFF, I GOT THIS FOR NOW!!!"
-sleep 5000
-Send "#m"
-sleep 5000
 ;MouseMove 100, 100
 ;
 nDIR := PATH "\" VideoFileType
@@ -210,40 +256,21 @@ else
    TrayTip "MQTT NOT Enabled"
 }
 ;
-; 
-; This secion runs Autostakkert and opens your inputed files
+; ================================================================================
+; This secion opens your inputed files
+; ================================================================================
 ;
 ;
-try
-	{
-    Run AS4
-    if Enabled = 1
-		{
-		Run STATUS '"Opening AS4"'
-		}
-	WinWait "AutoStakkert"
-	WinActivate "AutoStakkert"
-    if Enabled = 1
-		{
-		Run STATUS '"AS4 Confirmed open"'
-		}
-	}
-catch
-	{
-    MsgBox "File does not exist."
-    if Enabled = 1
-		{
-		Run MQTTERROR '"AS4 needs input"'
-		}
-	}
 ; Sends file / open
 try
 	{
+	WinActivate "AutoStakkert"
 	MenuSelect "AutoStakkert",, "File", "Open AVI/SER"
     if Enabled = 1
 		{
 		Run STATUS '"AS4 file menu OK"'
 		sleep 2000 ; 2seconds ; long waits due to bg win popups and traytips
+		WinWait "ahk_class #32770"
 		ControlClick "Edit1", "ahk_class #32770" ; clicks into edit path to find all files later
 		}
 	}
@@ -344,4 +371,4 @@ if Enabled = 1
 FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " AS4 Stacking started.`n", "Log.txt"
 ;
 ;
-Run "15-AS3-wait-loop-v1.ahk" " " PATH
+Run "15-AS3-wait-loop-v2.ahk" " " PATH

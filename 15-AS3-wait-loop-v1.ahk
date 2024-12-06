@@ -56,7 +56,7 @@ Sleep(10000) ; 10seconds
 ; ================================================================================
 ;
 ;
-FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Starting AS3 Stacking watcher.`n", "Log.txt"
+FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Starting AS4 Stacking watcher.`n", "Log.txt"
 ;
 if Enabled = 1
 	{
@@ -166,7 +166,9 @@ catch
 ; ================================================================================
 ;
 ;
+; Quantity of RAW FC videos
 CountVID := 0
+; Quantity of STACKED files output from AS4
 CountOUT := 0
 Loop Files, CurrentSet PreferredStackDepth "\" ASOutputFileType
 	CountOUT++
@@ -178,7 +180,7 @@ Loop Files, CurrentSet VideoFileType
 TrayTip "Stacking should be started.  Found " CountOUT " stacked Files in " CurrentSet PreferredStackDepth "\" ASOutputFileType
 FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Stacking should be started.  Found " CountOUT " stacked Files in " CurrentSet "\" PreferredStackDepth "\" ASOutputFileType "`n", "Log.txt"
 
-TrayTip "Found " CountVID " Video Files in " CurrentSet VideoFileType
+TrayTip "Found " CountVID " Video Files in " CurrentSet "\" VideoFileType
 FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Found " CountVID " Video Files in " CurrentSet "\" VideoFileType "`n", "Log.txt"
 ;
 ;
@@ -186,152 +188,163 @@ TrayTip "Blur=" Blur " and Iter=" Iter, "Your AstraImage settings"
 FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Starting AstraImage Script.  Using Blur=" Blur " and Iter=" Iter " AstraImage settings`n", "Log.txt"
 ;
 ;
-;
-; This section waits until stacking progress is at 100%
-; to prevent an infinte loop use timer * count in loop per https://www.autohotkey.com/board/topic/31617-count-1-on-every-loop/
-; 48hrs = 172,800sec/30sec = 5760counts 
-;
-;
 ; This loop waits for the first file to get processed before loading previews in AstraImage
 if CountOUT = 0
-{
-	TrayTip VideoFileType " count is: " CountOUT
+	{
+	; This section send MQTT if enabled
 	if Enabled = 1
 		{
 		Run Filter CountOUT
 		}
-	Loop 5760
-	 {
+	; Loop 60x 10s = 10min then error out as no AS4 got stacked
+	Loop 60
+		{
 		TrayTip "Waiting for 1st file"
-		CountOUT := 0
 		Loop Files, CurrentSet PreferredStackDepth "\" ASOutputFileType
 			CountOUT++
-		Sleep 30000
 		FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Starting AstraImage.exe`n", "Log.txt"	 
 		if CountOUT >= 1
-		{
+			{
 			TrayTip "Found 1st file, moving to next step"
 			break
-		}
+			}
 		else
+			{
+			Sleep 10000
+			}
+		}
+	FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " NO FILE EVER STACKED`n", "Log.txt"
+	if Enabled = 1
 		{
+		Run MQTTERROR '"NO AS4 files written in 10min!"'
 		}
 	}
-}
 ;
 ; Start AI 
 ; This loop previews in AstraImage until tif count matches avi count
+; if the tif count never matches due to processing AVI's faster than preview, the script will periodically evaluate the AS4 progress meter
 ;
-;
+; begins only when a stacked file is spit out!
+; while running, each stacked file gets process in AI and saved until either all files are done or the AS4 progress finishes
 if CountOUT > 0
-{
-	Loop 5760
-	 {
-		CountVID := 0
-		CountOUT := 0
-		FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Starting AstraImage.exe`n", "Log.txt"
-		try
-			WinClose "ahk_exe AstraImageWindows.exe"
-		try
-		{
-			Run AstraImage
-		    if Enabled = 1
-				{
-				Run TARGET '"AstraImage Preview"'
-				Run STATUS '"Previewing in AstraImage"'
-				}	
-		}
-		catch
-			MsgBox "File does not exist."
-			FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Please check setup for AI.exe location`n", "Log.txt"
-		sleep 10000
-		;
-		; This section compares input and output files types to evaulate if AS3 was successfule before checking proress bar.
-		Loop Files, CurrentSet VideoFileType
-			CountVID++
-		;
-		Loop Files, CurrentSet PreferredStackDepth "\" ASOutputFileType
-			CountOUT++
-		TrayTip "Found stacked file for AI Preview"
-		COUTTXT := "Progress =" Ceil((CountOUT/CountVID)*100) "%"
-		TrayTip "Stacked files=" CountOUT " and Video Files=" CountVID
-		TrayTip COUTTXT
+	{
+	CountVID := 0
+	CountOUT := 0
+	FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Starting AstraImage.exe`n", "Log.txt"
+	try
+		WinClose "ahk_exe AstraImageWindows.exe"
+	try
+	{
+		Run AstraImage
 		if Enabled = 1
 			{
-			Run FILTER q COUTTXT q
-			}			
-		ToolTip "Checking AS3 output file status, please wait"
-		SetTimer () => ToolTip(), -20000
-		FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Found stacked file for AI Preview`n", "Log.txt"
-		; Set focus and or wait for app
+			Run TARGET '"AstraImage Preview"'
+			Run STATUS '"Previewing in AstraImage"'
+			}	
+	}
+	catch
+		{
+		MsgBox "File does not exist."
+		if Enabled = 1
+			{
+			Run MQTTERROR '"Please check setup for AI.exe location"'
+			}
+		FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Please check setup for AI.exe location`n", "Log.txt"
+		; exit of script is desired, but break only works for loops not catches?
+		;break
+		}
+	WinWait "Astra Image"
+	;
+	; This section compares input and output files types to evaulate if AS4 was successfule before checking proress bar.
+	Loop Files, CurrentSet VideoFileType
+		CountVID++
+	;
+	Loop Files, CurrentSet PreferredStackDepth "\" ASOutputFileType
+		CountOUT++
+	TrayTip "Found stacked file for AI Preview"
+	COUTTXT := "Progress =" Ceil((CountOUT/CountVID)*100) "%"
+	TrayTip "Stacked files=" CountOUT " and Video Files=" CountVID
+	TrayTip COUTTXT
+	if Enabled = 1
+		{
+		Run FILTER q COUTTXT q
+		}			
+	ToolTip "Checking AS3 output file status, please wait"
+	SetTimer () => ToolTip(), -20000
+	FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Found stacked file for AI Preview`n", "Log.txt"
+	; Set focus and or wait for app
+	; opens AI, sharps and saves, no error handling
+	try
+		{
+		WinActivate "ahk_exe AstraImageWindows.exe"
+		MenuSelect "Astra Image",, "File", "Open"
+		WinWait "Astra Image - Open File"
+		WinWait "ahk_class #32770"
+		sleep 1000 ; MQTT Pub opens window and AHK needs time to refoucs active window
+		WinActivate "ahk_class #32770"
+		sleep 1000 ; MQTT Pub opens window and AHK needs time to refoucs active window
+		WinActivate "ahk_class #32770" ; clicks into edit path to refocus window
+		sleep 1000 ; MQTT Pub opens window and AHK needs time to refoucs active window
+		WinActivate "ahk_class #32770"
+		sleep 1000 ; MQTT Pub opens window and AHK needs time to refoucs active window
+		WinActivate "ahk_class #32770" ; clicks into edit path to refocus window
+		ControlClick "Edit1", "ahk_class #32770" ; clicks into edit path to refocus window
+		Send "!a" ; unneded alt+a
+		sleep 200
+		Send "!n" ; ensures it's inside path
+		Send StackPath "`n" ; pastes path
+		sleep 200
+		Send "+{Tab 1}"
+		sleep 1000
+		Send "{End 1}" "`n"
+		sleep 2000
+		Send "!n" "m"
+		WinWait "ahk_class TfrmSDDeconvolution"
+		ControlClick "TNumEdit1","ahk_class TfrmSDDeconvolution"
+		sleep 100
+		Send "`b`b`b`b"
+		sleep 100
+		Send Blur
+		sleep 100
+		ControlClick "TNumEdit3","ahk_class TfrmSDDeconvolution"
+		sleep 100
+		Send "`b`b`b`b"
+		sleep 100
+		Send Iter
+		sleep 100
+		ControlClick "TButton3","ahk_class TfrmSDDeconvolution"
+		Send "`n"
 		;
-		try
-		{
-			WinActivate "ahk_exe AstraImageWindows.exe"
-			MenuSelect "Astra Image",, "File", "Open"
-			WinWait "Astra Image - Open File"
-			WinWait "ahk_class #32770"
-			sleep 5000 ; MQTT Pub opens window and AHK needs time to refoucs active window
-			WinActivate "ahk_class #32770"
-			sleep 5000 ; MQTT Pub opens window and AHK needs time to refoucs active window
-			WinActivate "ahk_class #32770" ; clicks into edit path to refocus window
-			ControlClick "Edit1", "ahk_class #32770" ; clicks into edit path to refocus window
-			Send "!a" ; unneded alt+a
-			sleep 200
-			Send "!n" ; ensures it's inside path
-			Send StackPath "`n" ; pastes path
-			sleep 200
-			Send "+{Tab 1}"
-			sleep 1000
-			Send "{End 1}" "`n"
-			sleep 2000
-			Send "!n" "m"
-			;MenuSelect "Enhance",, "Simple Deconvolution"
-			sleep 2000
-			ControlClick "TNumEdit1","ahk_class TfrmSDDeconvolution"
-			sleep 1000
-			Send "`b`b`b`b"
-			sleep 1000
-			Send Blur
-			sleep 1000
-			ControlClick "TNumEdit3","ahk_class TfrmSDDeconvolution"
-			sleep 1000
-			Send "`b`b`b`b"
-			sleep 1000
-			Send Iter
-			sleep 1000
-			ControlClick "TButton3","ahk_class TfrmSDDeconvolution"
-			Send "`n"
-			;
-			Sleep 2000
-			WinWaitClose "ahk_class TfrmSDDeconvolution"
-			;
-			; Saves file to skep next steps
-			;
-			WinActivate "ahk_exe AstraImageWindows.exe"
-			MenuSelect "Astra Image",, "File", "Save As"
-			sleep 2000
-			Send "{Home 1}"
-			Send LabelPath "\"
-			sleep 1000
-			ControlClick "Button2","ahk_class #32770"
-			Send "`n"
-			sleep 10000
-			ControlClick "TButton2","ahk_class TfrmSave"
-			Send "`n"
+		Sleep 200
+		WinWaitClose "ahk_class TfrmSDDeconvolution"
+		;
+		; Saves file to skep next steps
+		;
+		WinActivate "ahk_exe AstraImageWindows.exe"
+		MenuSelect "Astra Image",, "File", "Save As"
+		sleep 2000
+		Send "{Home 1}"
+		Send LabelPath "\"
+		WinWait "ahk_class #32770"
+		ControlClick "Button2","ahk_class #32770"
+		Send "`n"
+		WinWait "ahk_class TfrmSave"
+		ControlClick "TButton2","ahk_class TfrmSave"
+		Send "`n"
 		}
-		if CountOUT >= CountVID
+	if CountOUT >= CountVID
 		{
-			TrayTip "Found same in and out file counts"
-			TrayTip "New file found, wrap up your work, will close AI in 10sec"
-			sleep 10000
-			WinClose "ahk_exe AstraImageWindows.exe"
-			WinActivate "ahk_exe AutoStakkert.exe"
-			FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Switching to AS3 for wrap up watching.`n", "Log.txt"
-			sleep 2000
-			break
+		TrayTip "Found same in and out file counts"
+		TrayTip "New file found, wrap up your work, will close AI in 10sec"
+		sleep 10000
+		WinClose "ahk_exe AstraImageWindows.exe"
+		WinActivate "ahk_exe AutoStakkert.exe"
+		FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Switching to AS3 for wrap up watching.`n", "Log.txt"
+		sleep 2000
+		; exit of script is desired, but break only works for loops not catches?
+		;break
 		}
-		else
+	else
 		{
 		; This sections from Discord AHK Help
 		;
@@ -343,33 +356,49 @@ if CountOUT > 0
 				for change in changes
 					if change.Action == 1 ; FILE_ACTION_ADDED
 						newFile := change.Name
-			}
-			WatchFolder(folder, callback)
-			start := A_TickCount
-			while !newFile && (start - A_TickCount) < timeout
-				sleep 50
-			WatchFolder(folder, "**DEL")
-			return newFile
-		;
-		#Include "100-FileWatchLib.ahk"
-		;
 		}
+		WatchFolder(folder, callback)
+		start := A_TickCount
+		while !newFile && (start - A_TickCount) < timeout
+			sleep 50
+		WatchFolder(folder, "**DEL")
+		return newFile
+	;
+	#Include "100-FileWatchLib.ahk"
+	;
 	}
-		else
-		{
-		}
+	else
+	{
+	}
 }
 else
 {
 }
 ;
+; OLD METHOD ...This secion defines the AS4 watch for end progress
+;Loop 5760
+;{
+;	ToolTip "Checking AS3 status, please wait"
+;	SetTimer () => ToolTip(), -20000
+;	WinActivate "ahk_exe AutoStakkert.exe"
+;	sleep 100
+;	WinActivate "ahk_exe AutoStakkert.exe"
+;	Progress := PixelGetColor(nX, nY, "Alt")
+;	sleep 30000
+;	;if WinExist "ahk_class TFormImage"
+;	;	ControlClick "Button1","ahk_class #32770"
+;	if WinExist("ahk_class #32770")
+;		ControlClick "Button1", "ahk_class #32770" ; clicks into edit path to find all files later
+;		FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Recovered from error.`n", "Log.txt"
+;	if (Progress = BLACK )
+;		TrayTip "Found 100% Progress, moving to next step"
+;		FileAppend FormatTime(A_Now, "dddd MMMM d, yyyy hh:mm:ss tt") " Finished AS3 Stacking watcher.`n", "Log.txt"
+;		break
+;}
+;
+; NEW METHOD ...Compare stacks to vids and break when equal!
 ;
 ;
-;
-; This secion defines the AS4 watch for end progress
-;
-;
-
 Loop 5760
 {
 	ToolTip "Checking AS3 status, please wait"
